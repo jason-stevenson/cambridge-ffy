@@ -29,4 +29,6 @@ $( document ).ready(function() {
 	  $('.end-of-chapter ol li').wrapInner('<span class="item"/>');
 	  $(".end-of-chapter .item").css("color", "black");
 	});
+
+
 });
