@@ -24,9 +24,13 @@ module.exports = function(grunt) {
       }
     },
 
+
+
+
+
     watch: {
       sass: {
-        files: ['sass/*.scss'],
+        files: ['sass/*.scss', 'sass/**/*.scss'],
         tasks: ['compass:dev']
       },
       /* watch and see if our javascript files change, or new packages are installed */
@@ -34,9 +38,10 @@ module.exports = function(grunt) {
         files: ['assets/js/main.js', 'components/**/*.js'],
         tasks: ['uglify']
       },
+
       /* watch our files for change, reload */
       livereload: {
-        files: ['*.html', 'sass/*.scss', 'css/*.css', 'images/*', 'assets/js/{main.min.js, plugins.min.js}'],
+        files: ['*.html', 'sass/*.scss', 'sass/**/*.scss', 'css/*.css', 'images/*', 'assets/js/{main.min.js, plugins.min.js}'],
         options: {
           livereload: true
         }

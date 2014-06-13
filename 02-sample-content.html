@@ -17,9 +17,11 @@
 </head>
 
 
+
+
 <body>
 	<div id="epub">
-		<div id="none">
+		<div id="section1" class="chapter1">
 			<div class="row">
 				<div class="large-12 columns">
 					<h2>This is a large page title</h2>
@@ -305,6 +307,16 @@
 							</ol>
 							
 						</div>
+
+
+
+					<div class="galleria">
+					    <a href="images/chapter1-cover.jpg"><img src="images/chapter1-cover.jpg" data-title="My title" data-description="My description"></a>
+					    <a href="images/surfer.jpg"><img src="images/surfer.jpg" data-title="Another title" data-description="My <em>HTML</em> description"></a>
+					</div>
+
+
+
 						<div class="eoc-panel">
 							<h3>Exam-style questions</h3>
 							<p>Youth cultural groups are often identified and distinguished by their clothing, appearance and musical tastes. Historically, many youth cultures have been portrayed negatively by mass media. However, being involved in a particular youth culture often has very positive influences for adolescents and can play a key role in their development and self-esteem.</p>
@@ -328,21 +340,16 @@
 
 
 
-  <script>
-  document.write('<script src=' +
-  ('__proto__' in {} ? 'javascripts/vendor/zepto' : 'javascripts/vendor/jquery') +
-  '.js><\/script>')
-  </script>
-  
-    <script src="javascripts/foundation/foundation.js"></script>
+  	<script src="javascripts/vendor/jquery.js"></script>
+	<script src="javascripts/galleria/galleria-1.2.9.js"></script>
+	<script src="javascripts/foundation/foundation.js"></script>
 	<script src="javascripts/foundation/foundation.tooltips.js"></script>
-	
-	
-  
-  <script>
-    $(document).foundation();
-  </script>
-
-  <script src="javascripts/cambridge/main.js"></script>
+	<script src="javascripts/foundation/foundation.reveal.js"></script>
+	<script> $(document).foundation();</script>
+	<script src="javascripts/cambridge/main.js"></script>
+	<script>
+    	Galleria.loadTheme('javascripts/galleria/themes/classic/galleria.classic.min.js');
+    	Galleria.run('.galleria');
+	</script>
 </body>
 </html>
