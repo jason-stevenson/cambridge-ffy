@@ -12,101 +12,69 @@
 
 // General
 
-#epub{
-	h2{
-	line-height:1.2em;
-	}
 
-	table{
-		.title{
-			color:$purple;
-			font-size: $h4-font-size;
-			line-height: 1.2em;
-			margin-bottom: 0.5em;
-		}
-		border:3px solid $purple !important;
-		th{
-			background-color:$purple;
-			border-right:2px solid #fff;
-		}
-
-		td{
-			border-right:2px solid $purple;
-		}
-		ul{
-			li{
-				list-style: none;
-				text-indent: -1.5em;
-  				padding-left: 1.5em;
-				&:before{
-					content: "\2014\a0\a0";
-				}
-			}
-		}
-	}
-}
 
 
 
 // Cover styles
 // ================================================================================================
 
-#section1.chapter-cover{
-	@include cover-background("chapter1-cover.jpg");
-}
-#section2.chapter-cover{
-	@include cover-background("chapter1-cover.jpg");
-}
+// #section1.chapter-cover{
+// 	@include cover-background("chapter1-cover.jpg");
+// }
+// #section2.chapter-cover{
+// 	@include cover-background("chapter1-cover.jpg");
+// }
 
-.chapter-cover{
-		h1{
-		font-size:emCalc(30px);
-		margin: 0.4em 0;
-		> span{
-			opacity: 0.6;
-		}
-		@media #{$small} {	
-			margin: 0.2em 0;
-			font-size:emCalc(50px);
-		}
-	}
-	h1 + div{
-		font-size: $h4-font-size;
-		margin: 0 0 1em 0;
-		color: #fff;
-		opacity: 0.6;
+// .chapter-cover{
+// 		h1{
+// 		font-size:emCalc(30px);
+// 		margin: 0.4em 0;
+// 		> span{
+// 			opacity: 0.6;
+// 		}
+// 		@media #{$small} {	
+// 			margin: 0.2em 0;
+// 			font-size:emCalc(50px);
+// 		}
+// 	}
+// 	h1 + div{
+// 		font-size: $h4-font-size;
+// 		margin: 0 0 1em 0;
+// 		color: #fff;
+// 		opacity: 0.6;
 
-		@media #{$small} {
-			font-size: $h2-font-size;
-		}
-	}
-	.title-panel{
-		height:auto;
-		position:relative;
-		top: 150px;
-	}
-	.overview-panel{
-		@include background-opacity(#fff, 0.8);
-		height:auto;
-		position:relative;
-		top: 150px;
-		.title{
-			font-size: $h5-font-size;
-			font-weight:bold;
-			line-height: 1.4em;
-			margin:1.2em 0 0.4em 0;
-		}
-		.split{
-			width: 45%;
-			padding-right:10px;
-			float: left;
-			margin-bottom: 2em;
-		}
-		.split p{
-			margin:0.4em 0;
-		}
-	}
-}
+// 		@media #{$small} {
+// 			font-size: $h2-font-size;
+// 		}
+// 	}
+// 	.title-panel{
+// 		height:auto;
+// 		position:relative;
+// 		top: 150px;
+// 	}
+// 	.overview-panel{
+// 		@include background-opacity(#fff, 0.8);
+// 		height:auto;
+// 		position:relative;
+// 		top: 150px;
+// 		.title{
+// 			font-size: $h5-font-size;
+// 			font-weight:bold;
+// 			line-height: 1.4em;
+// 			margin:1.2em 0 0.4em 0;
+// 		}
+// 		.split{
+// 			width: 45%;
+// 			padding-right:10px;
+// 			float: left;
+// 			margin-bottom: 2em;
+// 		}
+// 		.split p{
+// 			margin:0.4em 0;
+// 		}
+// 	}
+// }
 
 
 
@@ -115,134 +83,41 @@
 // Sectional theming
 // ================================================================================================
 
-#section1{
-	h1{
-		color: #fff;
-	}
-	h2,h3{
-		color: $section1-base-color;
-	}
-	
-	.title-panel{
-		@include background-opacity($section1-base-color, 0.8);
-	}
-	.overview-panel{
-		.title{color: $section1-base-color}
-	}
-	.end-of-chapter{
-		ul,li{
-			color:$section1-base-color;
-		}
-		.eoc-panel{
-			border-color: $section1-base-color;
+// #epub{
+// 	#book1{
+// 		h1{
+// 			color: #fff;
+// 		}
+// 		h2{
+// 			background-color:$book1;
+// 			color: #fff;
+// 		}
+// 		h3{
+// 			color: $book1;
+// 		}
+		
+// 		.title-panel{
+// 			@include background-opacity($book1, 0.8);
+// 		}
+// 		.overview-panel{
+// 			.title{color: $book1}
+// 		}
+// 		.end-of-chapter{
+// 			ul,li{
+// 				color:$book1;
+// 			}
+// 			.eoc-panel{
+// 				border-color: $book1;
 
-			h3{
-				color: #fff;
-				background-color:$section1-base-color;
-			}
-		}
-		.download{a{@include download-colour($section1-base-color)}};
-	}
-}
-
-#section2{
-	h1{
-		color: #fff;
-	}
-	h2,h3{
-		color: $section2-base-color;
-	}
-	.title-panel{
-		@include background-opacity($section2-base-color, 0.8);
-	}
-	.overview-panel{
-		.title{color: $section2-base-color}
-	}
-	.end-of-chapter{
-		ul,li{
-			color:$section2-base-color;
-		}
-		.eoc-panel{
-			border-color: $section2-base-color;
-			h3{
-				color: #fff;
-				background-color:$section2-base-color;
-			}
-		}
-		.download{a{@include download-colour($section2-base-color)}};
-	}
-}
-
-
-
-
-// Panels
-// ================================================================================================
-
-// Activity panels
-.activity-panel{
-		padding:15px 50px;
-		margin-bottom: 45px;
-		h3{
-			padding:0;
-			margin:0;
-			font-size:$h4-font-size;
-			color: #fff !important;
-		}
-}
-.respond{
-	.header{@include panel-ribbon($respond-colour)};
-	.content{@include panel-content($respond-colour)};
-	.download{a{@include download-colour($respond-colour)}};
-}
-.checklist{
-	.header{@include panel-ribbon($checklist-colour)};
-	.content{@include panel-content($checklist-colour)};
-	.download{a{@include download-colour($checklist-colour)}};
-}
-.research{
-	.header{@include panel-ribbon($research-colour)};
-	.content{@include panel-content($research-colour)};
-	.download{a{@include download-colour($research-colour)}};
-}
-.discussion{
-	.header{@include panel-ribbon($discussion-colour)};
-	.content{@include panel-content($discussion-colour)};
-	.download{a{@include download-colour($discussion-colour)}};
-}
-.syllabus{
-	.header{@include panel-ribbon($syllabus-colour)};
-	.content{@include panel-content($syllabus-colour)};
-	.download{a{@include download-colour($syllabus-colour)}};
-}
-.interactive{
-	.header{@include panel-ribbon($interactive-colour)};
-	.content{@include panel-content($interactive-colour)};
-	.download{a{@include download-colour($interactive-colour)}};
-}
-
-
-// End of Chapter 
-// ================================================================================================
-
-
-.eoc-panel{
-	position: relative;
-	border: 2px solid;
-	padding:20px;
-	margin: 45px 0;
-
-	@include rounded-corners(20px);
-	 h3{
-	 	display: inline;
-	 	position: relative;
-	 	top: -30px;
-	 	left: -22px;
-	 	padding:10px 30px;
-	 	@include rounded-corners(0 20px 20px 0);
-
-	 }
-}
+// 				h3{
+// 					color: #fff;
+// 					background-color:$book1;
+// 				}
+// 			}
+// 			.download{a{@include download-colour($book1)}};
+// 		}
+// 	}
+// }
 
 
 

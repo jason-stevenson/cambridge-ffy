@@ -1,0 +1,68 @@
+
+
+
+/* Page elements */
+
+#epub{
+	h2{
+		font-size: 1.8em;
+		line-height:1.2em;
+		padding:0.6em;
+	}
+
+	// Colourd bullets
+	ol{
+		li{
+			color: $grey;
+			font-weight: bold;
+			> span{
+				font-weight: normal;
+				color: #000;
+			}
+		}
+	}
+
+	table{
+		.title{
+			color:$purple;
+			font-size: $h4-font-size;
+			line-height: 1.2em;
+			margin-bottom: 0.5em;
+		}
+		border:3px solid $purple !important;
+		th{
+			background-color:$purple;
+			border-right:2px solid #fff;
+		}
+
+		td{
+			border-right:2px solid $purple;
+		}
+		ul{
+			li{
+				list-style: none;
+				text-indent: -1.5em;
+  				padding-left: 1.5em;
+				&:before{
+					content: "\2014\a0\a0";
+				}
+			}
+		}
+
+	}
+}
+
+
+
+
+#epub{
+	#book1{
+		h2{
+			background-color:$book1;
+			color: #fff;
+		}
+		h3{
+			color: $book1;
+		}
+	}
+}

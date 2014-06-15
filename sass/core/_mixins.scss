@@ -7,12 +7,31 @@
   }
 }
 
-@mixin rounded-corners($radius) {
+// Box Rounding
+@mixin rounded-all-corners($radius) {
   border-radius: $radius;
   -moz-border-radius: $radius;
   -webkit-border-radius: $radius;
 }
 
+@mixin rounded-corners($tl,$tr,$br,$bl) {
+  -moz-border-radius-topleft: $tl;
+  -moz-border-radius-topright: $tr;
+  -moz-border-radius-bottomright: $br;
+  -moz-border-radius-bottomleft: $bl;
+  -webkit-border-top-left-radius: $tl;
+  -webkit-border-top-right-radius: $tr;
+  -webkit-border-bottom-right-radius: $br;
+  -webkit-border-bottom-left-radius: $bl;
+  border-top-left-radius: $tl;
+  border-top-right-radius: $tr;
+  border-bottom-right-radius: $br;
+  border-bottom-left-radius: $bl;
+}
+
+
+
+// Shadows
 @mixin box-shadow($top, $left, $blur, $color, $inset: false) {
   @if $inset {
     -webkit-box-shadow:inset $top $left $blur $color;
@@ -25,6 +44,9 @@
   }
 }
 
+
+
+// Hover states
 @mixin hoverColor() {
   -webkit-transition: all 0.4s ease-in-out 0s;
   -moz-transition: all 0.4s ease-in-out 0s;
@@ -33,11 +55,13 @@
   transition: all 0.4s ease-in-out 0s;
 }
 
+
+
+// Background images
 @mixin background-opacity($color, $opacity: 0.7) {
     background: $color; /* The Fallback */
     background: rgba($color, $opacity);
 }
-
 @mixin cover-background($filename) {
   background-image: url('../images/#{$filename}');
   background-repeat: no-repeat;
@@ -49,13 +73,15 @@
   background-size: cover;
 }
 
-@mixin svg-bg($name, $repeat: no-repeat, $position: 0 0) {
-  background-image: url('../images/#{$name}.png'); // IE8 & below
-  background-image: none, url('../images/#{$name}.svg');
+@mixin svg-bg($path, $repeat: no-repeat, $position: 0 0) {
+  background-image: url('#{$path}.png'); // IE8 & below
+  background-image: none, url('#{$path}.svg');
   background-repeat: $repeat;
   background-position:$position; 
 }
 
+
+// Panel styles
 @mixin panel-ribbon($color){
       background-color: $color;
       display: block;
