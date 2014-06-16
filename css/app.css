@@ -8245,45 +8245,28 @@ a.th {
   font-weight: normal;
   color: #000;
 }
-/* line 39, ../sass/theme/_page.scss */
-#epub table {
-  border: 3px solid #961b81 !important;
-}
-/* line 40, ../sass/theme/_page.scss */
-#epub table .title {
-  color: #961b81;
-  font-size: 1.4375em;
-  line-height: 1.2em;
-  margin-bottom: 0.5em;
-}
-/* line 47, ../sass/theme/_page.scss */
-#epub table th {
-  background-color: #961b81;
-  border-right: 2px solid #fff;
-}
-/* line 52, ../sass/theme/_page.scss */
-#epub table td {
-  border-right: 2px solid #961b81;
-}
-/* line 56, ../sass/theme/_page.scss */
-#epub table ul li {
-  list-style: none;
-  text-indent: -1.5em;
-  padding-left: 1.5em;
-}
-/* line 60, ../sass/theme/_page.scss */
-#epub table ul li:before {
-  content: "\2014\a0\a0";
-}
 
-/* line 74, ../sass/theme/_page.scss */
+/* line 45, ../sass/theme/_page.scss */
 #epub #book1 h2 {
   background-color: #982d79;
   color: #fff;
 }
-/* line 78, ../sass/theme/_page.scss */
+/* line 49, ../sass/theme/_page.scss */
 #epub #book1 h3 {
   color: #982d79;
+}
+
+/* line 7, ../sass/theme/_tables.scss */
+#epub .book1 .chapter1 table {
+  background-color: red;
+}
+/* line 9, ../sass/theme/_tables.scss */
+#epub .book1 .chapter1 table th {
+  background-color: #009280;
+}
+/* line 10, ../sass/theme/_tables.scss */
+#epub .book1 .chapter1 table td {
+  border-right: 2px solid #009280;
 }
 
 /* line 6, ../sass/theme/_panels.scss */
@@ -8442,13 +8425,26 @@ a.th {
   font-size: 1.4375em;
   color: #568c9d !important;
 }
+/* line 84, ../sass/theme/_panels.scss */
+.activity-panel table {
+  border: 2px solid #568c9d !important;
+}
+/* line 86, ../sass/theme/_panels.scss */
+.activity-panel table th {
+  background-color: #568c9d !important;
+  border-right: 2px solid #fff;
+}
+/* line 91, ../sass/theme/_panels.scss */
+.activity-panel table td {
+  border-right: 2px solid #568c9d !important;
+}
 
-/* line 89, ../sass/theme/_panels.scss */
+/* line 100, ../sass/theme/_panels.scss */
 .trivia-panel {
   clear: both;
   margin-bottom: 45px;
 }
-/* line 92, ../sass/theme/_panels.scss */
+/* line 103, ../sass/theme/_panels.scss */
 .trivia-panel h3 {
   padding: 8px;
   margin: 0;
@@ -8460,7 +8456,7 @@ a.th {
   margin-bottom: 15px;
 }
 
-/* line 106, ../sass/theme/_panels.scss */
+/* line 117, ../sass/theme/_panels.scss */
 .collaborate-panel {
   clear: both;
   padding: 15px 50px;
@@ -8486,7 +8482,7 @@ a.th {
   background-size: auto 100px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 106, ../sass/theme/_panels.scss */
+  /* line 117, ../sass/theme/_panels.scss */
   .collaborate-panel {
     background-image: url("../images/ui/collaborate-icon.png");
     background-image: none, url("../images/ui/collaborate-icon.svg");
@@ -8495,7 +8491,7 @@ a.th {
     background-size: auto 80px;
   }
 }
-/* line 124, ../sass/theme/_panels.scss */
+/* line 135, ../sass/theme/_panels.scss */
 .collaborate-panel h3 {
   padding: 0;
   margin: 0;

@@ -14,7 +14,7 @@ $( document ).ready(function() {
 	$('.chapter-cover').wrapInner('<div class="masthead"></div>');
 
 
-	// Investiggate Panels
+	// Investigate Panels
 	$('.investigate-panel').wrapInner('<div class="content"></div>');
 
 
@@ -22,8 +22,13 @@ $( document ).ready(function() {
 	$('.activity-panel').wrapInner('<div class="inner"></div>');
 	$('.activity-panel').prepend('<div class="top"></div>');
 	$('<div class="bottom"></div>').insertAfter('.activity-panel .inner');
-
 	$('.activity-panel .download a').html('<span class="icon-doc-solid"></span><div>Download</div>');
+
+
+
+
+
+
 
 	// $('.end-of-chapter .download a').html('<span class="icon-doc-solid"></span><div>Download</div>');
 

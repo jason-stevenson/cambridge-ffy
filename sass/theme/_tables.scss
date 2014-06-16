@@ -1,0 +1,13 @@
+
+
+
+
+#epub{
+	.book1 .chapter1{
+		table{
+			background-color:red;
+			th{background-color:$book1-chapter1}
+			td{border-right:2px solid $book1-chapter1}
+		}
+	}
+}

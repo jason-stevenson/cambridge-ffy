@@ -35,35 +35,6 @@
 			}
 		}
 	}
-
-	table{
-		.title{
-			color:$purple;
-			font-size: $h4-font-size;
-			line-height: 1.2em;
-			margin-bottom: 0.5em;
-		}
-		border:3px solid $purple !important;
-		th{
-			background-color:$purple;
-			border-right:2px solid #fff;
-		}
-
-		td{
-			border-right:2px solid $purple;
-		}
-		ul{
-			li{
-				list-style: none;
-				text-indent: -1.5em;
-  				padding-left: 1.5em;
-				&:before{
-					content: "\2014\a0\a0";
-				}
-			}
-		}
-
-	}
 }
 
 
