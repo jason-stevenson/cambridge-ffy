@@ -5,20 +5,26 @@ $( document ).ready(function() {
  	// ================================================================
 	// As we cant use the body element to apply the cover images to
 	// we need to re-size the internal div to fill the browser window
+	$('.chapter-cover').css({'height':($(window).height())});
 
-	// $('.chapter-cover').css({'height':($(window).height())});
+	$(window).resize(function(){
+    	$('.chapter-cover').css({'height':($(window).height())});
+    });
 
-	// $(window).resize(function(){
- //    $('.chapter-cover').css({'height':($(window).height())});
- //    });
-
-
-
-	// // Panels
-	 $('.investigate-panel').wrapInner('<div class="content"></div>');
+	$('.chapter-cover').wrapInner('<div class="masthead"></div>');
 
 
-	// $('.activity-panel .download a').html('<span class="icon-doc-solid"></span><div>Download</div>');
+	// Investiggate Panels
+	$('.investigate-panel').wrapInner('<div class="content"></div>');
+
+
+	//Acitivity panel
+	$('.activity-panel').wrapInner('<div class="inner"></div>');
+	$('.activity-panel').prepend('<div class="top"></div>');
+	$('<div class="bottom"></div>').insertAfter('.activity-panel .inner');
+
+	$('.activity-panel .download a').html('<span class="icon-doc-solid"></span><div>Download</div>');
+
 	// $('.end-of-chapter .download a').html('<span class="icon-doc-solid"></span><div>Download</div>');
 
 
@@ -31,6 +37,5 @@ $( document ).ready(function() {
 	// });
 
 	 $('ol li').wrapInner('<span class="item"/></span>');
-
 
 });

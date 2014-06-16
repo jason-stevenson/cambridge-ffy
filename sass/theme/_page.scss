@@ -4,13 +4,27 @@
 /* Page elements */
 
 #epub{
+
+	.has-tip{
+		background-color:lighten($tooltiip-color,50);
+		padding:0.2em;
+		@include rounded-all-corners(0.6em);
+
+	}
+
 	h2{
 		font-size: 1.8em;
 		line-height:1.2em;
 		padding:0.6em;
 	}
 
-	// Colourd bullets
+	h4{
+		color: $grey;
+		font-weight: 400;
+		font-size: 1.3em;
+	}
+
+	// Coloured bullets
 	ol{
 		li{
 			color: $grey;

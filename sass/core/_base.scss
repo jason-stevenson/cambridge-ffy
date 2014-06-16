@@ -84,25 +84,34 @@
 	// ================================================================================================
 	.download{
 		@include clearfix();
+		text-align:left;
+		margin-bottom: 25px;
+
+		@media #{$small} {
+			text-align:center;
+		}
+
 		>a >span {
-			font-size:emCalc(70px);
-			padding-bottom:10px;
-			padding-left:5px;
+			font-size:emCalc(60px);
+			float: left;
+
 			@media #{$small} {
-				font-size:emCalc(60px);
-				float: left;
+				float: none;
+				font-size:emCalc(80px);
 			}
 		}
 		>a >span + div{
-			margin-top: 10px;
+			margin-top: 15px;
+			margin-left: 10px;
 			margin-bottom: 15px;
-			font-size:emCalc(18px);
+			font-size:emCalc(20px);
+	
+			float: left;
+
 			@media #{$small} {
+				float: none;
+				margin: 15px 0px 0px 0px;
 				font-size:emCalc(20px);
-				line-height:1.5em;
-				padding-left:10px;
-				padding-top:5px;
-				float: left;
 			}
 		}
 	}

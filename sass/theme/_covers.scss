@@ -1,0 +1,80 @@
+
+// Chapter background images
+
+// $chapters:5;
+
+// @while $chapters > 0{
+// 	#book1.chapter-cover.chapter#{$chapters}{
+// 		@include cover-background("chapter1-cover.jpg");
+// 	}
+// }
+
+#book1.chapter-cover.chapter1{@include cover-background("chapter1-cover.jpg")}
+#book1.chapter-cover.chapter2{@include cover-background("chapter1-cover.jpg")}
+#book1.chapter-cover.chapter3{@include cover-background("chapter1-cover.jpg")}
+#book1.chapter-cover.chapter4{@include cover-background("chapter1-cover.jpg")}
+#book1.chapter-cover.chapter5{@include cover-background("chapter1-cover.jpg")}
+#book1.chapter-cover.chapter6{@include cover-background("chapter1-cover.jpg")}
+#book1.chapter-cover.chapter7{@include cover-background("chapter1-cover.jpg")}
+#book1.chapter-cover.chapter8{@include cover-background("chapter1-cover.jpg")}
+#book1.chapter-cover.chapter9{@include cover-background("chapter1-cover.jpg")}
+#book1.chapter-cover.chapter10{@include cover-background("chapter1-cover.jpg")}
+#book1.chapter-cover.chapter11{@include cover-background("chapter1-cover.jpg")}
+#book1.chapter-cover.chapter12{@include cover-background("chapter1-cover.jpg")}
+
+#book2.chapter-cover.chapter1{@include cover-background("chapter1-cover.jpg")}
+#book2.chapter-cover.chapter2{@include cover-background("chapter1-cover.jpg")}
+#book2.chapter-cover.chapter3{@include cover-background("chapter1-cover.jpg")}
+#book2.chapter-cover.chapter4{@include cover-background("chapter1-cover.jpg")}
+#book2.chapter-cover.chapter5{@include cover-background("chapter1-cover.jpg")}
+#book2.chapter-cover.chapter6{@include cover-background("chapter1-cover.jpg")}
+#book2.chapter-cover.chapter7{@include cover-background("chapter1-cover.jpg")}
+#book2.chapter-cover.chapter8{@include cover-background("chapter1-cover.jpg")}
+
+
+
+// Chapter masthead colours
+#book1.chapter1{.masthead{@include background-opacity($book1-chapter1);}}
+#book1.chapter2{.masthead{@include background-opacity($book1-chapter2);}}
+
+#book2.chapter1{.masthead{@include background-opacity($book2-chapter1);}}
+#book2.chapter2{.masthead{@include background-opacity($book2-chapter2);}}
+
+
+
+
+
+.chapter-cover{
+	.masthead{
+		position: relative;
+		top: 50px;
+		text-align: right;
+		color: #fff;
+		text-transform: uppercase;
+		padding: 2.5em;
+		font-weight: 200;
+
+		.chapter{
+			font-size: $h3-font-size;
+			line-height: 2em;
+		}
+		.title{
+			font-size: $h1-font-size;
+			line-height: 1.2em;
+		}
+
+	}
+	
+}
+
+.cover-caption{
+	background-color: #FFF;
+	padding:2em;
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	font-size:0.9em;
+	span{
+		color: $grey;
+	}
+}

@@ -45,6 +45,13 @@
 }
 
 
+// Tranparent background
+@mixin background-opacity($color, $opacity: 0.5) {
+    background: $color; /* The Fallback */
+    background: rgba($color, $opacity);
+}
+
+
 
 // Hover states
 @mixin hoverColor() {
@@ -123,10 +130,10 @@
       @include box-shadow(-7px, 7px, 0, darken($color,8));
 }
 
-@mixin download-colour($color){
+@mixin download-colour($color, $amount: 15){
   color:$color;
     &:hover{
       @include hoverColor();
-      color:darken($color,18);;
+      color:darken($color,$amount);;
     }
 }
