@@ -17,16 +17,8 @@ $( document ).ready(function() {
 
 	// EOC
  	// ================================================================
-	// $('.eoc').css({'height':($(window).height())});
-	// $('.eoc').css({'width':($(window).width())});
-
-	// $(window).resize(function(){
- //    	$('.eoc').css({'height':($(window).height())});
- //    	$('.eoc').css({'width':($(window).width())});
- //    });
-
 	$('.eoc').wrapInner('<div class="content"></div>');
-
+	$('.eoc .download a').html('<span class="icon-doc-solid"></span><div>Download</div>');
 
 
 	// Panels

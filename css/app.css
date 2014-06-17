@@ -8496,216 +8496,276 @@ a.th {
 /* line 11, ../sass/theme/_eoc.scss */
 #epub #book1.eoc.chapter1 {
   background-color: #d9e9e2;
-  height: 100%;
+  height: 100% !important;
 }
 /* line 17, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter1 .download {
+  float: left;
+  width: 100%;
+}
+/* line 22, ../sass/theme/_eoc.scss */
 #epub #book1.eoc.chapter1 h3 {
   color: #009280;
   line-height: 4em;
 }
-/* line 21, ../sass/theme/_eoc.scss */
+/* line 26, ../sass/theme/_eoc.scss */
 #epub #book1.eoc.chapter1 h4 {
   color: #009280;
 }
-/* line 25, ../sass/theme/_eoc.scss */
+/* line 30, ../sass/theme/_eoc.scss */
 #epub #book1.eoc.chapter1 ol, #epub #book1.eoc.chapter1 li {
   color: #009280;
 }
 /* line 11, ../sass/theme/_eoc.scss */
 #epub #book1.eoc.chapter2 {
   background-color: #efd3cc;
-  height: 100%;
+  height: 100% !important;
 }
 /* line 17, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter2 .download {
+  float: left;
+  width: 100%;
+}
+/* line 22, ../sass/theme/_eoc.scss */
 #epub #book1.eoc.chapter2 h3 {
   color: #a32041;
   line-height: 4em;
 }
-/* line 21, ../sass/theme/_eoc.scss */
+/* line 26, ../sass/theme/_eoc.scss */
 #epub #book1.eoc.chapter2 h4 {
   color: #a32041;
 }
-/* line 25, ../sass/theme/_eoc.scss */
+/* line 30, ../sass/theme/_eoc.scss */
 #epub #book1.eoc.chapter2 ol, #epub #book1.eoc.chapter2 li {
   color: #a32041;
 }
 /* line 11, ../sass/theme/_eoc.scss */
 #epub #book1.eoc.chapter3 {
   background-color: #dce6ef;
-  height: 100%;
+  height: 100% !important;
 }
 /* line 17, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter3 .download {
+  float: left;
+  width: 100%;
+}
+/* line 22, ../sass/theme/_eoc.scss */
 #epub #book1.eoc.chapter3 h3 {
   color: #2a86bb;
   line-height: 4em;
 }
-/* line 21, ../sass/theme/_eoc.scss */
+/* line 26, ../sass/theme/_eoc.scss */
 #epub #book1.eoc.chapter3 h4 {
   color: #2a86bb;
 }
-/* line 25, ../sass/theme/_eoc.scss */
+/* line 30, ../sass/theme/_eoc.scss */
 #epub #book1.eoc.chapter3 ol, #epub #book1.eoc.chapter3 li {
   color: #2a86bb;
 }
 /* line 11, ../sass/theme/_eoc.scss */
 #epub #book1.eoc.chapter4 {
   background-color: #eff5d9;
-  height: 100%;
+  height: 100% !important;
 }
 /* line 17, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter4 .download {
+  float: left;
+  width: 100%;
+}
+/* line 22, ../sass/theme/_eoc.scss */
 #epub #book1.eoc.chapter4 h3 {
   color: #9bc63c;
   line-height: 4em;
 }
-/* line 21, ../sass/theme/_eoc.scss */
+/* line 26, ../sass/theme/_eoc.scss */
 #epub #book1.eoc.chapter4 h4 {
   color: #9bc63c;
 }
-/* line 25, ../sass/theme/_eoc.scss */
+/* line 30, ../sass/theme/_eoc.scss */
 #epub #book1.eoc.chapter4 ol, #epub #book1.eoc.chapter4 li {
   color: #9bc63c;
 }
 /* line 11, ../sass/theme/_eoc.scss */
 #epub #book1.eoc.chapter5 {
   background-color: #dfd3d3;
-  height: 100%;
+  height: 100% !important;
 }
 /* line 17, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter5 .download {
+  float: left;
+  width: 100%;
+}
+/* line 22, ../sass/theme/_eoc.scss */
 #epub #book1.eoc.chapter5 h3 {
   color: #663a58;
   line-height: 4em;
 }
-/* line 21, ../sass/theme/_eoc.scss */
+/* line 26, ../sass/theme/_eoc.scss */
 #epub #book1.eoc.chapter5 h4 {
   color: #663a58;
 }
-/* line 25, ../sass/theme/_eoc.scss */
+/* line 30, ../sass/theme/_eoc.scss */
 #epub #book1.eoc.chapter5 ol, #epub #book1.eoc.chapter5 li {
   color: #663a58;
 }
 /* line 11, ../sass/theme/_eoc.scss */
 #epub #book1.eoc.chapter6 {
   background-color: #e4e3cf;
-  height: 100%;
+  height: 100% !important;
 }
 /* line 17, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter6 .download {
+  float: left;
+  width: 100%;
+}
+/* line 22, ../sass/theme/_eoc.scss */
 #epub #book1.eoc.chapter6 h3 {
   color: #757b38;
   line-height: 4em;
 }
-/* line 21, ../sass/theme/_eoc.scss */
+/* line 26, ../sass/theme/_eoc.scss */
 #epub #book1.eoc.chapter6 h4 {
   color: #757b38;
 }
-/* line 25, ../sass/theme/_eoc.scss */
+/* line 30, ../sass/theme/_eoc.scss */
 #epub #book1.eoc.chapter6 ol, #epub #book1.eoc.chapter6 li {
   color: #757b38;
 }
 /* line 11, ../sass/theme/_eoc.scss */
 #epub #book1.eoc.chapter7 {
   background-color: #d9e9e2;
-  height: 100%;
+  height: 100% !important;
 }
 /* line 17, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter7 .download {
+  float: left;
+  width: 100%;
+}
+/* line 22, ../sass/theme/_eoc.scss */
 #epub #book1.eoc.chapter7 h3 {
   color: #009280;
   line-height: 4em;
 }
-/* line 21, ../sass/theme/_eoc.scss */
+/* line 26, ../sass/theme/_eoc.scss */
 #epub #book1.eoc.chapter7 h4 {
   color: #009280;
 }
-/* line 25, ../sass/theme/_eoc.scss */
+/* line 30, ../sass/theme/_eoc.scss */
 #epub #book1.eoc.chapter7 ol, #epub #book1.eoc.chapter7 li {
   color: #009280;
 }
 /* line 11, ../sass/theme/_eoc.scss */
 #epub #book1.eoc.chapter8 {
   background-color: #efd3cc;
-  height: 100%;
+  height: 100% !important;
 }
 /* line 17, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter8 .download {
+  float: left;
+  width: 100%;
+}
+/* line 22, ../sass/theme/_eoc.scss */
 #epub #book1.eoc.chapter8 h3 {
   color: #a32041;
   line-height: 4em;
 }
-/* line 21, ../sass/theme/_eoc.scss */
+/* line 26, ../sass/theme/_eoc.scss */
 #epub #book1.eoc.chapter8 h4 {
   color: #a32041;
 }
-/* line 25, ../sass/theme/_eoc.scss */
+/* line 30, ../sass/theme/_eoc.scss */
 #epub #book1.eoc.chapter8 ol, #epub #book1.eoc.chapter8 li {
   color: #a32041;
 }
 /* line 11, ../sass/theme/_eoc.scss */
 #epub #book1.eoc.chapter9 {
   background-color: #dce6ef;
-  height: 100%;
+  height: 100% !important;
 }
 /* line 17, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter9 .download {
+  float: left;
+  width: 100%;
+}
+/* line 22, ../sass/theme/_eoc.scss */
 #epub #book1.eoc.chapter9 h3 {
   color: #2a86bb;
   line-height: 4em;
 }
-/* line 21, ../sass/theme/_eoc.scss */
+/* line 26, ../sass/theme/_eoc.scss */
 #epub #book1.eoc.chapter9 h4 {
   color: #2a86bb;
 }
-/* line 25, ../sass/theme/_eoc.scss */
+/* line 30, ../sass/theme/_eoc.scss */
 #epub #book1.eoc.chapter9 ol, #epub #book1.eoc.chapter9 li {
   color: #2a86bb;
 }
 /* line 11, ../sass/theme/_eoc.scss */
 #epub #book1.eoc.chapter10 {
   background-color: #eff5d9;
-  height: 100%;
+  height: 100% !important;
 }
 /* line 17, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter10 .download {
+  float: left;
+  width: 100%;
+}
+/* line 22, ../sass/theme/_eoc.scss */
 #epub #book1.eoc.chapter10 h3 {
   color: #9bc63c;
   line-height: 4em;
 }
-/* line 21, ../sass/theme/_eoc.scss */
+/* line 26, ../sass/theme/_eoc.scss */
 #epub #book1.eoc.chapter10 h4 {
   color: #9bc63c;
 }
-/* line 25, ../sass/theme/_eoc.scss */
+/* line 30, ../sass/theme/_eoc.scss */
 #epub #book1.eoc.chapter10 ol, #epub #book1.eoc.chapter10 li {
   color: #9bc63c;
 }
 /* line 11, ../sass/theme/_eoc.scss */
 #epub #book1.eoc.chapter11 {
   background-color: #dfd3d3;
-  height: 100%;
+  height: 100% !important;
 }
 /* line 17, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter11 .download {
+  float: left;
+  width: 100%;
+}
+/* line 22, ../sass/theme/_eoc.scss */
 #epub #book1.eoc.chapter11 h3 {
   color: #663a58;
   line-height: 4em;
 }
-/* line 21, ../sass/theme/_eoc.scss */
+/* line 26, ../sass/theme/_eoc.scss */
 #epub #book1.eoc.chapter11 h4 {
   color: #663a58;
 }
-/* line 25, ../sass/theme/_eoc.scss */
+/* line 30, ../sass/theme/_eoc.scss */
 #epub #book1.eoc.chapter11 ol, #epub #book1.eoc.chapter11 li {
   color: #663a58;
 }
 /* line 11, ../sass/theme/_eoc.scss */
 #epub #book1.eoc.chapter12 {
   background-color: #e4e3cf;
-  height: 100%;
+  height: 100% !important;
 }
 /* line 17, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter12 .download {
+  float: left;
+  width: 100%;
+}
+/* line 22, ../sass/theme/_eoc.scss */
 #epub #book1.eoc.chapter12 h3 {
   color: #757b38;
   line-height: 4em;
 }
-/* line 21, ../sass/theme/_eoc.scss */
+/* line 26, ../sass/theme/_eoc.scss */
 #epub #book1.eoc.chapter12 h4 {
   color: #757b38;
 }
-/* line 25, ../sass/theme/_eoc.scss */
+/* line 30, ../sass/theme/_eoc.scss */
 #epub #book1.eoc.chapter12 ol, #epub #book1.eoc.chapter12 li {
   color: #757b38;
 }
