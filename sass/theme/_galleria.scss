@@ -1,0 +1,12 @@
+
+
+/* Galleria
+================================================================================================ */
+.galleria{
+	height: 450px;
+	margin-bottom: 2em;
+}
+.galleria-container{
+	@include linear-gradient(#000, #999);
+	@include rounded-corners(20px, 20px, 0, 0);
+}

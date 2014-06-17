@@ -9,7 +9,22 @@
 
 
 #epub{
-	
+
+
+	> div:first-child[data-type="page"] {
+			@include grid-row;
+			@include grid-column(12, false, false, false, false, false, false, false);
+	}
+
+	> div:first-child[data-type="test"] {
+		div:first-child{
+			@include grid-row;
+			@include grid-column(12, false, false, false, false, false, false, false);
+		}
+	}
+
+
+
 	// Headings
 	h1,h2,h3{
 		color:$grey;
@@ -57,10 +72,10 @@
 		tr th{
 			color: #fff;
 			font-size:1.1em;
-			line-height: 1.3em;
+			line-height: 2em;
 		}
 		tr td{
-			padding:10px 25px;
+			padding:0.8em;
 		}
 	}
 	caption{
@@ -124,7 +139,7 @@
 		list-style-position:outside;
 		margin-left:18px;
 		li{
-			margin:5px 0px;
+			margin:15px 0px;
 		}
 		ul{
 			li{list-style-type:none;}
@@ -138,7 +153,7 @@
 		list-style-position:outside;
 		margin-left:18px;
 		li{
-			margin:5px 0px;
+			margin:15px 0px;
 		}
 		ol{
 			list-style-position:outside;
@@ -232,11 +247,7 @@
 		}
 	}
 
-	/* Galleria
-	================================================================================================ */
-	.galleria{
-		height: 450px;
-	}
+	
 
 
 }

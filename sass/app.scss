@@ -1,7 +1,6 @@
 
 /* Custom Colour variables are  imported first so they can be used in the foundaiton settings */
 @import "theme/colours";
-@import "theme/settings";
 
 /* Global Foundation Settings + Normalise */
 @import "framework/settings";
@@ -17,24 +16,27 @@
 /* ================================== */
 
 /* Core */
-/* ================================== */
 @import "core/cambridge-icons";
 @import "core/mixins";
 @import "core/base";
 
-/* Theme */
-/* ================================== */
+
+/* Theme  */
+@import "theme/prelim";
 @import "theme/covers";
-// @import "theme/prelim";
+@import "theme/chapter-opener";
 @import "theme/page";
+@import "theme/eoc";
+@import "theme/author";
+
+
+// Components
 @import "theme/tables";
-// @import "theme/eoc";
-// @import "theme/author";
 @import "theme/panels";
-// @import "theme/special-pages";
 @import "theme/custom";
 
 
+@import "theme/galleria";
 
 
 
@@ -42,27 +44,10 @@
 
 
 
-
-// @import "_special-pages";
-// @import "_custom-panels";
-
-// @import "_cambridge-icons";
 
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-
 // Import specific parts of Foundation by commenting the import "foundation"
-// and uncommenting what you want below. You must uncomment the following if customizing
-
-// @import "foundation/components/global"; // *always required
-// @import "foundation/components/grid";
-
-//
-// Use this grid if you want to start using the new Foundation 5 grid early.
-// It will change breakpoints to min-width: 640px and 1024px.
-//
-//@import "foundation/components/grid-5";
-//
+// and uncommenting what you want below. You must uncomment the following if customizin
 
 // @import "foundation/components/visibility";
 // @import "foundation/components/block-grid";

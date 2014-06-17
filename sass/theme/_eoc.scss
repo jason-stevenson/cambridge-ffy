@@ -1,0 +1,33 @@
+
+
+
+#epub{
+
+
+	$colors-list: $book1-chapter1, $book1-chapter2, $book1-chapter3, $book1-chapter4, $book1-chapter5, $book1-chapter6, $book1-chapter7, $book1-chapter8, $book1-chapter9, $book1-chapter10, $book1-chapter11, $book1-chapter12;
+	$tint-list: $book1-chapter1-tint, $book1-chapter2-tint, $book1-chapter3-tint, $book1-chapter4-tint, $book1-chapter5-tint, $book1-chapter6-tint, $book1-chapter7-tint, $book1-chapter8-tint, $book1-chapter9-tint, $book1-chapter10-tint, $book1-chapter11-tint, $book1-chapter12-tint;
+
+	@for $i from 1 through length($colors-list) {
+	#book1.eoc.chapter#{$i} {
+
+		
+		background-color: nth($tint-list, $i);
+		height:100% !important;
+
+			h3{
+				color: nth($colors-list, $i);
+				line-height: 4em;
+			}
+			h4{
+				color: nth($colors-list, $i);
+			}
+
+			ol,li{
+				color: nth($colors-list, $i);
+
+			}
+	    	
+	    }
+	}
+
+}

@@ -1228,26 +1228,33 @@ $section-border-size: 0px;
 //
 // Tooltip Variables
 //
+$has-tip-font-color: $tooltiip-color;
+$has-tip-border-bottom: dotted 0px $tooltiip-color;
+$has-tip-border-bottom-hover: dotted 0px $tooltiip-color;
+$has-tip-font-color-hover: $tooltiip-color;
 
-//$has-tip-border-bottom: dotted 0px #ccc;
+
+// $has-tip-border-bottom: dotted 1px $tooltiip-color;
 // $has-tip-font-weight: bold;
-//$has-tip-font-color: $tooltiip-color;
-//$has-tip-border-bottom-hover: dotted 0px #ccc;
-//$has-tip-font-color-hover: $tooltiip-color;
+// $has-tip-font-color: $tooltiip-color;
+// $has-tip-border-bottom-hover: dotted 0px #ccc;
+// $has-tip-font-color-hover: $tooltiip-color;
 // $has-tip-cursor-type: help;
 
-//$tooltip-padding: em-calc(14);
-//$tooltip-bg: #333;
+
+// $tooltip-padding: em-calc(14);
+$tooltip-bg: lighten($tooltiip-color,60);
 // $tooltip-font-size: em-calc(15);
-// $tooltip-font-weight: bold;
-// $tooltip-font-color: #fff;
+$tooltip-font-weight: normal;
+$tooltip-font-color: $tooltiip-color;
 // $tooltip-line-height: 1.3;
 // $tooltip-close-font-size: em-calc(10);
 // $tooltip-close-font-weight: normal;
 // $tooltip-close-font-color: #888;
 // $tooltip-font-size-sml: em-calc(14);
-// $tooltip-radius: $global-radius;
-//$tooltip-pip-size: 8px;
+$tooltip-padding: 15px;
+$tooltip-radius: 20px;
+$tooltip-pip-size: 0px;
 
 //
 // Top Bar Variables

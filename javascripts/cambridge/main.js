@@ -14,6 +14,23 @@ $( document ).ready(function() {
 	$('.chapter-cover').wrapInner('<div class="masthead"></div>');
 
 
+
+	// EOC
+ 	// ================================================================
+	// $('.eoc').css({'height':($(window).height())});
+	// $('.eoc').css({'width':($(window).width())});
+
+	// $(window).resize(function(){
+ //    	$('.eoc').css({'height':($(window).height())});
+ //    	$('.eoc').css({'width':($(window).width())});
+ //    });
+
+	$('.eoc').wrapInner('<div class="content"></div>');
+
+
+
+	// Panels
+ 	// ================================================================
 	// Investigate Panels
 	$('.investigate-panel').wrapInner('<div class="content"></div>');
 

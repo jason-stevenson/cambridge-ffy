@@ -7311,7 +7311,6 @@ a.th {
 /* Cambridge ePub */
 /* ================================== */
 /* Core */
-/* ================================== */
 @font-face {
   font-family: 'cambridge-core';
   src: url("../fonts/cambridge-core.eot?-uizpf0");
@@ -7480,67 +7479,103 @@ a.th {
 #epub {
   /* Helpers
   ================================================================================================ */
-  /* Galleria
-  ================================================================================================ */
 }
 /* line 14, ../sass/core/_base.scss */
+#epub > div:first-child[data-type="page"] {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 64em;
+  position: relative;
+  padding-left: 1.875em;
+  padding-right: 1.875em;
+  width: 100%;
+}
+/* line 3, ../sass/core/_mixins.scss */
+#epub > div:first-child[data-type="page"]:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 20, ../sass/core/_base.scss */
+#epub > div:first-child[data-type="test"] div:first-child {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 64em;
+  position: relative;
+  padding-left: 1.875em;
+  padding-right: 1.875em;
+  width: 100%;
+}
+/* line 3, ../sass/core/_mixins.scss */
+#epub > div:first-child[data-type="test"] div:first-child:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 29, ../sass/core/_base.scss */
 #epub h1, #epub h2, #epub h3 {
   color: #666666;
   font-weight: 600;
 }
-/* line 18, ../sass/core/_base.scss */
+/* line 33, ../sass/core/_base.scss */
 #epub h4, #epub h5 {
   font-weight: 200;
 }
-/* line 24, ../sass/core/_base.scss */
+/* line 39, ../sass/core/_base.scss */
 #epub img {
   width: 100%;
 }
-/* line 27, ../sass/core/_base.scss */
+/* line 42, ../sass/core/_base.scss */
 #epub figure {
   width: 100%;
   margin: 10px 0;
 }
 @media only screen and (min-width: 768px) {
-  /* line 27, ../sass/core/_base.scss */
+  /* line 42, ../sass/core/_base.scss */
   #epub figure {
     width: 70%;
   }
 }
-/* line 34, ../sass/core/_base.scss */
+/* line 49, ../sass/core/_base.scss */
 #epub figcaption {
   padding: 15px 0;
   font-weight: normal;
   font-size: 95%;
   line-height: 1.2em;
 }
-/* line 39, ../sass/core/_base.scss */
+/* line 54, ../sass/core/_base.scss */
 #epub figcaption span {
   font-weight: bold;
 }
-/* line 47, ../sass/core/_base.scss */
+/* line 62, ../sass/core/_base.scss */
 #epub table {
   width: 100%;
   margin: 25px 0;
   table-layout: fixed;
 }
-/* line 53, ../sass/core/_base.scss */
+/* line 68, ../sass/core/_base.scss */
 #epub table th,
 #epub table td {
   text-align: left;
   vertical-align: top;
 }
-/* line 57, ../sass/core/_base.scss */
+/* line 72, ../sass/core/_base.scss */
 #epub table tr th {
   color: #fff;
   font-size: 1.1em;
-  line-height: 1.3em;
+  line-height: 2em;
 }
-/* line 62, ../sass/core/_base.scss */
+/* line 77, ../sass/core/_base.scss */
 #epub table tr td {
-  padding: 10px 25px;
+  padding: 0.8em;
 }
-/* line 66, ../sass/core/_base.scss */
+/* line 81, ../sass/core/_base.scss */
 #epub caption {
   caption-side: bottom;
   text-align: left;
@@ -7549,11 +7584,11 @@ a.th {
   line-height: 1.2em;
   padding: 10px 0;
 }
-/* line 73, ../sass/core/_base.scss */
+/* line 88, ../sass/core/_base.scss */
 #epub caption span {
   font-weight: bold;
 }
-/* line 85, ../sass/core/_base.scss */
+/* line 100, ../sass/core/_base.scss */
 #epub .download {
   text-align: left;
   margin-bottom: 25px;
@@ -7565,24 +7600,24 @@ a.th {
   clear: both;
 }
 @media only screen and (min-width: 768px) {
-  /* line 85, ../sass/core/_base.scss */
+  /* line 100, ../sass/core/_base.scss */
   #epub .download {
     text-align: center;
   }
 }
-/* line 94, ../sass/core/_base.scss */
+/* line 109, ../sass/core/_base.scss */
 #epub .download > a > span {
   font-size: 3.75em;
   float: left;
 }
 @media only screen and (min-width: 768px) {
-  /* line 94, ../sass/core/_base.scss */
+  /* line 109, ../sass/core/_base.scss */
   #epub .download > a > span {
     float: none;
     font-size: 5em;
   }
 }
-/* line 103, ../sass/core/_base.scss */
+/* line 118, ../sass/core/_base.scss */
 #epub .download > a > span + div {
   margin-top: 15px;
   margin-left: 10px;
@@ -7591,86 +7626,86 @@ a.th {
   float: left;
 }
 @media only screen and (min-width: 768px) {
-  /* line 103, ../sass/core/_base.scss */
+  /* line 118, ../sass/core/_base.scss */
   #epub .download > a > span + div {
     float: none;
     margin: 15px 0px 0px 0px;
     font-size: 1.25em;
   }
 }
-/* line 123, ../sass/core/_base.scss */
+/* line 138, ../sass/core/_base.scss */
 #epub ul {
   list-style-position: outside;
   margin-left: 18px;
 }
-/* line 126, ../sass/core/_base.scss */
+/* line 141, ../sass/core/_base.scss */
 #epub ul li {
-  margin: 5px 0px;
+  margin: 15px 0px;
 }
-/* line 130, ../sass/core/_base.scss */
+/* line 145, ../sass/core/_base.scss */
 #epub ul ul li {
   list-style-type: none;
 }
-/* line 131, ../sass/core/_base.scss */
+/* line 146, ../sass/core/_base.scss */
 #epub ul ul li:before {
   content: " – ";
   margin-left: -10px;
 }
-/* line 137, ../sass/core/_base.scss */
+/* line 152, ../sass/core/_base.scss */
 #epub ol {
   list-style-position: outside;
   margin-left: 18px;
 }
-/* line 140, ../sass/core/_base.scss */
+/* line 155, ../sass/core/_base.scss */
 #epub ol li {
-  margin: 5px 0px;
+  margin: 15px 0px;
 }
-/* line 143, ../sass/core/_base.scss */
+/* line 158, ../sass/core/_base.scss */
 #epub ol ol {
   list-style-position: outside;
 }
-/* line 145, ../sass/core/_base.scss */
+/* line 160, ../sass/core/_base.scss */
 #epub ol ol li {
   list-style-type: decimal;
   padding: 0px 0px;
   margin: 5px 0px;
 }
-/* line 151, ../sass/core/_base.scss */
+/* line 166, ../sass/core/_base.scss */
 #epub ol ol.roman {
   list-style-position: outside;
 }
-/* line 153, ../sass/core/_base.scss */
+/* line 168, ../sass/core/_base.scss */
 #epub ol ol.roman li {
   list-style-type: lower-roman;
   padding: 0px 0px;
   margin: 5px 0px;
 }
-/* line 159, ../sass/core/_base.scss */
+/* line 174, ../sass/core/_base.scss */
 #epub ol ol.alpha {
   list-style-position: outside;
 }
-/* line 161, ../sass/core/_base.scss */
+/* line 176, ../sass/core/_base.scss */
 #epub ol ol.alpha li {
   list-style-type: lower-alpha;
   padding: 0px 0px;
   margin: 5px 0px;
 }
-/* line 170, ../sass/core/_base.scss */
+/* line 185, ../sass/core/_base.scss */
 #epub ol.alpha li {
   list-style-type: upper-alpha;
 }
-/* line 174, ../sass/core/_base.scss */
+/* line 189, ../sass/core/_base.scss */
 #epub ol.alpha ol li {
   list-style-type: lower-roman;
 }
-/* line 186, ../sass/core/_base.scss */
+/* line 201, ../sass/core/_base.scss */
 #epub .image-tile-2 figure,
 #epub .image-tile-3 figure,
 #epub .image-tile-4 figure {
   width: 100%;
   margin: 0;
 }
-/* line 192, ../sass/core/_base.scss */
+/* line 207, ../sass/core/_base.scss */
 #epub .image-tile-2 {
   display: block;
   padding: 0;
@@ -7702,7 +7737,7 @@ a.th {
 #epub .image-tile-2 > li:nth-of-type(1n+1) {
   clear: both;
 }
-/* line 193, ../sass/core/_base.scss */
+/* line 208, ../sass/core/_base.scss */
 #epub .image-tile-3 {
   display: block;
   padding: 0;
@@ -7734,7 +7769,7 @@ a.th {
 #epub .image-tile-3 > li:nth-of-type(1n+1) {
   clear: both;
 }
-/* line 194, ../sass/core/_base.scss */
+/* line 209, ../sass/core/_base.scss */
 #epub .image-tile-4 {
   display: block;
   padding: 0;
@@ -7767,7 +7802,7 @@ a.th {
   clear: both;
 }
 @media only screen and (min-width: 768px) {
-  /* line 197, ../sass/core/_base.scss */
+  /* line 212, ../sass/core/_base.scss */
   #epub .image-tile-2 {
     display: block;
     padding: 0;
@@ -7799,7 +7834,7 @@ a.th {
   #epub .image-tile-2 > li:nth-of-type(2n+1) {
     clear: both;
   }
-  /* line 198, ../sass/core/_base.scss */
+  /* line 213, ../sass/core/_base.scss */
   #epub .image-tile-3 {
     display: block;
     padding: 0;
@@ -7831,7 +7866,7 @@ a.th {
   #epub .image-tile-3 > li:nth-of-type(3n+1) {
     clear: both;
   }
-  /* line 199, ../sass/core/_base.scss */
+  /* line 214, ../sass/core/_base.scss */
   #epub .image-tile-4 {
     display: block;
     padding: 0;
@@ -7864,54 +7899,50 @@ a.th {
     clear: both;
   }
 }
-/* line 207, ../sass/core/_base.scss */
+/* line 222, ../sass/core/_base.scss */
 #epub .inline {
   width: 50% !important;
   display: block;
 }
-/* line 211, ../sass/core/_base.scss */
+/* line 226, ../sass/core/_base.scss */
 #epub .float-left {
   width: 100%;
 }
 @media only screen and (min-width: 768px) {
-  /* line 211, ../sass/core/_base.scss */
+  /* line 226, ../sass/core/_base.scss */
   #epub .float-left {
     float: left;
     width: 50%;
     margin-right: 50px;
   }
 }
-/* line 219, ../sass/core/_base.scss */
+/* line 234, ../sass/core/_base.scss */
 #epub .float-right {
   width: 100%;
 }
 @media only screen and (min-width: 768px) {
-  /* line 219, ../sass/core/_base.scss */
+  /* line 234, ../sass/core/_base.scss */
   #epub .float-right {
     float: right;
     width: 50%;
     margin-left: 50px;
   }
 }
-/* line 227, ../sass/core/_base.scss */
+/* line 242, ../sass/core/_base.scss */
 #epub .float-center {
   width: 100%;
 }
 @media only screen and (min-width: 768px) {
-  /* line 227, ../sass/core/_base.scss */
+  /* line 242, ../sass/core/_base.scss */
   #epub .float-center {
     width: 70%;
     margin: 0 auto;
   }
 }
-/* line 237, ../sass/core/_base.scss */
-#epub .galleria {
-  height: 450px;
-}
 
-/* Theme */
-/* ================================== */
-/* line 12, ../sass/theme/_covers.scss */
+/* Theme  */
+/* Generate colours for tables in each section  */
+/* line 33, ../sass/theme/_covers.scss */
 #book1.chapter-cover.chapter1 {
   background-image: url("../images/chapter1-cover.jpg");
   background-repeat: no-repeat;
@@ -7923,7 +7954,7 @@ a.th {
   background-size: cover;
 }
 
-/* line 13, ../sass/theme/_covers.scss */
+/* line 34, ../sass/theme/_covers.scss */
 #book1.chapter-cover.chapter2 {
   background-image: url("../images/chapter1-cover.jpg");
   background-repeat: no-repeat;
@@ -7935,7 +7966,7 @@ a.th {
   background-size: cover;
 }
 
-/* line 14, ../sass/theme/_covers.scss */
+/* line 35, ../sass/theme/_covers.scss */
 #book1.chapter-cover.chapter3 {
   background-image: url("../images/chapter1-cover.jpg");
   background-repeat: no-repeat;
@@ -7947,7 +7978,7 @@ a.th {
   background-size: cover;
 }
 
-/* line 15, ../sass/theme/_covers.scss */
+/* line 36, ../sass/theme/_covers.scss */
 #book1.chapter-cover.chapter4 {
   background-image: url("../images/chapter1-cover.jpg");
   background-repeat: no-repeat;
@@ -7959,7 +7990,7 @@ a.th {
   background-size: cover;
 }
 
-/* line 16, ../sass/theme/_covers.scss */
+/* line 37, ../sass/theme/_covers.scss */
 #book1.chapter-cover.chapter5 {
   background-image: url("../images/chapter1-cover.jpg");
   background-repeat: no-repeat;
@@ -7971,7 +8002,7 @@ a.th {
   background-size: cover;
 }
 
-/* line 17, ../sass/theme/_covers.scss */
+/* line 38, ../sass/theme/_covers.scss */
 #book1.chapter-cover.chapter6 {
   background-image: url("../images/chapter1-cover.jpg");
   background-repeat: no-repeat;
@@ -7983,7 +8014,7 @@ a.th {
   background-size: cover;
 }
 
-/* line 18, ../sass/theme/_covers.scss */
+/* line 39, ../sass/theme/_covers.scss */
 #book1.chapter-cover.chapter7 {
   background-image: url("../images/chapter1-cover.jpg");
   background-repeat: no-repeat;
@@ -7995,7 +8026,7 @@ a.th {
   background-size: cover;
 }
 
-/* line 19, ../sass/theme/_covers.scss */
+/* line 40, ../sass/theme/_covers.scss */
 #book1.chapter-cover.chapter8 {
   background-image: url("../images/chapter1-cover.jpg");
   background-repeat: no-repeat;
@@ -8007,7 +8038,7 @@ a.th {
   background-size: cover;
 }
 
-/* line 20, ../sass/theme/_covers.scss */
+/* line 41, ../sass/theme/_covers.scss */
 #book1.chapter-cover.chapter9 {
   background-image: url("../images/chapter1-cover.jpg");
   background-repeat: no-repeat;
@@ -8019,7 +8050,7 @@ a.th {
   background-size: cover;
 }
 
-/* line 21, ../sass/theme/_covers.scss */
+/* line 42, ../sass/theme/_covers.scss */
 #book1.chapter-cover.chapter10 {
   background-image: url("../images/chapter1-cover.jpg");
   background-repeat: no-repeat;
@@ -8031,7 +8062,7 @@ a.th {
   background-size: cover;
 }
 
-/* line 22, ../sass/theme/_covers.scss */
+/* line 43, ../sass/theme/_covers.scss */
 #book1.chapter-cover.chapter11 {
   background-image: url("../images/chapter1-cover.jpg");
   background-repeat: no-repeat;
@@ -8043,7 +8074,7 @@ a.th {
   background-size: cover;
 }
 
-/* line 23, ../sass/theme/_covers.scss */
+/* line 44, ../sass/theme/_covers.scss */
 #book1.chapter-cover.chapter12 {
   background-image: url("../images/chapter1-cover.jpg");
   background-repeat: no-repeat;
@@ -8055,7 +8086,7 @@ a.th {
   background-size: cover;
 }
 
-/* line 25, ../sass/theme/_covers.scss */
+/* line 46, ../sass/theme/_covers.scss */
 #book2.chapter-cover.chapter1 {
   background-image: url("../images/chapter1-cover.jpg");
   background-repeat: no-repeat;
@@ -8067,7 +8098,7 @@ a.th {
   background-size: cover;
 }
 
-/* line 26, ../sass/theme/_covers.scss */
+/* line 47, ../sass/theme/_covers.scss */
 #book2.chapter-cover.chapter2 {
   background-image: url("../images/chapter1-cover.jpg");
   background-repeat: no-repeat;
@@ -8079,7 +8110,7 @@ a.th {
   background-size: cover;
 }
 
-/* line 27, ../sass/theme/_covers.scss */
+/* line 48, ../sass/theme/_covers.scss */
 #book2.chapter-cover.chapter3 {
   background-image: url("../images/chapter1-cover.jpg");
   background-repeat: no-repeat;
@@ -8091,7 +8122,7 @@ a.th {
   background-size: cover;
 }
 
-/* line 28, ../sass/theme/_covers.scss */
+/* line 49, ../sass/theme/_covers.scss */
 #book2.chapter-cover.chapter4 {
   background-image: url("../images/chapter1-cover.jpg");
   background-repeat: no-repeat;
@@ -8103,7 +8134,7 @@ a.th {
   background-size: cover;
 }
 
-/* line 29, ../sass/theme/_covers.scss */
+/* line 50, ../sass/theme/_covers.scss */
 #book2.chapter-cover.chapter5 {
   background-image: url("../images/chapter1-cover.jpg");
   background-repeat: no-repeat;
@@ -8115,7 +8146,7 @@ a.th {
   background-size: cover;
 }
 
-/* line 30, ../sass/theme/_covers.scss */
+/* line 51, ../sass/theme/_covers.scss */
 #book2.chapter-cover.chapter6 {
   background-image: url("../images/chapter1-cover.jpg");
   background-repeat: no-repeat;
@@ -8127,7 +8158,7 @@ a.th {
   background-size: cover;
 }
 
-/* line 31, ../sass/theme/_covers.scss */
+/* line 52, ../sass/theme/_covers.scss */
 #book2.chapter-cover.chapter7 {
   background-image: url("../images/chapter1-cover.jpg");
   background-repeat: no-repeat;
@@ -8139,7 +8170,7 @@ a.th {
   background-size: cover;
 }
 
-/* line 32, ../sass/theme/_covers.scss */
+/* line 53, ../sass/theme/_covers.scss */
 #book2.chapter-cover.chapter8 {
   background-image: url("../images/chapter1-cover.jpg");
   background-repeat: no-repeat;
@@ -8151,35 +8182,35 @@ a.th {
   background-size: cover;
 }
 
-/* line 37, ../sass/theme/_covers.scss */
+/* line 58, ../sass/theme/_covers.scss */
 #book1.chapter1 .masthead {
   background: #009280;
   /* The Fallback */
   background: rgba(0, 146, 128, 0.7);
 }
 
-/* line 38, ../sass/theme/_covers.scss */
+/* line 59, ../sass/theme/_covers.scss */
 #book1.chapter2 .masthead {
   background: #a32041;
   /* The Fallback */
   background: rgba(163, 32, 65, 0.7);
 }
 
-/* line 40, ../sass/theme/_covers.scss */
+/* line 61, ../sass/theme/_covers.scss */
 #book2.chapter1 .masthead {
   background: #a55261;
   /* The Fallback */
   background: rgba(165, 82, 97, 0.7);
 }
 
-/* line 41, ../sass/theme/_covers.scss */
+/* line 62, ../sass/theme/_covers.scss */
 #book2.chapter2 .masthead {
   background: #757a38;
   /* The Fallback */
   background: rgba(117, 122, 56, 0.7);
 }
 
-/* line 48, ../sass/theme/_covers.scss */
+/* line 69, ../sass/theme/_covers.scss */
 .chapter-cover .masthead {
   position: relative;
   top: 50px;
@@ -8189,18 +8220,18 @@ a.th {
   padding: 2.5em;
   font-weight: 200;
 }
-/* line 57, ../sass/theme/_covers.scss */
+/* line 78, ../sass/theme/_covers.scss */
 .chapter-cover .masthead .chapter {
   font-size: 1.625em;
   line-height: 2em;
 }
-/* line 61, ../sass/theme/_covers.scss */
+/* line 82, ../sass/theme/_covers.scss */
 .chapter-cover .masthead .title {
   font-size: 2.5em;
   line-height: 1.2em;
 }
 
-/* line 70, ../sass/theme/_covers.scss */
+/* line 91, ../sass/theme/_covers.scss */
 .cover-caption {
   background-color: #FFF;
   padding: 2em;
@@ -8209,13 +8240,196 @@ a.th {
   width: 100%;
   font-size: 0.9em;
 }
-/* line 77, ../sass/theme/_covers.scss */
+/* line 98, ../sass/theme/_covers.scss */
 .cover-caption span {
   color: #666666;
 }
 
+/* line 3, ../sass/theme/_chapter-opener.scss */
+#epub {
+  /* Generate colours for each chapter opener panel  */
+  /* Book 1 */
+  /* Book 2*/
+}
+/* line 8, ../sass/theme/_chapter-opener.scss */
+#epub .how-much-panel {
+  padding: 0.5em 1.5em;
+  -moz-border-radius-topleft: 0;
+  -moz-border-radius-topright: 0;
+  -moz-border-radius-bottomright: 20px;
+  -moz-border-radius-bottomleft: 20px;
+  -webkit-border-top-left-radius: 0;
+  -webkit-border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 20px;
+  -webkit-border-bottom-left-radius: 20px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+/* line 20, ../sass/theme/_chapter-opener.scss */
+#epub #book1.chapter-opener.chapter1 h3 {
+  color: #009280;
+}
+/* line 21, ../sass/theme/_chapter-opener.scss */
+#epub #book1.chapter-opener.chapter1 .how-much-panel {
+  background-color: #d9e9e2;
+}
+/* line 20, ../sass/theme/_chapter-opener.scss */
+#epub #book1.chapter-opener.chapter2 h3 {
+  color: #a32041;
+}
+/* line 21, ../sass/theme/_chapter-opener.scss */
+#epub #book1.chapter-opener.chapter2 .how-much-panel {
+  background-color: #efd3cc;
+}
+/* line 20, ../sass/theme/_chapter-opener.scss */
+#epub #book1.chapter-opener.chapter3 h3 {
+  color: #2a86bb;
+}
+/* line 21, ../sass/theme/_chapter-opener.scss */
+#epub #book1.chapter-opener.chapter3 .how-much-panel {
+  background-color: #dce6ef;
+}
+/* line 20, ../sass/theme/_chapter-opener.scss */
+#epub #book1.chapter-opener.chapter4 h3 {
+  color: #9bc63c;
+}
+/* line 21, ../sass/theme/_chapter-opener.scss */
+#epub #book1.chapter-opener.chapter4 .how-much-panel {
+  background-color: #eff5d9;
+}
+/* line 20, ../sass/theme/_chapter-opener.scss */
+#epub #book1.chapter-opener.chapter5 h3 {
+  color: #663a58;
+}
+/* line 21, ../sass/theme/_chapter-opener.scss */
+#epub #book1.chapter-opener.chapter5 .how-much-panel {
+  background-color: #dfd3d3;
+}
+/* line 20, ../sass/theme/_chapter-opener.scss */
+#epub #book1.chapter-opener.chapter6 h3 {
+  color: #757b38;
+}
+/* line 21, ../sass/theme/_chapter-opener.scss */
+#epub #book1.chapter-opener.chapter6 .how-much-panel {
+  background-color: #e4e3cf;
+}
+/* line 20, ../sass/theme/_chapter-opener.scss */
+#epub #book1.chapter-opener.chapter7 h3 {
+  color: #009280;
+}
+/* line 21, ../sass/theme/_chapter-opener.scss */
+#epub #book1.chapter-opener.chapter7 .how-much-panel {
+  background-color: #d9e9e2;
+}
+/* line 20, ../sass/theme/_chapter-opener.scss */
+#epub #book1.chapter-opener.chapter8 h3 {
+  color: #a32041;
+}
+/* line 21, ../sass/theme/_chapter-opener.scss */
+#epub #book1.chapter-opener.chapter8 .how-much-panel {
+  background-color: #efd3cc;
+}
+/* line 20, ../sass/theme/_chapter-opener.scss */
+#epub #book1.chapter-opener.chapter9 h3 {
+  color: #2a86bb;
+}
+/* line 21, ../sass/theme/_chapter-opener.scss */
+#epub #book1.chapter-opener.chapter9 .how-much-panel {
+  background-color: #dce6ef;
+}
+/* line 20, ../sass/theme/_chapter-opener.scss */
+#epub #book1.chapter-opener.chapter10 h3 {
+  color: #9bc63c;
+}
+/* line 21, ../sass/theme/_chapter-opener.scss */
+#epub #book1.chapter-opener.chapter10 .how-much-panel {
+  background-color: #eff5d9;
+}
+/* line 20, ../sass/theme/_chapter-opener.scss */
+#epub #book1.chapter-opener.chapter11 h3 {
+  color: #663a58;
+}
+/* line 21, ../sass/theme/_chapter-opener.scss */
+#epub #book1.chapter-opener.chapter11 .how-much-panel {
+  background-color: #dfd3d3;
+}
+/* line 20, ../sass/theme/_chapter-opener.scss */
+#epub #book1.chapter-opener.chapter12 h3 {
+  color: #757b38;
+}
+/* line 21, ../sass/theme/_chapter-opener.scss */
+#epub #book1.chapter-opener.chapter12 .how-much-panel {
+  background-color: #e4e3cf;
+}
+/* line 32, ../sass/theme/_chapter-opener.scss */
+#epub #book2.chapter-opener.chapter1 h3 {
+  color: #a55261;
+}
+/* line 33, ../sass/theme/_chapter-opener.scss */
+#epub #book2.chapter-opener.chapter1 .how-much-panel {
+  background-color: #eedcd8;
+}
+/* line 32, ../sass/theme/_chapter-opener.scss */
+#epub #book2.chapter-opener.chapter2 h3 {
+  color: #757a38;
+}
+/* line 33, ../sass/theme/_chapter-opener.scss */
+#epub #book2.chapter-opener.chapter2 .how-much-panel {
+  background-color: #e4e3cf;
+}
+/* line 32, ../sass/theme/_chapter-opener.scss */
+#epub #book2.chapter-opener.chapter3 h3 {
+  color: #663a58;
+}
+/* line 33, ../sass/theme/_chapter-opener.scss */
+#epub #book2.chapter-opener.chapter3 .how-much-panel {
+  background-color: #ded2d3;
+}
+/* line 32, ../sass/theme/_chapter-opener.scss */
+#epub #book2.chapter-opener.chapter4 h3 {
+  color: #cb532a;
+}
+/* line 33, ../sass/theme/_chapter-opener.scss */
+#epub #book2.chapter-opener.chapter4 .how-much-panel {
+  background-color: #f9ddc8;
+}
+/* line 32, ../sass/theme/_chapter-opener.scss */
+#epub #book2.chapter-opener.chapter5 h3 {
+  color: #a55261;
+}
+/* line 33, ../sass/theme/_chapter-opener.scss */
+#epub #book2.chapter-opener.chapter5 .how-much-panel {
+  background-color: #eedcd8;
+}
+/* line 32, ../sass/theme/_chapter-opener.scss */
+#epub #book2.chapter-opener.chapter6 h3 {
+  color: #757a38;
+}
+/* line 33, ../sass/theme/_chapter-opener.scss */
+#epub #book2.chapter-opener.chapter6 .how-much-panel {
+  background-color: #e4e3cf;
+}
+/* line 32, ../sass/theme/_chapter-opener.scss */
+#epub #book2.chapter-opener.chapter7 h3 {
+  color: #663a58;
+}
+/* line 33, ../sass/theme/_chapter-opener.scss */
+#epub #book2.chapter-opener.chapter7 .how-much-panel {
+  background-color: #ded2d3;
+}
+/* line 32, ../sass/theme/_chapter-opener.scss */
+#epub #book2.chapter-opener.chapter8 h3 {
+  color: #cb532a;
+}
+/* line 33, ../sass/theme/_chapter-opener.scss */
+#epub #book2.chapter-opener.chapter8 .how-much-panel {
+  background-color: #f9ddc8;
+}
+
 /* Page elements */
-/* line 8, ../sass/theme/_page.scss */
+/* line 11, ../sass/theme/_page.scss */
 #epub .has-tip {
   background-color: #b2bbe7;
   padding: 0.2em;
@@ -8223,50 +8437,718 @@ a.th {
   -moz-border-radius: 0.6em;
   -webkit-border-radius: 0.6em;
 }
-/* line 15, ../sass/theme/_page.scss */
+/* line 19, ../sass/theme/_page.scss */
+#epub p a {
+  font-weight: bold;
+  color: #666666;
+}
+/* line 22, ../sass/theme/_page.scss */
+#epub p a:hover {
+  text-decoration: underline;
+}
+/* line 25, ../sass/theme/_page.scss */
+#epub p a:active {
+  text-decoration: none;
+  color: #000;
+}
+/* line 35, ../sass/theme/_page.scss */
 #epub h2 {
   font-size: 1.8em;
   line-height: 1.2em;
   padding: 0.6em;
 }
-/* line 21, ../sass/theme/_page.scss */
+/* line 41, ../sass/theme/_page.scss */
 #epub h4 {
   color: #666666;
   font-weight: 400;
   font-size: 1.3em;
 }
-/* line 29, ../sass/theme/_page.scss */
+/* line 49, ../sass/theme/_page.scss */
 #epub ol li {
   color: #666666;
   font-weight: bold;
 }
-/* line 32, ../sass/theme/_page.scss */
+/* line 52, ../sass/theme/_page.scss */
 #epub ol li > span {
   font-weight: normal;
   color: #000;
 }
 
-/* line 45, ../sass/theme/_page.scss */
+/* line 65, ../sass/theme/_page.scss */
 #epub #book1 h2 {
   background-color: #982d79;
   color: #fff;
 }
-/* line 49, ../sass/theme/_page.scss */
+/* line 69, ../sass/theme/_page.scss */
 #epub #book1 h3 {
   color: #982d79;
 }
+/* line 74, ../sass/theme/_page.scss */
+#epub #book2 h2 {
+  background-color: #82a835;
+  color: #fff;
+}
+/* line 78, ../sass/theme/_page.scss */
+#epub #book2 h3 {
+  color: #82a835;
+}
 
-/* line 7, ../sass/theme/_tables.scss */
-#epub .book1 .chapter1 table {
-  background-color: red;
+/* line 11, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter1 {
+  background-color: #d9e9e2;
+  height: 100%;
 }
-/* line 9, ../sass/theme/_tables.scss */
-#epub .book1 .chapter1 table th {
+/* line 17, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter1 h3 {
+  color: #009280;
+  line-height: 4em;
+}
+/* line 21, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter1 h4 {
+  color: #009280;
+}
+/* line 25, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter1 ol, #epub #book1.eoc.chapter1 li {
+  color: #009280;
+}
+/* line 11, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter2 {
+  background-color: #efd3cc;
+  height: 100%;
+}
+/* line 17, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter2 h3 {
+  color: #a32041;
+  line-height: 4em;
+}
+/* line 21, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter2 h4 {
+  color: #a32041;
+}
+/* line 25, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter2 ol, #epub #book1.eoc.chapter2 li {
+  color: #a32041;
+}
+/* line 11, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter3 {
+  background-color: #dce6ef;
+  height: 100%;
+}
+/* line 17, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter3 h3 {
+  color: #2a86bb;
+  line-height: 4em;
+}
+/* line 21, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter3 h4 {
+  color: #2a86bb;
+}
+/* line 25, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter3 ol, #epub #book1.eoc.chapter3 li {
+  color: #2a86bb;
+}
+/* line 11, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter4 {
+  background-color: #eff5d9;
+  height: 100%;
+}
+/* line 17, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter4 h3 {
+  color: #9bc63c;
+  line-height: 4em;
+}
+/* line 21, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter4 h4 {
+  color: #9bc63c;
+}
+/* line 25, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter4 ol, #epub #book1.eoc.chapter4 li {
+  color: #9bc63c;
+}
+/* line 11, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter5 {
+  background-color: #dfd3d3;
+  height: 100%;
+}
+/* line 17, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter5 h3 {
+  color: #663a58;
+  line-height: 4em;
+}
+/* line 21, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter5 h4 {
+  color: #663a58;
+}
+/* line 25, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter5 ol, #epub #book1.eoc.chapter5 li {
+  color: #663a58;
+}
+/* line 11, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter6 {
+  background-color: #e4e3cf;
+  height: 100%;
+}
+/* line 17, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter6 h3 {
+  color: #757b38;
+  line-height: 4em;
+}
+/* line 21, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter6 h4 {
+  color: #757b38;
+}
+/* line 25, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter6 ol, #epub #book1.eoc.chapter6 li {
+  color: #757b38;
+}
+/* line 11, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter7 {
+  background-color: #d9e9e2;
+  height: 100%;
+}
+/* line 17, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter7 h3 {
+  color: #009280;
+  line-height: 4em;
+}
+/* line 21, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter7 h4 {
+  color: #009280;
+}
+/* line 25, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter7 ol, #epub #book1.eoc.chapter7 li {
+  color: #009280;
+}
+/* line 11, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter8 {
+  background-color: #efd3cc;
+  height: 100%;
+}
+/* line 17, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter8 h3 {
+  color: #a32041;
+  line-height: 4em;
+}
+/* line 21, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter8 h4 {
+  color: #a32041;
+}
+/* line 25, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter8 ol, #epub #book1.eoc.chapter8 li {
+  color: #a32041;
+}
+/* line 11, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter9 {
+  background-color: #dce6ef;
+  height: 100%;
+}
+/* line 17, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter9 h3 {
+  color: #2a86bb;
+  line-height: 4em;
+}
+/* line 21, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter9 h4 {
+  color: #2a86bb;
+}
+/* line 25, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter9 ol, #epub #book1.eoc.chapter9 li {
+  color: #2a86bb;
+}
+/* line 11, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter10 {
+  background-color: #eff5d9;
+  height: 100%;
+}
+/* line 17, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter10 h3 {
+  color: #9bc63c;
+  line-height: 4em;
+}
+/* line 21, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter10 h4 {
+  color: #9bc63c;
+}
+/* line 25, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter10 ol, #epub #book1.eoc.chapter10 li {
+  color: #9bc63c;
+}
+/* line 11, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter11 {
+  background-color: #dfd3d3;
+  height: 100%;
+}
+/* line 17, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter11 h3 {
+  color: #663a58;
+  line-height: 4em;
+}
+/* line 21, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter11 h4 {
+  color: #663a58;
+}
+/* line 25, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter11 ol, #epub #book1.eoc.chapter11 li {
+  color: #663a58;
+}
+/* line 11, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter12 {
+  background-color: #e4e3cf;
+  height: 100%;
+}
+/* line 17, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter12 h3 {
+  color: #757b38;
+  line-height: 4em;
+}
+/* line 21, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter12 h4 {
+  color: #757b38;
+}
+/* line 25, ../sass/theme/_eoc.scss */
+#epub #book1.eoc.chapter12 ol, #epub #book1.eoc.chapter12 li {
+  color: #757b38;
+}
+
+/* Generate colours for tables in each section  */
+/* line 11, ../sass/theme/_tables.scss */
+#book1.chapter1 table {
+  border: none;
+}
+/* line 13, ../sass/theme/_tables.scss */
+#book1.chapter1 table th {
   background-color: #009280;
+  border-right: 2px solid #fff;
 }
-/* line 10, ../sass/theme/_tables.scss */
-#epub .book1 .chapter1 table td {
+/* line 17, ../sass/theme/_tables.scss */
+#book1.chapter1 table tr {
+  border-bottom: 2px solid #009280;
+}
+/* line 19, ../sass/theme/_tables.scss */
+#book1.chapter1 table tr td:last-child {
+  border: none;
+}
+/* line 23, ../sass/theme/_tables.scss */
+#book1.chapter1 table td {
   border-right: 2px solid #009280;
+}
+
+/* line 11, ../sass/theme/_tables.scss */
+#book1.chapter2 table {
+  border: none;
+}
+/* line 13, ../sass/theme/_tables.scss */
+#book1.chapter2 table th {
+  background-color: #a32041;
+  border-right: 2px solid #fff;
+}
+/* line 17, ../sass/theme/_tables.scss */
+#book1.chapter2 table tr {
+  border-bottom: 2px solid #a32041;
+}
+/* line 19, ../sass/theme/_tables.scss */
+#book1.chapter2 table tr td:last-child {
+  border: none;
+}
+/* line 23, ../sass/theme/_tables.scss */
+#book1.chapter2 table td {
+  border-right: 2px solid #a32041;
+}
+
+/* line 11, ../sass/theme/_tables.scss */
+#book1.chapter3 table {
+  border: none;
+}
+/* line 13, ../sass/theme/_tables.scss */
+#book1.chapter3 table th {
+  background-color: #2a86bb;
+  border-right: 2px solid #fff;
+}
+/* line 17, ../sass/theme/_tables.scss */
+#book1.chapter3 table tr {
+  border-bottom: 2px solid #2a86bb;
+}
+/* line 19, ../sass/theme/_tables.scss */
+#book1.chapter3 table tr td:last-child {
+  border: none;
+}
+/* line 23, ../sass/theme/_tables.scss */
+#book1.chapter3 table td {
+  border-right: 2px solid #2a86bb;
+}
+
+/* line 11, ../sass/theme/_tables.scss */
+#book1.chapter4 table {
+  border: none;
+}
+/* line 13, ../sass/theme/_tables.scss */
+#book1.chapter4 table th {
+  background-color: #9bc63c;
+  border-right: 2px solid #fff;
+}
+/* line 17, ../sass/theme/_tables.scss */
+#book1.chapter4 table tr {
+  border-bottom: 2px solid #9bc63c;
+}
+/* line 19, ../sass/theme/_tables.scss */
+#book1.chapter4 table tr td:last-child {
+  border: none;
+}
+/* line 23, ../sass/theme/_tables.scss */
+#book1.chapter4 table td {
+  border-right: 2px solid #9bc63c;
+}
+
+/* line 11, ../sass/theme/_tables.scss */
+#book1.chapter5 table {
+  border: none;
+}
+/* line 13, ../sass/theme/_tables.scss */
+#book1.chapter5 table th {
+  background-color: #663a58;
+  border-right: 2px solid #fff;
+}
+/* line 17, ../sass/theme/_tables.scss */
+#book1.chapter5 table tr {
+  border-bottom: 2px solid #663a58;
+}
+/* line 19, ../sass/theme/_tables.scss */
+#book1.chapter5 table tr td:last-child {
+  border: none;
+}
+/* line 23, ../sass/theme/_tables.scss */
+#book1.chapter5 table td {
+  border-right: 2px solid #663a58;
+}
+
+/* line 11, ../sass/theme/_tables.scss */
+#book1.chapter6 table {
+  border: none;
+}
+/* line 13, ../sass/theme/_tables.scss */
+#book1.chapter6 table th {
+  background-color: #757b38;
+  border-right: 2px solid #fff;
+}
+/* line 17, ../sass/theme/_tables.scss */
+#book1.chapter6 table tr {
+  border-bottom: 2px solid #757b38;
+}
+/* line 19, ../sass/theme/_tables.scss */
+#book1.chapter6 table tr td:last-child {
+  border: none;
+}
+/* line 23, ../sass/theme/_tables.scss */
+#book1.chapter6 table td {
+  border-right: 2px solid #757b38;
+}
+
+/* line 11, ../sass/theme/_tables.scss */
+#book1.chapter7 table {
+  border: none;
+}
+/* line 13, ../sass/theme/_tables.scss */
+#book1.chapter7 table th {
+  background-color: #009280;
+  border-right: 2px solid #fff;
+}
+/* line 17, ../sass/theme/_tables.scss */
+#book1.chapter7 table tr {
+  border-bottom: 2px solid #009280;
+}
+/* line 19, ../sass/theme/_tables.scss */
+#book1.chapter7 table tr td:last-child {
+  border: none;
+}
+/* line 23, ../sass/theme/_tables.scss */
+#book1.chapter7 table td {
+  border-right: 2px solid #009280;
+}
+
+/* line 11, ../sass/theme/_tables.scss */
+#book1.chapter8 table {
+  border: none;
+}
+/* line 13, ../sass/theme/_tables.scss */
+#book1.chapter8 table th {
+  background-color: #a32041;
+  border-right: 2px solid #fff;
+}
+/* line 17, ../sass/theme/_tables.scss */
+#book1.chapter8 table tr {
+  border-bottom: 2px solid #a32041;
+}
+/* line 19, ../sass/theme/_tables.scss */
+#book1.chapter8 table tr td:last-child {
+  border: none;
+}
+/* line 23, ../sass/theme/_tables.scss */
+#book1.chapter8 table td {
+  border-right: 2px solid #a32041;
+}
+
+/* line 11, ../sass/theme/_tables.scss */
+#book1.chapter9 table {
+  border: none;
+}
+/* line 13, ../sass/theme/_tables.scss */
+#book1.chapter9 table th {
+  background-color: #2a86bb;
+  border-right: 2px solid #fff;
+}
+/* line 17, ../sass/theme/_tables.scss */
+#book1.chapter9 table tr {
+  border-bottom: 2px solid #2a86bb;
+}
+/* line 19, ../sass/theme/_tables.scss */
+#book1.chapter9 table tr td:last-child {
+  border: none;
+}
+/* line 23, ../sass/theme/_tables.scss */
+#book1.chapter9 table td {
+  border-right: 2px solid #2a86bb;
+}
+
+/* line 11, ../sass/theme/_tables.scss */
+#book1.chapter10 table {
+  border: none;
+}
+/* line 13, ../sass/theme/_tables.scss */
+#book1.chapter10 table th {
+  background-color: #9bc63c;
+  border-right: 2px solid #fff;
+}
+/* line 17, ../sass/theme/_tables.scss */
+#book1.chapter10 table tr {
+  border-bottom: 2px solid #9bc63c;
+}
+/* line 19, ../sass/theme/_tables.scss */
+#book1.chapter10 table tr td:last-child {
+  border: none;
+}
+/* line 23, ../sass/theme/_tables.scss */
+#book1.chapter10 table td {
+  border-right: 2px solid #9bc63c;
+}
+
+/* line 11, ../sass/theme/_tables.scss */
+#book1.chapter11 table {
+  border: none;
+}
+/* line 13, ../sass/theme/_tables.scss */
+#book1.chapter11 table th {
+  background-color: #663a58;
+  border-right: 2px solid #fff;
+}
+/* line 17, ../sass/theme/_tables.scss */
+#book1.chapter11 table tr {
+  border-bottom: 2px solid #663a58;
+}
+/* line 19, ../sass/theme/_tables.scss */
+#book1.chapter11 table tr td:last-child {
+  border: none;
+}
+/* line 23, ../sass/theme/_tables.scss */
+#book1.chapter11 table td {
+  border-right: 2px solid #663a58;
+}
+
+/* line 11, ../sass/theme/_tables.scss */
+#book1.chapter12 table {
+  border: none;
+}
+/* line 13, ../sass/theme/_tables.scss */
+#book1.chapter12 table th {
+  background-color: #757b38;
+  border-right: 2px solid #fff;
+}
+/* line 17, ../sass/theme/_tables.scss */
+#book1.chapter12 table tr {
+  border-bottom: 2px solid #757b38;
+}
+/* line 19, ../sass/theme/_tables.scss */
+#book1.chapter12 table tr td:last-child {
+  border: none;
+}
+/* line 23, ../sass/theme/_tables.scss */
+#book1.chapter12 table td {
+  border-right: 2px solid #757b38;
+}
+
+/* line 35, ../sass/theme/_tables.scss */
+#book2.chapter1 table {
+  border: none;
+}
+/* line 37, ../sass/theme/_tables.scss */
+#book2.chapter1 table th {
+  background-color: #a55261;
+  border-right: 2px solid #fff;
+}
+/* line 41, ../sass/theme/_tables.scss */
+#book2.chapter1 table tr {
+  border-bottom: 2px solid #a55261;
+}
+/* line 43, ../sass/theme/_tables.scss */
+#book2.chapter1 table tr td:last-child {
+  border: none;
+}
+/* line 47, ../sass/theme/_tables.scss */
+#book2.chapter1 table td {
+  border-right: 2px solid #a55261;
+}
+
+/* line 35, ../sass/theme/_tables.scss */
+#book2.chapter2 table {
+  border: none;
+}
+/* line 37, ../sass/theme/_tables.scss */
+#book2.chapter2 table th {
+  background-color: #757a38;
+  border-right: 2px solid #fff;
+}
+/* line 41, ../sass/theme/_tables.scss */
+#book2.chapter2 table tr {
+  border-bottom: 2px solid #757a38;
+}
+/* line 43, ../sass/theme/_tables.scss */
+#book2.chapter2 table tr td:last-child {
+  border: none;
+}
+/* line 47, ../sass/theme/_tables.scss */
+#book2.chapter2 table td {
+  border-right: 2px solid #757a38;
+}
+
+/* line 35, ../sass/theme/_tables.scss */
+#book2.chapter3 table {
+  border: none;
+}
+/* line 37, ../sass/theme/_tables.scss */
+#book2.chapter3 table th {
+  background-color: #663a58;
+  border-right: 2px solid #fff;
+}
+/* line 41, ../sass/theme/_tables.scss */
+#book2.chapter3 table tr {
+  border-bottom: 2px solid #663a58;
+}
+/* line 43, ../sass/theme/_tables.scss */
+#book2.chapter3 table tr td:last-child {
+  border: none;
+}
+/* line 47, ../sass/theme/_tables.scss */
+#book2.chapter3 table td {
+  border-right: 2px solid #663a58;
+}
+
+/* line 35, ../sass/theme/_tables.scss */
+#book2.chapter4 table {
+  border: none;
+}
+/* line 37, ../sass/theme/_tables.scss */
+#book2.chapter4 table th {
+  background-color: #cb532a;
+  border-right: 2px solid #fff;
+}
+/* line 41, ../sass/theme/_tables.scss */
+#book2.chapter4 table tr {
+  border-bottom: 2px solid #cb532a;
+}
+/* line 43, ../sass/theme/_tables.scss */
+#book2.chapter4 table tr td:last-child {
+  border: none;
+}
+/* line 47, ../sass/theme/_tables.scss */
+#book2.chapter4 table td {
+  border-right: 2px solid #cb532a;
+}
+
+/* line 35, ../sass/theme/_tables.scss */
+#book2.chapter5 table {
+  border: none;
+}
+/* line 37, ../sass/theme/_tables.scss */
+#book2.chapter5 table th {
+  background-color: #a55261;
+  border-right: 2px solid #fff;
+}
+/* line 41, ../sass/theme/_tables.scss */
+#book2.chapter5 table tr {
+  border-bottom: 2px solid #a55261;
+}
+/* line 43, ../sass/theme/_tables.scss */
+#book2.chapter5 table tr td:last-child {
+  border: none;
+}
+/* line 47, ../sass/theme/_tables.scss */
+#book2.chapter5 table td {
+  border-right: 2px solid #a55261;
+}
+
+/* line 35, ../sass/theme/_tables.scss */
+#book2.chapter6 table {
+  border: none;
+}
+/* line 37, ../sass/theme/_tables.scss */
+#book2.chapter6 table th {
+  background-color: #757a38;
+  border-right: 2px solid #fff;
+}
+/* line 41, ../sass/theme/_tables.scss */
+#book2.chapter6 table tr {
+  border-bottom: 2px solid #757a38;
+}
+/* line 43, ../sass/theme/_tables.scss */
+#book2.chapter6 table tr td:last-child {
+  border: none;
+}
+/* line 47, ../sass/theme/_tables.scss */
+#book2.chapter6 table td {
+  border-right: 2px solid #757a38;
+}
+
+/* line 35, ../sass/theme/_tables.scss */
+#book2.chapter7 table {
+  border: none;
+}
+/* line 37, ../sass/theme/_tables.scss */
+#book2.chapter7 table th {
+  background-color: #663a58;
+  border-right: 2px solid #fff;
+}
+/* line 41, ../sass/theme/_tables.scss */
+#book2.chapter7 table tr {
+  border-bottom: 2px solid #663a58;
+}
+/* line 43, ../sass/theme/_tables.scss */
+#book2.chapter7 table tr td:last-child {
+  border: none;
+}
+/* line 47, ../sass/theme/_tables.scss */
+#book2.chapter7 table td {
+  border-right: 2px solid #663a58;
+}
+
+/* line 35, ../sass/theme/_tables.scss */
+#book2.chapter8 table {
+  border: none;
+}
+/* line 37, ../sass/theme/_tables.scss */
+#book2.chapter8 table th {
+  background-color: #cb532a;
+  border-right: 2px solid #fff;
+}
+/* line 41, ../sass/theme/_tables.scss */
+#book2.chapter8 table tr {
+  border-bottom: 2px solid #cb532a;
+}
+/* line 43, ../sass/theme/_tables.scss */
+#book2.chapter8 table tr td:last-child {
+  border: none;
+}
+/* line 47, ../sass/theme/_tables.scss */
+#book2.chapter8 table td {
+  border-right: 2px solid #cb532a;
 }
 
 /* line 6, ../sass/theme/_panels.scss */
@@ -8391,7 +9273,7 @@ a.th {
 .activity-panel .download a:hover {
   color: #666666;
 }
-/* line 135, ../sass/core/_mixins.scss */
+/* line 147, ../sass/core/_mixins.scss */
 .activity-panel .download a:hover:hover {
   -webkit-transition: all 0.4s ease-in-out 0s;
   -moz-transition: all 0.4s ease-in-out 0s;
@@ -8433,18 +9315,20 @@ a.th {
 .activity-panel table th {
   background-color: #568c9d !important;
   border-right: 2px solid #fff;
+  border-bottom: 2px solid #568c9d !important;
 }
-/* line 91, ../sass/theme/_panels.scss */
+/* line 92, ../sass/theme/_panels.scss */
 .activity-panel table td {
   border-right: 2px solid #568c9d !important;
+  border-bottom: 2px solid #568c9d !important;
 }
 
-/* line 100, ../sass/theme/_panels.scss */
+/* line 102, ../sass/theme/_panels.scss */
 .trivia-panel {
   clear: both;
   margin-bottom: 45px;
 }
-/* line 103, ../sass/theme/_panels.scss */
+/* line 105, ../sass/theme/_panels.scss */
 .trivia-panel h3 {
   padding: 8px;
   margin: 0;
@@ -8456,7 +9340,7 @@ a.th {
   margin-bottom: 15px;
 }
 
-/* line 117, ../sass/theme/_panels.scss */
+/* line 119, ../sass/theme/_panels.scss */
 .collaborate-panel {
   clear: both;
   padding: 15px 50px;
@@ -8482,7 +9366,7 @@ a.th {
   background-size: auto 100px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 117, ../sass/theme/_panels.scss */
+  /* line 119, ../sass/theme/_panels.scss */
   .collaborate-panel {
     background-image: url("../images/ui/collaborate-icon.png");
     background-image: none, url("../images/ui/collaborate-icon.svg");
@@ -8491,7 +9375,7 @@ a.th {
     background-size: auto 80px;
   }
 }
-/* line 135, ../sass/theme/_panels.scss */
+/* line 137, ../sass/theme/_panels.scss */
 .collaborate-panel h3 {
   padding: 0;
   margin: 0;
@@ -8501,3 +9385,40 @@ a.th {
 }
 
 /* Custom styles */
+/* Galleria
+================================================================================================ */
+/* line 5, ../sass/theme/_galleria.scss */
+.galleria {
+  height: 450px;
+  margin-bottom: 2em;
+}
+
+/* line 9, ../sass/theme/_galleria.scss */
+.galleria-container {
+  background-color: #999999;
+  /* Fallback Color */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(#999999));
+  /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, black, #999999);
+  /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image: -moz-linear-gradient(top, black, #999999);
+  /* FF3.6 */
+  background-image: -ms-linear-gradient(top, black, #999999);
+  /* IE10 */
+  background-image: -o-linear-gradient(top, black, #999999);
+  /* Opera 11.10+ */
+  background-image: linear-gradient(top, #000000, #999999);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='black', EndColorStr='#999999');
+  -moz-border-radius-topleft: 20px;
+  -moz-border-radius-topright: 20px;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 0;
+  -webkit-border-top-left-radius: 20px;
+  -webkit-border-top-right-radius: 20px;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}

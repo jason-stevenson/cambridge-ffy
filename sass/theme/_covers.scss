@@ -9,6 +9,27 @@
 // 	}
 // }
 
+/* Generate colours for tables in each section  */
+
+// $chapters:12;
+
+// @for $i from 1 through $chapters {
+// 	#book1.chapter#{$i} {
+
+// 		$path = "chapter" + $i + "-cover.jpg"
+
+
+		
+// 		#book1.chapter-cover.chapter#{$i}{
+// 			@include cover-background(#{$path})
+// 		}
+
+    
+// 	}
+// }
+
+
+
 #book1.chapter-cover.chapter1{@include cover-background("chapter1-cover.jpg")}
 #book1.chapter-cover.chapter2{@include cover-background("chapter1-cover.jpg")}
 #book1.chapter-cover.chapter3{@include cover-background("chapter1-cover.jpg")}

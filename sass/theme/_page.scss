@@ -5,12 +5,32 @@
 
 #epub{
 
+
+
+
 	.has-tip{
 		background-color:lighten($tooltiip-color,50);
 		padding:0.2em;
 		@include rounded-all-corners(0.6em);
 
 	}
+
+	p{
+		a{
+		font-weight: bold;
+		color: $grey;
+			&:hover{
+				text-decoration: underline;
+			}
+			&:active{
+				text-decoration: none;
+				color: #000;
+			}
+		}
+	}
+	
+
+
 
 	h2{
 		font-size: 1.8em;
@@ -48,6 +68,15 @@
 		}
 		h3{
 			color: $book1;
+		}
+	}
+	#book2{
+		h2{
+			background-color:$book2;
+			color: #fff;
+		}
+		h3{
+			color: $book2;
 		}
 	}
 }
