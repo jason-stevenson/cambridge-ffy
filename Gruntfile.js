@@ -19,36 +19,62 @@ module.exports = function(grunt) {
 
       // Compass
       compass: {
+        options: {
+          sassDir: 'sass',
+          cssDir: 'css',
+          imagesDir: 'images',
+        },
+        dist: {
+          options: {
+            outputStyle: 'compressed'
+          }
+        },
         dev: {
           options: {
-            config: 'config.rb',
-            force: true
+            outputStyle: 'expanded'
           }
         }
       },
+
+
+
+
+
 
       //Concat JS files
       concat: {
         dist: {
           src: [
-            'javascripts/**/*.js',
+            'javascripts/vendor/*.js',
+            'javascripts/foundation/foundation.js',
+            'javascripts/foundation/foundation.tooltipsjs',
+            'javascripts/foundation/foundation.reveal.js',
+            'javascripts/cambridge/*.js',
           ],
-          dest: 'build/js/production.js',
+          dest: 'build/javascripts/cambridge.js',
         }
       },
+
 
       // Uglify JS files
       uglify: {
+        options:{
+          mangle: false
+        },
         dist: {
-          src: 'build/js/production.js',
-          dest: 'build/js/production.min.js'
+          src: 'build/javascripts/cambridge.js',
+          dest: 'build/javascripts/cambridge.min.js'
         }
       },
 
+
+
+
+
       // Image compression
       imagemin: {
-        static: {                          // Target
-          options: {                       // Target options
+        static: {                        
+          options: {                       
             optimizationLevel: 6
           }
         },
@@ -62,6 +88,22 @@ module.exports = function(grunt) {
         }
       },
 
+      // Copy files to the build folder ready for upload
+      copy: {
+        main: {
+          src: [
+            '*.html',
+            'css/*',
+            'javascripts/galleria/**/*',
+            'javascripts/vendor/*',
+          ],
+          dest: 'build/',
+        },
+      },
+
+
+
+    // Watch + Livereload
 		watch: {
 			sass: {
 				files: ['sass/**/*.scss'],
@@ -79,14 +121,14 @@ module.exports = function(grunt) {
 
 
 
-    });
+  });
 
 
 
 
    // Deploy task
  	grunt.registerTask('deploy', [
-      'concat','uglify', 'imagemin'
+      'compass:dist', 'concat','uglify', 'imagemin', 'copy'
    ]);
 
  	// Default task
