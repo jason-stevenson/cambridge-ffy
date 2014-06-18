@@ -1,67 +1,63 @@
 
-// Chapter background images
 
-// $chapters:5;
+/* 
 
-// @while $chapters > 0{
-// 	#book1.chapter-cover.chapter#{$chapters}{
-// 		@include cover-background("chapter1-cover.jpg");
-// 	}
-// }
+Chapter + Section covers 
 
-/* Generate colours for tables in each section  */
-
-// $chapters:12;
-
-// @for $i from 1 through $chapters {
-// 	#book1.chapter#{$i} {
-
-// 		$path = "chapter" + $i + "-cover.jpg"
-
-
-		
-// 		#book1.chapter-cover.chapter#{$i}{
-// 			@include cover-background(#{$path})
-// 		}
-
-    
-// 	}
-// }
+=========================================================================== */
 
 
 
-#book1.chapter-cover.chapter1{@include cover-background("chapter1-cover.jpg")}
-#book1.chapter-cover.chapter2{@include cover-background("chapter1-cover.jpg")}
-#book1.chapter-cover.chapter3{@include cover-background("chapter1-cover.jpg")}
-#book1.chapter-cover.chapter4{@include cover-background("chapter1-cover.jpg")}
-#book1.chapter-cover.chapter5{@include cover-background("chapter1-cover.jpg")}
-#book1.chapter-cover.chapter6{@include cover-background("chapter1-cover.jpg")}
-#book1.chapter-cover.chapter7{@include cover-background("chapter1-cover.jpg")}
-#book1.chapter-cover.chapter8{@include cover-background("chapter1-cover.jpg")}
-#book1.chapter-cover.chapter9{@include cover-background("chapter1-cover.jpg")}
-#book1.chapter-cover.chapter10{@include cover-background("chapter1-cover.jpg")}
-#book1.chapter-cover.chapter11{@include cover-background("chapter1-cover.jpg")}
-#book1.chapter-cover.chapter12{@include cover-background("chapter1-cover.jpg")}
-
-#book2.chapter-cover.chapter1{@include cover-background("chapter1-cover.jpg")}
-#book2.chapter-cover.chapter2{@include cover-background("chapter1-cover.jpg")}
-#book2.chapter-cover.chapter3{@include cover-background("chapter1-cover.jpg")}
-#book2.chapter-cover.chapter4{@include cover-background("chapter1-cover.jpg")}
-#book2.chapter-cover.chapter5{@include cover-background("chapter1-cover.jpg")}
-#book2.chapter-cover.chapter6{@include cover-background("chapter1-cover.jpg")}
-#book2.chapter-cover.chapter7{@include cover-background("chapter1-cover.jpg")}
-#book2.chapter-cover.chapter8{@include cover-background("chapter1-cover.jpg")}
+@mixin coverBackground($filename) {
+  background-image: url('../images/chapter#{$filename}-cover.jpg');
+  background-repeat: no-repeat;
+  background-position:center center;
+  background-attachment:scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 
 
-// Chapter masthead colours
-#book1.chapter1{.masthead{@include background-opacity($book1-chapter1);}}
-#book1.chapter2{.masthead{@include background-opacity($book1-chapter2);}}
+/*	Assign backgrounds 
+=========================================================================== 
+	
+	Using a custom mixin here allows us to pass the increment 
+   	variable through to generate the image path for the covers */
 
-#book2.chapter1{.masthead{@include background-opacity($book2-chapter1);}}
-#book2.chapter2{.masthead{@include background-opacity($book2-chapter2);}}
+ @for $i from 1 through 12 {
+	#book1.chapter-cover.chapter#{$i} {
+		@include coverBackground($i);
+	}
+	#book2.chapter-cover.chapter#{$i} {
+		@include coverBackground($i);
+	}
+}
 
 
+
+/* 	Assign mast colours 
+=========================================================================== */
+
+$colors-list: $book1-chapter1, $book1-chapter2, $book1-chapter3, $book1-chapter4, $book1-chapter5, $book1-chapter6, $book1-chapter7, $book1-chapter8, $book1-chapter9, $book1-chapter10, $book1-chapter11, $book1-chapter12;
+@for $i from 1 through length($colors-list) {
+	#book1.chapter-cover.chapter#{$i} {
+		.masthead{
+			@include background-opacity(nth($colors-list, $i));
+		}
+	}
+}
+
+$colors-list: $book2-chapter1, $book2-chapter2, $book2-chapter3, $book2-chapter4, $book2-chapter5, $book2-chapter6, $book2-chapter7, $book2-chapter8;
+@for $i from 1 through length($colors-list) {
+	#book2.chapter-cover.chapter#{$i} {
+		.masthead{
+			@include background-opacity(nth($colors-list, $i));
+		}
+	}
+}
 
 
 
@@ -99,3 +95,4 @@
 		color: $grey;
 	}
 }
+
