@@ -3,142 +3,227 @@
 // Panels
 // ================================================================================================
 
-.investigate-panel{
-	clear: both;
-	@include grid-row;
-	@include rounded-corners(0.8em, 0, 0, 0.8em);
-	background-color: $investigate-color;
-	border: 3px dotted darken($investigate-color,25);
-	padding: 0.8em;
-	margin-bottom:2em;
-
-	// Icon re-sizing
-	@include svg-bg("../images/ui/investigate-icon", no-repeat, 12px 12px);
-	background-size: 50px auto;
-	@media #{$small} {
-		@include svg-bg("../images/ui/investigate-icon", no-repeat, 20px 20px);
-		background-size: 65px auto;
-	}
-
-	.content{
-		@include grid-column(11, false, false, 1, false, false, false, left);
-	}
-	h3{
-		color: #000 !important;
-	}
-}
+#epub{
 
 
-
-
-.activity-panel{
+	.investigate-panel{
 		clear: both;
-		margin-bottom: 45px;
-	.top{
-		background-color:$activity-color;
-		height:10px;
-		margin: 0 15px;
-		@include rounded-corners(20px, 20px, 0, 0);
-	}
-	.bottom{
-		background-color:$activity-color;
-		height:10px;
-		margin: 0 15px;
-		@include rounded-corners(0, 0, 20px, 20px);
-	}
-	.inner{
-		padding:15px 20px;
-		border:1px solid $activity-color;
-		overflow: auto;
-	}
-
-	.download{
-		float: left;
-		width: 100%;
-		padding-right: 0;
-		a{
-			color:$activity-color;
-			&:hover{
-				@include download-colour($grey, 0);
-			}
-		}
-		@media #{$small} {
-			width: 20%;
-			padding-right: 30px;
-		}
-
-	}
-	.content{
-		float: left;
-		width: 100%;
-		@media #{$small} {
-			width: 80%;
-		}
-	}
-	h3{
-		padding:0;
-		margin:0;
-		font-size:$h4-font-size;
-		color: $activity-color !important;
-	}
-	table{
-		border:2px solid $activity-color !important;
-		th{
-			background-color:$activity-color !important;
-			border-right:2px solid #fff;
-			border-bottom:2px solid $activity-color !important;
-		}
-
-		td{
-			border-right:2px solid $activity-color !important;
-			border-bottom:2px solid $activity-color !important;
-		}
-	}
-}
-
-
-
-
-.trivia-panel{
-		clear: both;
-		margin-bottom: 45px;
-		h3{
-			padding:8px;
-			margin:0;
-			text-align:center;
-			text-transform: uppercase;
-			font-size:$h4-font-size;
-			background-color: $trivia-color;
-			color: #fff !important;
-			margin-bottom: 15px;
-		}
-}
-
-
-
-.collaborate-panel{
-		clear: both;
-		padding:15px 50px;
-		margin-bottom: 45px;
-		border-bottom:1px solid $collaborate-color;
-		border-right:1px solid $collaborate-color;
-		@include rounded-corners(0,0,1em,0);
-
+		@include grid-row;
+		@include rounded-corners(0.8em, 0, 0, 0.8em);
+		background-color: $investigate-color;
+		border: 3px dotted darken($investigate-color,25);
+		padding: 0.8em;
+		margin-bottom:2em;
 
 		// Icon re-sizing
-		@include svg-bg("../images/ui/collaborate-icon", no-repeat, 12px 12px);
-			background-size: auto 100px;
+		@include svg-bg("../images/ui/investigate-icon", no-repeat, 12px 12px);
+		background-size: 50px auto;
 		@media #{$small} {
-			@include svg-bg("../images/ui/collaborate-icon", no-repeat, 20px 20px);
-			background-size: auto 80px;
+			@include svg-bg("../images/ui/investigate-icon", no-repeat, 20px 20px);
+			background-size: 65px auto;
 		}
 
+		.content{
+			@include grid-column(11, false, false, 1, false, false, false, left);
+		}
+		h3{
+			color: #000 !important;
+		}
+	}
+
+
+
+
+	.activity-panel{
+			clear: both;
+			margin-bottom: 45px;
+		.top{
+			background-color:$activity-color;
+			height:10px;
+			margin: 0 15px;
+			@include rounded-corners(20px, 20px, 0, 0);
+		}
+		.bottom{
+			background-color:$activity-color;
+			height:10px;
+			margin: 0 15px;
+			@include rounded-corners(0, 0, 20px, 20px);
+		}
+		.inner{
+			padding:15px 20px;
+			border:1px solid $activity-color;
+			overflow: auto;
+		}
+
+		.download{
+			float: left;
+			width: 100%;
+			padding-right: 0;
+			a{
+				color:$activity-color;
+				&:hover{
+					@include download-colour($grey, 0);
+				}
+			}
+			@media #{$small} {
+				width: 20%;
+				padding-right: 30px;
+			}
+
+		}
+		.content{
+			float: left;
+			width: 100%;
+			@media #{$small} {
+				width: 80%;
+			}
+		}
+		.quote{
+			border:1px solid #000;
+			background-color: #eee;
+			padding:1.3em;
+			overflow: auto;
+			h4{
+				color: #000;
+				font-size: 1.1em;
+				font-weight: bold;
+			}
+			h5{
+				@extend h4;
+				font-size: 0.9em;
+			}
+			cite{
+				float: right;
+				line-height: 1.3em;
+				text-align: right;
+				font-size: 0.9em;
+			}
+		}
 
 		h3{
 			padding:0;
 			margin:0;
 			font-size:$h4-font-size;
-			text-transform: uppercase;
-			color: $collaborate-color !important;
+			color: $activity-color !important;
 		}
+		table{
+			border:2px solid $activity-color !important;
+			th{
+				background-color:$activity-color !important;
+				border-right:2px solid #fff;
+				border-bottom:2px solid $activity-color !important;
+			}
+
+			td{
+				border-right:2px solid $activity-color !important;
+				border-bottom:2px solid $activity-color !important;
+			}
+		}
+
+		ol li{
+			color: $activity-color;
+		}
+	}
+
+
+
+
+
+
+	.trivia-panel{
+			width: 70%;
+			margin:0 auto;
+
+			clear: both;
+			margin-bottom: 25px;
+			height: 140px;
+			// Icon re-sizing
+			@include svg-bg("../images/ui/trivia-icon", no-repeat, 20px 20px);
+			background-size: 70px auto;
+			@media #{$small} {
+				@include svg-bg("../images/ui/trivia-icon", no-repeat, 20px 20px);
+				background-size: 100px auto;
+			}
+
+			p{	
+				margin-left: 140px;
+				padding-top: 25px;
+				color: $trivia-color;
+					font-size: 1.2em;
+			}
+	}
+
+
+
+	.design-brief-panel{
+		background-color:desaturate(lighten($design-brief-color, 65),30);
+		border:2px solid $design-brief-color;
+		padding:1.6em;
+		margin-bottom: 1.5em;
+		h3{
+			color: $design-brief-color !important; 
+		}
+	}
+
+
+
+	.collaborate-panel{
+			clear: both;
+			padding:15px 50px;
+			margin-bottom: 45px;
+			border-bottom:1px solid $collaborate-color;
+			border-right:1px solid $collaborate-color;
+			@include rounded-corners(0,0,1em,0);
+
+
+			// Icon re-sizing
+			@include svg-bg("../images/ui/collaborate-icon", no-repeat, 12px 12px);
+				background-size: auto 100px;
+			@media #{$small} {
+				@include svg-bg("../images/ui/collaborate-icon", no-repeat, 20px 20px);
+				background-size: auto 80px;
+			}
+
+
+			h3{
+				padding:0;
+				margin:0;
+				font-size:$h4-font-size;
+				text-transform: uppercase;
+				color: $collaborate-color !important;
+			}
+	}
+
+
+
+		
+	/* Lets review */
+	.lets-review{
+		ol{
+			li{
+				margin:5px;
+			}
+		}
+	}
 }
+
+$colors-list: $book1-chapter1, $book1-chapter2, $book1-chapter3, $book1-chapter4, $book1-chapter5, $book1-chapter6, $book1-chapter7, $book1-chapter8, $book1-chapter9, $book1-chapter10, $book1-chapter11, $book1-chapter12;
+@for $i from 1 through length($colors-list) {
+	#book1.chapter#{$i} {
+		.lets-review{
+			h3{color: nth($colors-list, $i) !important}
+			li{color: nth($colors-list, $i)};
+		}
+    }
+}
+$colors-list: $book2-chapter1, $book2-chapter2, $book2-chapter3, $book2-chapter4, $book2-chapter5, $book2-chapter6, $book2-chapter7, $book2-chapter8;
+@for $i from 1 through length($colors-list) {
+	#book2.chapter#{$i} {
+		.lets-review{
+			h3{color: nth($colors-list, $i) !important}
+			li{color: nth($colors-list, $i)};
+		}
+	}
+}
+
+

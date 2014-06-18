@@ -5,8 +5,18 @@
 .galleria{
 	height: 450px;
 	margin-bottom: 2em;
+	margin:0 auto;
+	margin-bottom: 2em;
+	width:100%;
+
+	@media #{$small} {	
+		width:80%;
+	}
 }
 .galleria-container{
-	@include linear-gradient(#000, #999);
-	@include rounded-corners(20px, 20px, 0, 0);
+	@include linear-gradient(#000, #333);
+	//@include rounded-corners(20px, 20px, 0, 0);
+	img{
+		@include box-shadow(5px, 5px, 15px, rgba(0,0,0,0.3));
+	}
 }

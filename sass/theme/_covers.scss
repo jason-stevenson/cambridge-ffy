@@ -6,10 +6,8 @@ Chapter + Section covers
 
 =========================================================================== */
 
-
-
-@mixin coverBackground($filename) {
-  background-image: url('../images/chapter#{$filename}-cover.jpg');
+@mixin coverBackground($book, $filename) {
+  background-image: url('../images/covers/book#{$book}/chapter#{$filename}-cover.jpg');
   background-repeat: no-repeat;
   background-position:center center;
   background-attachment:scroll;
@@ -29,10 +27,10 @@ Chapter + Section covers
 
  @for $i from 1 through 12 {
 	#book1.chapter-cover.chapter#{$i} {
-		@include coverBackground($i);
+		@include coverBackground(1,$i);
 	}
 	#book2.chapter-cover.chapter#{$i} {
-		@include coverBackground($i);
+		@include coverBackground(2, $i);
 	}
 }
 

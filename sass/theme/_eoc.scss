@@ -3,36 +3,140 @@
 
 #epub{
 
-
 	$colors-list: $book1-chapter1, $book1-chapter2, $book1-chapter3, $book1-chapter4, $book1-chapter5, $book1-chapter6, $book1-chapter7, $book1-chapter8, $book1-chapter9, $book1-chapter10, $book1-chapter11, $book1-chapter12;
 	$tint-list: $book1-chapter1-tint, $book1-chapter2-tint, $book1-chapter3-tint, $book1-chapter4-tint, $book1-chapter5-tint, $book1-chapter6-tint, $book1-chapter7-tint, $book1-chapter8-tint, $book1-chapter9-tint, $book1-chapter10-tint, $book1-chapter11-tint, $book1-chapter12-tint;
 
 	@for $i from 1 through length($colors-list) {
-	#book1.eoc.chapter#{$i} {
+		#book1.eoc.chapter#{$i} {
 
-		
-		background-color: nth($tint-list, $i);
-		height:100% !important;
+			background-color: nth($tint-list, $i);
+			height:100% !important;
 
-		.download{
-			float:left;
-			width: 100%;
+			.interview{
+		    	background-color:#fff;
+		    	h3{
+		    		background-color:nth($colors-list, $i);
+		    		color:#fff;
+		    		padding:0.5em;
+		    	}
+		    	h4{
+		    		color: $book1;
+		    		font-weight: bold;
+		    	}
+		    	h5{
+		    		font-weight: bold;
+		    		color: $grey;
+		    		margin-bottom: 0.8em;
+		    	}
+		    	.content{
+		    		padding:0 1em 1em 1em;
+		    	}
+		    	figure{
+		    		margin-top: -0.9em;
+		    		margin-right: -1em;
+		    	}
+		    }
+
+			.download{a{color: nth($colors-list, $i) !important; float:left}};
+				
+			h3{color: nth($colors-list, $i)}
+			h4{color: nth($colors-list, $i)}
+			ol,li{color: nth($colors-list, $i)}
+
+			table{
+				border:2px solid  nth($colors-list, $i);
+				th:last-child{
+					border-right:2px solid  nth($colors-list, $i);;
+				}
+			}
 		}
+	}
 
-			h3{
-				color: nth($colors-list, $i);
-				line-height: 4em;
+	$colors-list: $book2-chapter1, $book2-chapter2, $book2-chapter3, $book2-chapter4, $book2-chapter5, $book2-chapter6, $book2-chapter7, $book2-chapter8;
+	$tint-list: $book2-chapter1-tint, $book2-chapter2-tint, $book2-chapter3-tint, $book2-chapter4-tint, $book2-chapter5-tint, $book2-chapter6-tint, $book2-chapter7-tint, $book2-chapter8-tint;
+
+	@for $i from 1 through length($colors-list) {
+		#book2.eoc.chapter#{$i} {
+
+			background-color: nth($tint-list, $i);
+			height:100% !important;
+
+			.interview{
+		    	background-color:#fff;
+		    	h3{
+		    		background-color:nth($colors-list, $i);
+		    		color:#fff;
+		    		padding:0.5em;
+		    	}
+		    	h4{
+		    		color: $book2;
+		    		font-weight: bold;
+		    	}
+		    	h5{
+		    		font-weight: bold;
+		    		color: $grey;
+		    		margin-bottom: 0.8em;
+		    	}
+		    	.content{
+		    		padding:0 1em 1em 1em;
+		    	}
+		    	figure{
+		    		margin-top: -0.9em;
+		    		margin-right: -1em;
+		    	}
+		    }
+
+			.download{a{color: nth($colors-list, $i) !important; float:left}};
+				
+			h3{color: nth($colors-list, $i)}
+			h4{color: nth($colors-list, $i)}
+			ol,li{color: nth($colors-list, $i)}
+
+			table{
+				border:2px solid  nth($colors-list, $i);
+				th:last-child{
+					border-right:2px solid  nth($colors-list, $i);;
+				}
 			}
-			h4{
-				color: nth($colors-list, $i);
+		}
+	}
+
+
+
+
+
+
+	figure{
+		figcaption{
+			color: #000;
+		}
+	}
+	form{
+		margin-top: 0.8em;
+			.form-item{
+				display: block;
+				overflow: auto;
+
+			label{
+				display: block;
+				font-weight: normal;
+				color: #000;
+				font-size: 1em;
+				width: 20%;
+				float: left;
+				
+			}
+			input{
+				display: block;
+				width: 50%;
+				float: left;
+				border:none;
+				border-bottom:1px solid #000;
+				background:none;
 			}
 
-			ol,li{
-				color: nth($colors-list, $i);
-
-			}
-	    	
-	    }
+		}
+			
 	}
 
 }

@@ -1,0 +1,85 @@
+
+
+
+#epub{
+
+	$colors-list: $book1-chapter1, $book1-chapter2, $book1-chapter3, $book1-chapter4, $book1-chapter5, $book1-chapter6, $book1-chapter7, $book1-chapter8, $book1-chapter9, $book1-chapter10, $book1-chapter11, $book1-chapter12;
+	$tint-list: $book1-chapter1-tint, $book1-chapter2-tint, $book1-chapter3-tint, $book1-chapter4-tint, $book1-chapter5-tint, $book1-chapter6-tint, $book1-chapter7-tint, $book1-chapter8-tint, $book1-chapter9-tint, $book1-chapter10-tint, $book1-chapter11-tint, $book1-chapter12-tint;
+
+	@for $i from 1 through length($colors-list) {
+    #book1.recipes.chapter#{$i} {
+
+    	background-color:$recipe-color;
+    	padding:0;
+
+		.title{background-color: nth($colors-list, $i);}
+			h2{background:none;
+				@include svg-bg("../images/ui/recipe-icon", no-repeat, 12px 12px);
+				background-size: 430px auto;
+				@media #{$small} {
+					@include svg-bg("../images/ui/recipe-icon", no-repeat, center center);
+					background-size: 550px auto;
+				}
+			}
+			h3,h4{color:nth($colors-list, $i)}
+			.time{background-color:nth($tint-list, $i)}
+	    }
+
+	}
+
+
+
+
+
+
+	.title{
+		
+		padding: 1em;
+		color: #fff;
+		text-align: center;
+		text-transform: uppercase;
+
+	}
+	.content{
+		padding:1.4em;
+
+		.info{
+			width: 45%;
+			float: left;
+		}
+		.time{
+			width: 45%;
+			padding:1.5em;
+			
+			float: right;
+		}
+		.ingredients{
+			float: left;
+			width: 100%;
+			margin: 0 0 1.5em 0;
+
+			ul{
+				list-style-type: none;
+				padding:0;
+				margin: 0;
+				li{
+					background-color:#fff;
+					padding: 0.8em;
+					margin: 0;
+					border:1px solid #253275;
+					width: 20%;
+					float: left;
+					margin-left: -1px;
+					color: #253275;
+				}
+			}
+
+		}
+		.method{
+			float: left;
+		}
+	}
+	
+
+
+}

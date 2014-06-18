@@ -17,7 +17,7 @@
 	}
 
 	> div:first-child[data-type="test"] {
-		div:first-child{
+		> div:first-child{
 			@include grid-row;
 			@include grid-column(12, false, false, false, false, false, false, false);
 		}
@@ -46,6 +46,7 @@
 			width:70%;
 		}
 	}
+
 	figcaption{
 		padding:15px 0;
 		font-weight:normal;
@@ -64,6 +65,7 @@
 		margin:25px 0;
 		table-layout: fixed;
 		
+
 		th,
 		td{
 			text-align:left;
@@ -72,7 +74,7 @@
 		tr th{
 			color: #fff;
 			font-size:1.1em;
-			line-height: 2em;
+			line-height: 1.4em;
 		}
 		tr td{
 			padding:0.8em;
