@@ -46,12 +46,8 @@ module.exports = function(grunt) {
         dist: {
           src: [
             'javascripts/vendor/*.js',
-            'javascripts/foundation/foundation.js',
-            'javascripts/foundation/foundation.tooltipsjs',
-            'javascripts/foundation/foundation.reveal.js',
-            'javascripts/cambridge/*.js',
           ],
-          dest: 'build/javascripts/cambridge.js',
+          dest: 'build/javascripts/vendor.js',
         }
       },
 
@@ -62,8 +58,17 @@ module.exports = function(grunt) {
           mangle: false
         },
         dist: {
-          src: 'build/javascripts/cambridge.js',
-          dest: 'build/javascripts/cambridge.min.js'
+          files: {
+            'build/javascripts/vendor/custom.modernizr.js': 'javascripts/vendor/custom.modernizr.js',
+            'build/javascripts/vendor/jquery.js': 'javascripts/vendor/jquery.js',
+            'build/javascripts/vendor/zepto.js': 'javascripts/vendor/zepto.js',
+            'build/javascripts/foundation/foundation.js': 'javascripts/foundation/foundation.js',
+            'build/javascripts/foundation/foundation.tooltips.js': 'javascripts/foundation/foundation.tooltips.js',
+            'build/javascripts/foundation/foundation.reveal.js': 'javascripts/foundation/foundation.reveal.js',
+            'build/javascripts/galleria/galleria-1.2.9.js': 'javascripts/galleria/galleria-1.2.9.js',
+            'build/javascripts/cambridge/main.js': 'javascripts/cambridge/main.js',
+
+          }
         }
       },
 
@@ -82,7 +87,7 @@ module.exports = function(grunt) {
           files: [{
             expand: true,
             cwd: 'images/',
-            src: ['**/*.{png,jpg,gif}'],
+            src: ['**/*.{png,jpg,gif,svg}'],
             dest: 'build/images'
           }]
         }
@@ -94,8 +99,8 @@ module.exports = function(grunt) {
           src: [
             '*.html',
             'css/*',
-            'javascripts/galleria/**/*',
-            'javascripts/vendor/*',
+            'fonts/*',
+            'javascripts/galleria/themes/**/*'
           ],
           dest: 'build/',
         },
@@ -128,7 +133,7 @@ module.exports = function(grunt) {
 
    // Deploy task
  	grunt.registerTask('deploy', [
-      'compass:dist', 'concat','uglify', 'imagemin', 'copy'
+      'compass:dist', 'uglify', 'imagemin', 'copy'
    ]);
 
  	// Default task
