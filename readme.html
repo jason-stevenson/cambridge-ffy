@@ -21,51 +21,71 @@
 
 <body>
 	<div id="epub">
-		<div id="book1" class="chapter1" data-type="page">
+		<div id="readme" data-type="page">
 
-			<h2>Cambridge ePub framework</h2>
-
-			<p>Accidents are common in the kitchen but they can be avoided if we follow a few simple safety practices and take into consideration a number of safety design features. If we choose not to follow these safety practices and standards then this is when accidents will occur. It does not matter how busy we are in the kitchen or how much fun we are having, it is essential to remember to follow food safety practices at all times. Kitchen safety really is important!</p>
+			<h1>Cambridge Core</h1>
 			
-			<p>We must always consider and analyse:</p>
-			<ul>
-				<li>kitchen design and organisation</li>
-				<li>electrical safety</li>
-				<li>microwave safety</li>
-				<li>food safety and hygiene</li>
-				<li>preventing burns and scalds</li>
-				<li>preventing falls and cuts.</li>
-			</ul>
+			<h5>Directory Structure</h5>
+
+					<h6>Sample pages</h6>
+					<p>Numbered html files are sample pages of ePub content</p>
+					<ul>
+						<li><code>01-section-cover.html</code></li>
+						<li><code>04-sample-content.html</code></li>
+					</ul>
+
+					
+					<h6>Fonts folder</h6>
+					<p>Contains icon fonts used across publications</p>
+
+					<h6>Images folder</h6>
+					<p>Page content imagery only</p>
+
+					<h6>UI folder</h6>
+					<p>Graphics used in epub theme. Custom panels, section covers etc.</p>
+
+					<h6>SASS</h6>
+					<p>Contains all the SASS partials for CSS compliation. These are not required for final deployment</p>
+
+					<h6>Stylesheets</h6>
+					<p>Contains compressed version of the CSS stylesheet</p>
+
+					<h6>javascripts</h6>
+					<p>Contains the Foundation framework, jQuery, modernizer and Cambridge file for custom jQuery.</p>
+					<p>Syntaxhighlighter is only required for code snippets in <code>elements.html</code> and can be deleted on final deployment</p>
+
+					<h6>Snippets</h6>
+					<p>HTML with code snippets for insertion into <code>elements.html</code>. This folder can be deleted fror final deployment</p>
+					<p><em>Note: Code snippets were previoulsy being done within the document itself but after adding some jQuery to minmise required markup it was interfering with the output, so they were moved into an <code>iframe</code></em></p>
+
+					<h6>Gemfile + Gem.lock</h6>
+					<p>The gem file contains project dependencies and versions. See bundler section below</p>
+
+
+					<h5>Bundler</h5>
+					<p>These ePubs are produced using SASS + Compass on the Foundation framework. They also use Bundler to manage any gem dependencies and version that may be required. To make changes and re-compile the SASS use <code>bundle exec compass watch</code></p>
+
+					<p>Any required gems will be installed before you can continue. See <a href="http://bundler.io/">http://bundler.io/</a> for more info</p>
+
+					
+					<h5>Elements page</h5>
+					<p>The elements page contains examples of the ePub markup with code snippets in order to asisst content production. It is not required for final deployment and can be removed when not its no longer needed.</p>
+
+					<p>It does contain dependencies from the Foundation library and other javascript libraries in order to display the content correctly. These can also be deleted when the <code>elements.html</code> page is no longer needed.</p>
+
+					<h6>Dependencies</h6>
+
+					<p>The elements page requires the <code>script</code> declaration to import both jQuery and Zepto libraries. No other pages has this.</p>
+
+					<p>It uses a javascript library called <code>syntaxhighlighter</code> for code highlighting. It is located in the <code>/javascripts</code> folder and can b removed for deployment</p>
+
+					<p>There is also a directory called <code>snippets</code> which contain the actual code snippets which are pulled into the elements page. These are not required for final deployment and can also be deleted.</p>
 
 
 
-
-			</div>
 		</div>
 	</div>
 
-	
 
-
-
-
-
-
-
-
-
-
-
-  	<script src="javascripts/vendor/jquery.js"></script>
-	<script src="javascripts/galleria/galleria-1.2.9.min.js"></script>
-	<script src="javascripts/foundation/foundation.js"></script>
-	<script src="javascripts/foundation/foundation.tooltips.js"></script>
-	<script src="javascripts/foundation/foundation.reveal.js"></script>
-	<script> $(document).foundation();</script>
-	<script src="javascripts/cambridge/main.js"></script>
-	<script>
-    	Galleria.loadTheme('javascripts/galleria/themes/classic/galleria.classic.min.js');
-    	Galleria.run('.galleria');
-	</script>
 </body>
 </html>
