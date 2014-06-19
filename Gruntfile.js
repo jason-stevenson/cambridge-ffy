@@ -38,9 +38,6 @@ module.exports = function(grunt) {
 
 
 
-
-
-
       //Concat JS files
       concat: {
         dist: {
@@ -52,7 +49,7 @@ module.exports = function(grunt) {
       },
 
 
-      // Uglify JS files
+      // Uglify files
       uglify: {
         options:{
           mangle: false
@@ -67,6 +64,7 @@ module.exports = function(grunt) {
             'build/javascripts/foundation/foundation.reveal.js': 'javascripts/foundation/foundation.reveal.js',
             'build/javascripts/galleria/galleria-1.2.9.js': 'javascripts/galleria/galleria-1.2.9.js',
             'build/javascripts/cambridge/main.js': 'javascripts/cambridge/main.js',
+            'build/css/app.css': 'css/app.css',
 
           }
         }
