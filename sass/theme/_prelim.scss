@@ -1,0 +1,38 @@
+
+
+#epub{
+	#prelim{
+
+		h2{
+			background-color: #fff;
+			font-weight: 200;
+			padding: 0.6em 0;
+			color: $book1;
+		}
+		h3{
+			color: $book1;
+			font-size: $h5-font-size;
+			line-height: 0.8em;
+
+		}
+		h4{
+			font-size: $h5-font-size;
+			color: #000;
+			font-weight: 600;
+		}
+
+
+		img{
+			width: 50%;
+			margin-left:60px;
+			float:right;
+			@media #{$small} {
+				float:right;
+				width: 25%%;
+				margin-left:50px; 
+				clear:both;
+			}
+		}
+
+	}
+}

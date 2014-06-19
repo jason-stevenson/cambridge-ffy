@@ -18,6 +18,8 @@ Chapter + Section covers
 }
 
 
+#epub{
+
 
 /*	Assign backgrounds 
 =========================================================================== 
@@ -76,6 +78,8 @@ $colors-list: $book2-chapter1, $book2-chapter2, $book2-chapter3, $book2-chapter4
 		.title{
 			font-size: $h1-font-size;
 			line-height: 1.2em;
+			text-align: right;
+			padding: 0;
 		}
 
 	}
@@ -94,3 +98,5 @@ $colors-list: $book2-chapter1, $book2-chapter2, $book2-chapter3, $book2-chapter4
 	}
 }
 
+
+}

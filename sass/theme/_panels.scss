@@ -32,8 +32,7 @@
 	}
 
 
-
-
+	.interactive-panel,
 	.activity-panel{
 			clear: both;
 			margin-bottom: 45px;
@@ -103,6 +102,7 @@
 		h3{
 			padding:0;
 			margin:0;
+			margin-bottom: 0.8em;
 			font-size:$h4-font-size;
 			color: $activity-color !important;
 		}
@@ -127,6 +127,20 @@
 
 
 
+	.interactive-panel{
+		.content{
+
+			width: 100%;
+			h3{
+				text-transform: uppercase;
+				margin-bottom: 0.8em;
+			}
+			figure{
+				width: 100%;
+				img{width:100%;}
+			}
+		}
+	}
 
 
 

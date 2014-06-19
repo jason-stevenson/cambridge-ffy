@@ -34,6 +34,12 @@ $( document ).ready(function() {
 	$('.activity-panel .download a').html('<span class="icon-doc-solid"></span><div>Download</div>');
 
 
+	//Acitivity panel
+	$('.interactive-panel').wrapInner('<div class="inner"></div>');
+	$('.interactive-panel').prepend('<div class="top"></div>');
+	$('<div class="bottom"></div>').insertAfter('.interactive-panel .inner');
+	
+
 
 
 

@@ -10,6 +10,8 @@
 
 #epub{
 
+	/* The data attribute on the root epub element provides the page with the reposive grid config */
+	// ================================================================================================
 
 	> div:first-child[data-type="page"] {
 			@include grid-row;
@@ -26,6 +28,7 @@
 
 
 	// Headings
+	// ================================================================================================
 	h1,h2,h3{
 		color:$grey;
 		font-weight:600;
@@ -36,6 +39,7 @@
 
 
 	// Images
+	// ================================================================================================
 	img{
 		width:100%;
 	}
@@ -91,8 +95,6 @@
 			font-weight:bold;
 		}
 	}
-
-
 
 
 
@@ -247,6 +249,28 @@
 			width: 70%;
 			margin:0 auto; 
 		}
+	}
+	
+	.float-right.small{
+		width: 60%;
+		margin:0 auto;
+		@media #{$small} {
+			width: 30%;
+			margin-left:50px; 
+		}
+	}
+	.float-left.small{
+		width: 60%;
+		margin:0 auto;
+		@media #{$small} {
+			width: 30%;
+			margin-right:50px; 
+		}
+	}
+
+
+	.align-right{
+		float: right;
 	}
 
 	

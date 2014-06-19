@@ -11,7 +11,11 @@
 
     	background-color:$recipe-color;
     	padding:0;
-
+    	.content{
+	    	ol li{
+	    		color:nth($colors-list, $i)
+	    	}
+	    }
 		.title{background-color: nth($colors-list, $i);}
 			h2{background:none;
 				@include svg-bg("../images/ui/recipe-icon", no-repeat, 12px 12px);
@@ -24,12 +28,37 @@
 			h3,h4{color:nth($colors-list, $i)}
 			.time{background-color:nth($tint-list, $i)}
 	    }
-
 	}
 
 
 
 
+	$colors-list: $book2-chapter1, $book2-chapter2, $book2-chapter3, $book2-chapter4, $book2-chapter5, $book2-chapter6, $book2-chapter7, $book2-chapter8;
+	$tint-list: $book2-chapter1-tint, $book2-chapter2-tint, $book2-chapter3-tint, $book2-chapter4-tint, $book2-chapter5-tint, $book2-chapter6-tint, $book2-chapter7-tint, $book2-chapter8-tint;
+	
+	@for $i from 1 through length($colors-list) {
+    #book2.recipes.chapter#{$i} {
+
+    	background-color:$recipe-color;
+    	padding:0;
+    	.content{
+	    	ol li{
+	    		color:nth($colors-list, $i)
+	    	}
+	    }
+		.title{background-color: nth($colors-list, $i);}
+			h2{background:none;
+				@include svg-bg("../images/ui/recipe-icon", no-repeat, 12px 12px);
+				background-size: 430px auto;
+				@media #{$small} {
+					@include svg-bg("../images/ui/recipe-icon", no-repeat, center center);
+					background-size: 550px auto;
+				}
+			}
+			h3,h4{color:nth($colors-list, $i)}
+			.time{background-color:nth($tint-list, $i)}
+	    }
+	}
 
 
 	.title{
@@ -63,6 +92,8 @@
 				padding:0;
 				margin: 0;
 				li{
+					line-height: 1.1em;
+					font-size: 1em;
 					background-color:#fff;
 					padding: 0.8em;
 					margin: 0;
