@@ -7996,6 +7996,22 @@ a.th {
 #epub .align-right {
   float: right;
 }
+/* line 290, ../sass/core/_base.scss */
+#epub .reveal-modal img {
+  width: 100%;
+}
+/* line 291, ../sass/core/_base.scss */
+#epub .reveal-modal figcaption {
+  padding: 15px 0 0 0;
+  font-weight: normal;
+  font-size: 90%;
+  line-height: 1.4em;
+}
+/* line 296, ../sass/core/_base.scss */
+#epub .reveal-modal figcaption > strong {
+  font-weight: bold;
+  color: #666666;
+}
 
 /* Theme  */
 /* line 6, ../sass/theme/_prelim.scss */

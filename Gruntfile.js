@@ -81,7 +81,7 @@ module.exports = function(grunt) {
             'build/javascripts/foundation/foundation.js': 'javascripts/foundation/foundation.js',
             'build/javascripts/foundation/foundation.tooltips.js': 'javascripts/foundation/foundation.tooltips.js',
             'build/javascripts/foundation/foundation.reveal.js': 'javascripts/foundation/foundation.reveal.js',
-            'build/javascripts/foundation/foundation.reveal.js': 'javascripts/foundation/foundation.section.js',
+            'build/javascripts/foundation/foundation.section.js': 'javascripts/foundation/foundation.section.js',
 
             'build/javascripts/galleria/galleria-1.2.9.js': 'javascripts/galleria/galleria-1.2.9.js',
             'build/javascripts/cambridge/main.js': 'javascripts/cambridge/main.js',
@@ -122,6 +122,20 @@ module.exports = function(grunt) {
 
 
 
+      ftpush: {
+          build: {
+            auth: {
+              host: 'thestevensons.name',
+              port: 21,
+              authKey: 'key1'
+            },
+            src: 'build',
+            dest: '/public_html/cambridge/test',
+            exclusions: ['path/to/source/folder/**/.DS_Store', 'path/to/source/folder/**/Thumbs.db', 'dist/tmp'],
+            keep: ['/important/images/at/server/*.jpg']
+          }
+        },
+
 
 
 
@@ -153,6 +167,8 @@ module.exports = function(grunt) {
  	grunt.registerTask('deploy', [
       'clean', 'cssmin', 'uglify', 'imagemin', 'copy'
    ]);
+
+  
 
  	// Default task
   	grunt.registerTask('default', [
