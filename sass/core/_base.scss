@@ -46,9 +46,6 @@
 	figure{
 		width:100%;
 		margin: 10px 0;
-		@media #{$small} {
-			width:70%;
-		}
 	}
 
 	figcaption{
@@ -56,7 +53,7 @@
 		font-weight:normal;
 		font-size: $base-font-size * 0.95;
 		line-height: 1.2em;
-		span{
+		strong{
 			font-weight:bold;
 		}
 	}
@@ -206,6 +203,14 @@
 	}
 
 
+
+
+	// iFrames
+	// ================================================================================================
+	iframe{margin-bottom: 1em;}
+
+
+
 	// Block grid / Image tile
 	// ================================================================================================
 	.image-tile-2,
@@ -226,6 +231,8 @@
 		.image-tile-3{@include block-grid(3, $block-grid-default-spacing)};
 		.image-tile-4{@include block-grid(4, $block-grid-default-spacing)};
 	}
+
+
 
 
 
@@ -282,26 +289,54 @@
 		float: right;
 	}
 
-	
+}
 
-	// Reveal lightbox overide
-	// ================================================================================================
-	.reveal-modal{
-		img{width:100%;}
-		figcaption{
-			padding:15px 0 0 0;
-			font-weight:normal;
-			font-size: $base-font-size * 0.90;
-			line-height: 1.4em;
-			> strong{
-				font-weight:bold;
-				color: $grey;
-			}
 
+
+
+// Reveal lightbox overide
+// ================================================================================================
+
+// Provides the Zoom icon
+figure {
+	a[data-reveal-id]{
+		span{	
+			float: right;
+			position: relative;
+			top: -41px;
+			right: 0;
+			font-size: 1.6em;
+			padding:0.3em;
+			background-color: #000;
+			color: #fff;
 		}
 	}
-
-
-
-
+	a:hover{
+		span{
+			background-color:#fff;
+			color: #000;
+		}
+	}
 }
+
+// Overide deault foundation behaviour. 
+// Also CC styles aren't applied as they are scoped to the #epub ID
+// ================================================================================================
+
+.reveal-modal{
+	figure,img{width: 100%}
+	figcaption{
+		padding:15px 0 0 0;
+		font-weight:normal;
+		font-size: $base-font-size * 0.90;
+		line-height: 1.4em;
+		> strong{
+			font-weight:bold;
+			color: $grey;
+		}
+	}
+}
+
+
+
+

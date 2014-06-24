@@ -69,25 +69,27 @@
 	}
 
 
+	// Caption
 	figcaption{
-		span{
+		strong{
 			color: $grey;
 		}
 	}
 
-	table{
-		caption{
-			span{
-				color: $grey;
-			}
+	.caption{
+		strong{
+			color: $grey;
 		}
 	}
+	
 
 	.has-tip{
 		background-color:lighten($tooltiip-color,50);
 		padding:0.2em;
 		@include rounded-all-corners(0.6em);
-
+			&:hover{
+				background-color:lighten($tooltiip-color,30);
+			}
 	}
 }
 

@@ -12,7 +12,7 @@
 			background-color: nth($tint-list, $i);
 			height:100% !important;
 
-			.interview{
+			.profile{
 		    	background-color:#fff;
 		    	h3{
 		    		background-color:nth($colors-list, $i);
@@ -54,7 +54,7 @@
 			background-color: nth($tint-list, $i);
 			height:100% !important;
 
-			.interview{
+			.profile{
 		    	background-color:#fff;
 		    	h3{
 		    		background-color:nth($colors-list, $i);
@@ -90,8 +90,10 @@
 
 
 	.eoc{
+		margin-top: -5px;
+
 		.content{
-			padding:0 1em 1em 1em;
+			padding:1em;
 		}
 
 		figure{

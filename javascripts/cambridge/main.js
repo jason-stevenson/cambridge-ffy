@@ -40,22 +40,19 @@ $( document ).ready(function() {
 	$('<div class="bottom"></div>').insertAfter('.interactive-panel .inner');
 	
 
-
-
-
-
-
-	// $('.end-of-chapter .download a').html('<span class="icon-doc-solid"></span><div>Download</div>');
-
-
-
-	// // Coloured bullets
-
-	// $( ".end-of-chapter ul" ).each(function( index ) {
-	//   $('.end-of-chapter ul li').wrapInner('<span class="item"/>');
-	//   $(".end-of-chapter .item").css("color", "black");
-	// });
-
+	// Colour list items
 	 $('ol li').wrapInner('<span class="item"/></span>');
+
+
+
+	// GLOBAL
+	// ================================================================
+	// Lighbox / Modal
+	$('<span class="icon-search"></span>').insertAfter('figure a[data-reveal-id] img');
+
+
+
+
+	
 
 });
