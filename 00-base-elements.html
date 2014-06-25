@@ -184,14 +184,28 @@
 
 			<!-- Galleria -->
 			<h3>Galleria</h3>
-			<div class="galleria">
+			<div id= "gal1" class="galleria">
 			    <a href="images/covers/book1/chapter1-cover.jpg"><img src="images/covers/book1/chapter1-cover.jpg" data-title="My title" data-description="My description"></a>
 			    <a href="images/breakfast.jpg"><img src="images/breakfast.jpg" data-title="Another title" data-description="My <em>HTML</em> description"></a>
 			    <a href="images/microwave.jpg"><img src="images/microwave.jpg" data-title="Another title" data-description="My <em>HTML</em> description"></a>
 			    <a href="images/manu.jpg"><img src="images/manu.jpg" data-title="Another title" data-description="My <em>HTML</em> description"></a>
 			    <a href="images/donna.jpg"><img src="images/donna.jpg" data-title="Another title" data-description="My <em>HTML</em> description"></a>
 			</div>
+			<div class="caption">Caption</div>
 
+
+			<h3>Galleria</h3>
+			<div class="slideshow">
+				<div id= "gal2" class="galleria">
+				    <a href="images/covers/book1/chapter1-cover.jpg"><img src="images/covers/book1/chapter1-cover.jpg" data-title="My title" data-description="My description"></a>
+				    <a href="images/breakfast.jpg"><img src="images/breakfast.jpg" data-title="Another title" data-description="My <em>HTML</em> description"></a>
+				    <a href="images/microwave.jpg"><img src="images/microwave.jpg" data-title="Another title" data-description="My <em>HTML</em> description"></a>
+				    <a href="images/manu.jpg"><img src="images/manu.jpg" data-title="Another title" data-description="My <em>HTML</em> description"></a>
+				    <a href="images/donna.jpg"><img src="images/donna.jpg" data-title="Another title" data-description="My <em>HTML</em> description"></a>
+				</div>
+				<div class="caption">Caption</div>
+			</div>
+			
 
 
 			<!-- Flow player -->
@@ -213,12 +227,6 @@
 
 
 
-	
-
-
-
-
-
 
   	<script src="javascripts/vendor/jquery.js"></script>
 	<script src="javascripts/galleria/galleria-1.2.9.js"></script>
@@ -231,7 +239,26 @@
 	<script src="javascripts/cambridge/main.js"></script>
 	<script>
     	Galleria.loadTheme('javascripts/galleria/themes/classic/galleria.classic.min.js');
-    	Galleria.run('.galleria');
+    	
+		Galleria.ready(function(options) {
+		    this.bind('image', function(e) {
+		        var caption = e.galleriaData.title;
+
+		       	$(".caption").html(caption);
+		       console.log($(this).parent())
+
+		       	//console.log(e.galleriaData)
+		    });
+		});
+ 		
+
+    	Galleria.run('#gal1, #gal2');
+
+    	
+
 	</script>
+
+
+	
 </body>
 </html>
