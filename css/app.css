@@ -8138,11 +8138,11 @@ Chapter + Section covers
   	
   	Using a custom mixin here allows us to pass the increment 
      	variable through to generate the image path for the covers */
-  /* 	Assign mast colours 
+  /* 	Assign colours 
   =========================================================================== */
 }
 /* line 31, ../sass/theme/_covers.scss */
-#epub #book1.chapter-cover.chapter1 {
+#epub #book1.chapter-opener.chapter1 {
   background-image: url("../images/covers/book1/chapter1-cover.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -8153,7 +8153,7 @@ Chapter + Section covers
   background-size: cover;
 }
 /* line 34, ../sass/theme/_covers.scss */
-#epub #book2.chapter-cover.chapter1 {
+#epub #book2.chapter-opener.chapter1 {
   background-image: url("../images/covers/book2/chapter1-cover.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -8164,7 +8164,7 @@ Chapter + Section covers
   background-size: cover;
 }
 /* line 31, ../sass/theme/_covers.scss */
-#epub #book1.chapter-cover.chapter2 {
+#epub #book1.chapter-opener.chapter2 {
   background-image: url("../images/covers/book1/chapter2-cover.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -8175,7 +8175,7 @@ Chapter + Section covers
   background-size: cover;
 }
 /* line 34, ../sass/theme/_covers.scss */
-#epub #book2.chapter-cover.chapter2 {
+#epub #book2.chapter-opener.chapter2 {
   background-image: url("../images/covers/book2/chapter2-cover.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -8186,7 +8186,7 @@ Chapter + Section covers
   background-size: cover;
 }
 /* line 31, ../sass/theme/_covers.scss */
-#epub #book1.chapter-cover.chapter3 {
+#epub #book1.chapter-opener.chapter3 {
   background-image: url("../images/covers/book1/chapter3-cover.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -8197,7 +8197,7 @@ Chapter + Section covers
   background-size: cover;
 }
 /* line 34, ../sass/theme/_covers.scss */
-#epub #book2.chapter-cover.chapter3 {
+#epub #book2.chapter-opener.chapter3 {
   background-image: url("../images/covers/book2/chapter3-cover.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -8208,7 +8208,7 @@ Chapter + Section covers
   background-size: cover;
 }
 /* line 31, ../sass/theme/_covers.scss */
-#epub #book1.chapter-cover.chapter4 {
+#epub #book1.chapter-opener.chapter4 {
   background-image: url("../images/covers/book1/chapter4-cover.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -8219,7 +8219,7 @@ Chapter + Section covers
   background-size: cover;
 }
 /* line 34, ../sass/theme/_covers.scss */
-#epub #book2.chapter-cover.chapter4 {
+#epub #book2.chapter-opener.chapter4 {
   background-image: url("../images/covers/book2/chapter4-cover.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -8230,7 +8230,7 @@ Chapter + Section covers
   background-size: cover;
 }
 /* line 31, ../sass/theme/_covers.scss */
-#epub #book1.chapter-cover.chapter5 {
+#epub #book1.chapter-opener.chapter5 {
   background-image: url("../images/covers/book1/chapter5-cover.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -8241,7 +8241,7 @@ Chapter + Section covers
   background-size: cover;
 }
 /* line 34, ../sass/theme/_covers.scss */
-#epub #book2.chapter-cover.chapter5 {
+#epub #book2.chapter-opener.chapter5 {
   background-image: url("../images/covers/book2/chapter5-cover.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -8252,7 +8252,7 @@ Chapter + Section covers
   background-size: cover;
 }
 /* line 31, ../sass/theme/_covers.scss */
-#epub #book1.chapter-cover.chapter6 {
+#epub #book1.chapter-opener.chapter6 {
   background-image: url("../images/covers/book1/chapter6-cover.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -8263,7 +8263,7 @@ Chapter + Section covers
   background-size: cover;
 }
 /* line 34, ../sass/theme/_covers.scss */
-#epub #book2.chapter-cover.chapter6 {
+#epub #book2.chapter-opener.chapter6 {
   background-image: url("../images/covers/book2/chapter6-cover.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -8274,7 +8274,7 @@ Chapter + Section covers
   background-size: cover;
 }
 /* line 31, ../sass/theme/_covers.scss */
-#epub #book1.chapter-cover.chapter7 {
+#epub #book1.chapter-opener.chapter7 {
   background-image: url("../images/covers/book1/chapter7-cover.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -8285,7 +8285,7 @@ Chapter + Section covers
   background-size: cover;
 }
 /* line 34, ../sass/theme/_covers.scss */
-#epub #book2.chapter-cover.chapter7 {
+#epub #book2.chapter-opener.chapter7 {
   background-image: url("../images/covers/book2/chapter7-cover.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -8296,7 +8296,7 @@ Chapter + Section covers
   background-size: cover;
 }
 /* line 31, ../sass/theme/_covers.scss */
-#epub #book1.chapter-cover.chapter8 {
+#epub #book1.chapter-opener.chapter8 {
   background-image: url("../images/covers/book1/chapter8-cover.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -8307,7 +8307,7 @@ Chapter + Section covers
   background-size: cover;
 }
 /* line 34, ../sass/theme/_covers.scss */
-#epub #book2.chapter-cover.chapter8 {
+#epub #book2.chapter-opener.chapter8 {
   background-image: url("../images/covers/book2/chapter8-cover.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -8318,7 +8318,7 @@ Chapter + Section covers
   background-size: cover;
 }
 /* line 31, ../sass/theme/_covers.scss */
-#epub #book1.chapter-cover.chapter9 {
+#epub #book1.chapter-opener.chapter9 {
   background-image: url("../images/covers/book1/chapter9-cover.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -8329,7 +8329,7 @@ Chapter + Section covers
   background-size: cover;
 }
 /* line 34, ../sass/theme/_covers.scss */
-#epub #book2.chapter-cover.chapter9 {
+#epub #book2.chapter-opener.chapter9 {
   background-image: url("../images/covers/book2/chapter9-cover.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -8340,7 +8340,7 @@ Chapter + Section covers
   background-size: cover;
 }
 /* line 31, ../sass/theme/_covers.scss */
-#epub #book1.chapter-cover.chapter10 {
+#epub #book1.chapter-opener.chapter10 {
   background-image: url("../images/covers/book1/chapter10-cover.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -8351,7 +8351,7 @@ Chapter + Section covers
   background-size: cover;
 }
 /* line 34, ../sass/theme/_covers.scss */
-#epub #book2.chapter-cover.chapter10 {
+#epub #book2.chapter-opener.chapter10 {
   background-image: url("../images/covers/book2/chapter10-cover.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -8362,7 +8362,7 @@ Chapter + Section covers
   background-size: cover;
 }
 /* line 31, ../sass/theme/_covers.scss */
-#epub #book1.chapter-cover.chapter11 {
+#epub #book1.chapter-opener.chapter11 {
   background-image: url("../images/covers/book1/chapter11-cover.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -8373,7 +8373,7 @@ Chapter + Section covers
   background-size: cover;
 }
 /* line 34, ../sass/theme/_covers.scss */
-#epub #book2.chapter-cover.chapter11 {
+#epub #book2.chapter-opener.chapter11 {
   background-image: url("../images/covers/book2/chapter11-cover.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -8384,7 +8384,7 @@ Chapter + Section covers
   background-size: cover;
 }
 /* line 31, ../sass/theme/_covers.scss */
-#epub #book1.chapter-cover.chapter12 {
+#epub #book1.chapter-opener.chapter12 {
   background-image: url("../images/covers/book1/chapter12-cover.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -8395,7 +8395,7 @@ Chapter + Section covers
   background-size: cover;
 }
 /* line 34, ../sass/theme/_covers.scss */
-#epub #book2.chapter-cover.chapter12 {
+#epub #book2.chapter-opener.chapter12 {
   background-image: url("../images/covers/book2/chapter12-cover.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -8405,171 +8405,360 @@ Chapter + Section covers
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 47, ../sass/theme/_covers.scss */
-#epub #book1.chapter-cover.chapter1 .masthead {
+/* line 48, ../sass/theme/_covers.scss */
+#epub #book1.chapter-opener.chapter1 .masthead {
   background: #009280;
   /* The Fallback */
   background: rgba(0, 146, 128, 0.7);
 }
-/* line 47, ../sass/theme/_covers.scss */
-#epub #book1.chapter-cover.chapter2 .masthead {
+/* line 51, ../sass/theme/_covers.scss */
+#epub #book1.chapter-opener.chapter1 h3 {
+  color: #009280;
+}
+/* line 52, ../sass/theme/_covers.scss */
+#epub #book1.chapter-opener.chapter1 .how-much-panel {
+  background-color: #d9e9e2;
+}
+/* line 48, ../sass/theme/_covers.scss */
+#epub #book1.chapter-opener.chapter2 .masthead {
   background: #a32041;
   /* The Fallback */
   background: rgba(163, 32, 65, 0.7);
 }
-/* line 47, ../sass/theme/_covers.scss */
-#epub #book1.chapter-cover.chapter3 .masthead {
+/* line 51, ../sass/theme/_covers.scss */
+#epub #book1.chapter-opener.chapter2 h3 {
+  color: #a32041;
+}
+/* line 52, ../sass/theme/_covers.scss */
+#epub #book1.chapter-opener.chapter2 .how-much-panel {
+  background-color: #efd3cc;
+}
+/* line 48, ../sass/theme/_covers.scss */
+#epub #book1.chapter-opener.chapter3 .masthead {
   background: #2a86bb;
   /* The Fallback */
   background: rgba(42, 134, 187, 0.7);
 }
-/* line 47, ../sass/theme/_covers.scss */
-#epub #book1.chapter-cover.chapter4 .masthead {
+/* line 51, ../sass/theme/_covers.scss */
+#epub #book1.chapter-opener.chapter3 h3 {
+  color: #2a86bb;
+}
+/* line 52, ../sass/theme/_covers.scss */
+#epub #book1.chapter-opener.chapter3 .how-much-panel {
+  background-color: #dce6ef;
+}
+/* line 48, ../sass/theme/_covers.scss */
+#epub #book1.chapter-opener.chapter4 .masthead {
   background: #9bc63c;
   /* The Fallback */
   background: rgba(155, 198, 60, 0.7);
 }
-/* line 47, ../sass/theme/_covers.scss */
-#epub #book1.chapter-cover.chapter5 .masthead {
+/* line 51, ../sass/theme/_covers.scss */
+#epub #book1.chapter-opener.chapter4 h3 {
+  color: #9bc63c;
+}
+/* line 52, ../sass/theme/_covers.scss */
+#epub #book1.chapter-opener.chapter4 .how-much-panel {
+  background-color: #eff5d9;
+}
+/* line 48, ../sass/theme/_covers.scss */
+#epub #book1.chapter-opener.chapter5 .masthead {
   background: #663a58;
   /* The Fallback */
   background: rgba(102, 58, 88, 0.7);
 }
-/* line 47, ../sass/theme/_covers.scss */
-#epub #book1.chapter-cover.chapter6 .masthead {
+/* line 51, ../sass/theme/_covers.scss */
+#epub #book1.chapter-opener.chapter5 h3 {
+  color: #663a58;
+}
+/* line 52, ../sass/theme/_covers.scss */
+#epub #book1.chapter-opener.chapter5 .how-much-panel {
+  background-color: #dfd3d3;
+}
+/* line 48, ../sass/theme/_covers.scss */
+#epub #book1.chapter-opener.chapter6 .masthead {
   background: #757b38;
   /* The Fallback */
   background: rgba(117, 123, 56, 0.7);
 }
-/* line 47, ../sass/theme/_covers.scss */
-#epub #book1.chapter-cover.chapter7 .masthead {
+/* line 51, ../sass/theme/_covers.scss */
+#epub #book1.chapter-opener.chapter6 h3 {
+  color: #757b38;
+}
+/* line 52, ../sass/theme/_covers.scss */
+#epub #book1.chapter-opener.chapter6 .how-much-panel {
+  background-color: #e4e3cf;
+}
+/* line 48, ../sass/theme/_covers.scss */
+#epub #book1.chapter-opener.chapter7 .masthead {
   background: #009280;
   /* The Fallback */
   background: rgba(0, 146, 128, 0.7);
 }
-/* line 47, ../sass/theme/_covers.scss */
-#epub #book1.chapter-cover.chapter8 .masthead {
+/* line 51, ../sass/theme/_covers.scss */
+#epub #book1.chapter-opener.chapter7 h3 {
+  color: #009280;
+}
+/* line 52, ../sass/theme/_covers.scss */
+#epub #book1.chapter-opener.chapter7 .how-much-panel {
+  background-color: #d9e9e2;
+}
+/* line 48, ../sass/theme/_covers.scss */
+#epub #book1.chapter-opener.chapter8 .masthead {
   background: #a32041;
   /* The Fallback */
   background: rgba(163, 32, 65, 0.7);
 }
-/* line 47, ../sass/theme/_covers.scss */
-#epub #book1.chapter-cover.chapter9 .masthead {
+/* line 51, ../sass/theme/_covers.scss */
+#epub #book1.chapter-opener.chapter8 h3 {
+  color: #a32041;
+}
+/* line 52, ../sass/theme/_covers.scss */
+#epub #book1.chapter-opener.chapter8 .how-much-panel {
+  background-color: #efd3cc;
+}
+/* line 48, ../sass/theme/_covers.scss */
+#epub #book1.chapter-opener.chapter9 .masthead {
   background: #2a86bb;
   /* The Fallback */
   background: rgba(42, 134, 187, 0.7);
 }
-/* line 47, ../sass/theme/_covers.scss */
-#epub #book1.chapter-cover.chapter10 .masthead {
+/* line 51, ../sass/theme/_covers.scss */
+#epub #book1.chapter-opener.chapter9 h3 {
+  color: #2a86bb;
+}
+/* line 52, ../sass/theme/_covers.scss */
+#epub #book1.chapter-opener.chapter9 .how-much-panel {
+  background-color: #dce6ef;
+}
+/* line 48, ../sass/theme/_covers.scss */
+#epub #book1.chapter-opener.chapter10 .masthead {
   background: #9bc63c;
   /* The Fallback */
   background: rgba(155, 198, 60, 0.7);
 }
-/* line 47, ../sass/theme/_covers.scss */
-#epub #book1.chapter-cover.chapter11 .masthead {
+/* line 51, ../sass/theme/_covers.scss */
+#epub #book1.chapter-opener.chapter10 h3 {
+  color: #9bc63c;
+}
+/* line 52, ../sass/theme/_covers.scss */
+#epub #book1.chapter-opener.chapter10 .how-much-panel {
+  background-color: #eff5d9;
+}
+/* line 48, ../sass/theme/_covers.scss */
+#epub #book1.chapter-opener.chapter11 .masthead {
   background: #663a58;
   /* The Fallback */
   background: rgba(102, 58, 88, 0.7);
 }
-/* line 47, ../sass/theme/_covers.scss */
-#epub #book1.chapter-cover.chapter12 .masthead {
+/* line 51, ../sass/theme/_covers.scss */
+#epub #book1.chapter-opener.chapter11 h3 {
+  color: #663a58;
+}
+/* line 52, ../sass/theme/_covers.scss */
+#epub #book1.chapter-opener.chapter11 .how-much-panel {
+  background-color: #dfd3d3;
+}
+/* line 48, ../sass/theme/_covers.scss */
+#epub #book1.chapter-opener.chapter12 .masthead {
   background: #757b38;
   /* The Fallback */
   background: rgba(117, 123, 56, 0.7);
 }
-/* line 56, ../sass/theme/_covers.scss */
-#epub #book2.chapter-cover.chapter1 .masthead {
+/* line 51, ../sass/theme/_covers.scss */
+#epub #book1.chapter-opener.chapter12 h3 {
+  color: #757b38;
+}
+/* line 52, ../sass/theme/_covers.scss */
+#epub #book1.chapter-opener.chapter12 .how-much-panel {
+  background-color: #e4e3cf;
+}
+/* line 60, ../sass/theme/_covers.scss */
+#epub #book2.chapter-opener.chapter1 .masthead {
   background: #a55261;
   /* The Fallback */
   background: rgba(165, 82, 97, 0.7);
 }
-/* line 56, ../sass/theme/_covers.scss */
-#epub #book2.chapter-cover.chapter2 .masthead {
+/* line 65, ../sass/theme/_covers.scss */
+#epub #book2.chapter-opener.chapter1 h3 {
+  color: #a55261;
+}
+/* line 66, ../sass/theme/_covers.scss */
+#epub #book2.chapter-opener.chapter1 .how-much-panel {
+  background-color: #eedcd8;
+}
+/* line 60, ../sass/theme/_covers.scss */
+#epub #book2.chapter-opener.chapter2 .masthead {
   background: #757a38;
   /* The Fallback */
   background: rgba(117, 122, 56, 0.7);
 }
-/* line 56, ../sass/theme/_covers.scss */
-#epub #book2.chapter-cover.chapter3 .masthead {
+/* line 65, ../sass/theme/_covers.scss */
+#epub #book2.chapter-opener.chapter2 h3 {
+  color: #757a38;
+}
+/* line 66, ../sass/theme/_covers.scss */
+#epub #book2.chapter-opener.chapter2 .how-much-panel {
+  background-color: #e4e3cf;
+}
+/* line 60, ../sass/theme/_covers.scss */
+#epub #book2.chapter-opener.chapter3 .masthead {
   background: #663a58;
   /* The Fallback */
   background: rgba(102, 58, 88, 0.7);
 }
-/* line 56, ../sass/theme/_covers.scss */
-#epub #book2.chapter-cover.chapter4 .masthead {
-  background: #cb532a;
-  /* The Fallback */
-  background: rgba(203, 83, 42, 0.7);
+/* line 65, ../sass/theme/_covers.scss */
+#epub #book2.chapter-opener.chapter3 h3 {
+  color: #663a58;
 }
-/* line 56, ../sass/theme/_covers.scss */
-#epub #book2.chapter-cover.chapter5 .masthead {
-  background: #a55261;
-  /* The Fallback */
-  background: rgba(165, 82, 97, 0.7);
+/* line 66, ../sass/theme/_covers.scss */
+#epub #book2.chapter-opener.chapter3 .how-much-panel {
+  background-color: #ded2d3;
 }
-/* line 56, ../sass/theme/_covers.scss */
-#epub #book2.chapter-cover.chapter6 .masthead {
-  background: #757a38;
-  /* The Fallback */
-  background: rgba(117, 122, 56, 0.7);
-}
-/* line 56, ../sass/theme/_covers.scss */
-#epub #book2.chapter-cover.chapter7 .masthead {
-  background: #663a58;
-  /* The Fallback */
-  background: rgba(102, 58, 88, 0.7);
-}
-/* line 56, ../sass/theme/_covers.scss */
-#epub #book2.chapter-cover.chapter8 .masthead {
+/* line 60, ../sass/theme/_covers.scss */
+#epub #book2.chapter-opener.chapter4 .masthead {
   background: #cb532a;
   /* The Fallback */
   background: rgba(203, 83, 42, 0.7);
 }
 /* line 65, ../sass/theme/_covers.scss */
-#epub .chapter-cover .masthead {
+#epub #book2.chapter-opener.chapter4 h3 {
+  color: #cb532a;
+}
+/* line 66, ../sass/theme/_covers.scss */
+#epub #book2.chapter-opener.chapter4 .how-much-panel {
+  background-color: #f9ddc8;
+}
+/* line 60, ../sass/theme/_covers.scss */
+#epub #book2.chapter-opener.chapter5 .masthead {
+  background: #a55261;
+  /* The Fallback */
+  background: rgba(165, 82, 97, 0.7);
+}
+/* line 65, ../sass/theme/_covers.scss */
+#epub #book2.chapter-opener.chapter5 h3 {
+  color: #a55261;
+}
+/* line 66, ../sass/theme/_covers.scss */
+#epub #book2.chapter-opener.chapter5 .how-much-panel {
+  background-color: #eedcd8;
+}
+/* line 60, ../sass/theme/_covers.scss */
+#epub #book2.chapter-opener.chapter6 .masthead {
+  background: #757a38;
+  /* The Fallback */
+  background: rgba(117, 122, 56, 0.7);
+}
+/* line 65, ../sass/theme/_covers.scss */
+#epub #book2.chapter-opener.chapter6 h3 {
+  color: #757a38;
+}
+/* line 66, ../sass/theme/_covers.scss */
+#epub #book2.chapter-opener.chapter6 .how-much-panel {
+  background-color: #e4e3cf;
+}
+/* line 60, ../sass/theme/_covers.scss */
+#epub #book2.chapter-opener.chapter7 .masthead {
+  background: #663a58;
+  /* The Fallback */
+  background: rgba(102, 58, 88, 0.7);
+}
+/* line 65, ../sass/theme/_covers.scss */
+#epub #book2.chapter-opener.chapter7 h3 {
+  color: #663a58;
+}
+/* line 66, ../sass/theme/_covers.scss */
+#epub #book2.chapter-opener.chapter7 .how-much-panel {
+  background-color: #ded2d3;
+}
+/* line 60, ../sass/theme/_covers.scss */
+#epub #book2.chapter-opener.chapter8 .masthead {
+  background: #cb532a;
+  /* The Fallback */
+  background: rgba(203, 83, 42, 0.7);
+}
+/* line 65, ../sass/theme/_covers.scss */
+#epub #book2.chapter-opener.chapter8 h3 {
+  color: #cb532a;
+}
+/* line 66, ../sass/theme/_covers.scss */
+#epub #book2.chapter-opener.chapter8 .how-much-panel {
+  background-color: #f9ddc8;
+}
+/* line 72, ../sass/theme/_covers.scss */
+#epub .wrapper {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 64em;
+}
+/* line 3, ../sass/core/_mixins.scss */
+#epub .wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 74, ../sass/theme/_covers.scss */
+#epub .wrapper .inner {
   position: relative;
-  top: 50px;
+  padding-left: 1.875em;
+  padding-right: 1.875em;
+  width: 100%;
+  float: left;
+}
+/* line 80, ../sass/theme/_covers.scss */
+#epub .chapter-opener {
+  height: 400px;
+  padding-top: 70px;
+}
+/* line 84, ../sass/theme/_covers.scss */
+#epub .chapter-opener .masthead {
+  margin-bottom: 150px;
   text-align: right;
   color: #fff;
   text-transform: uppercase;
-  padding: 2.5em;
   font-weight: 200;
+  padding: 1em;
 }
-/* line 74, ../sass/theme/_covers.scss */
-#epub .chapter-cover .masthead .chapter {
+@media only screen and (min-width: 768px) {
+  /* line 84, ../sass/theme/_covers.scss */
+  #epub .chapter-opener .masthead {
+    padding: 2.5em;
+  }
+}
+/* line 95, ../sass/theme/_covers.scss */
+#epub .chapter-opener .masthead .chapter {
   font-size: 1.625em;
   line-height: 2em;
 }
-/* line 78, ../sass/theme/_covers.scss */
-#epub .chapter-cover .masthead .title {
+/* line 99, ../sass/theme/_covers.scss */
+#epub .chapter-opener .masthead .title {
   font-size: 2.5em;
   line-height: 1.2em;
   text-align: right;
   padding: 0;
 }
-/* line 89, ../sass/theme/_covers.scss */
-#epub .cover-caption {
-  background-color: #FFF;
-  padding: 2em;
-  position: absolute;
-  bottom: 0px;
+/* line 108, ../sass/theme/_covers.scss */
+#epub .content {
   width: 100%;
-  font-size: 0.9em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 64em;
 }
-/* line 96, ../sass/theme/_covers.scss */
-#epub .cover-caption span {
-  color: #666666;
+/* line 3, ../sass/core/_mixins.scss */
+#epub .content:after {
+  content: "";
+  display: table;
+  clear: both;
 }
-
-/* line 3, ../sass/theme/_chapter-opener.scss */
-#epub {
-  /* Generate colours for each chapter opener panel  */
-  /* Book 1 */
-  /* Book 2*/
-}
-/* line 8, ../sass/theme/_chapter-opener.scss */
+/* line 112, ../sass/theme/_covers.scss */
 #epub .how-much-panel {
   padding: 0.5em 1.5em;
+  margin-bottom: 1.5em;
   -moz-border-radius-topleft: 0;
   -moz-border-radius-topright: 0;
   -moz-border-radius-bottomright: 20px;
@@ -8582,166 +8771,23 @@ Chapter + Section covers
   border-top-right-radius: 0;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
+  position: relative;
+  padding-left: 1.875em;
+  padding-right: 1.875em;
+  width: 100%;
+  float: left;
 }
-/* line 20, ../sass/theme/_chapter-opener.scss */
-#epub #book1.chapter-opener.chapter1 h3 {
-  color: #009280;
+/* line 118, ../sass/theme/_covers.scss */
+#epub .cover-caption {
+  background-color: #fff;
+  width: 100%;
+  font-size: 0.9em;
+  margin-bottom: 1.1em;
+  text-align: right;
 }
-/* line 21, ../sass/theme/_chapter-opener.scss */
-#epub #book1.chapter-opener.chapter1 .how-much-panel {
-  background-color: #d9e9e2;
-}
-/* line 20, ../sass/theme/_chapter-opener.scss */
-#epub #book1.chapter-opener.chapter2 h3 {
-  color: #a32041;
-}
-/* line 21, ../sass/theme/_chapter-opener.scss */
-#epub #book1.chapter-opener.chapter2 .how-much-panel {
-  background-color: #efd3cc;
-}
-/* line 20, ../sass/theme/_chapter-opener.scss */
-#epub #book1.chapter-opener.chapter3 h3 {
-  color: #2a86bb;
-}
-/* line 21, ../sass/theme/_chapter-opener.scss */
-#epub #book1.chapter-opener.chapter3 .how-much-panel {
-  background-color: #dce6ef;
-}
-/* line 20, ../sass/theme/_chapter-opener.scss */
-#epub #book1.chapter-opener.chapter4 h3 {
-  color: #9bc63c;
-}
-/* line 21, ../sass/theme/_chapter-opener.scss */
-#epub #book1.chapter-opener.chapter4 .how-much-panel {
-  background-color: #eff5d9;
-}
-/* line 20, ../sass/theme/_chapter-opener.scss */
-#epub #book1.chapter-opener.chapter5 h3 {
-  color: #663a58;
-}
-/* line 21, ../sass/theme/_chapter-opener.scss */
-#epub #book1.chapter-opener.chapter5 .how-much-panel {
-  background-color: #dfd3d3;
-}
-/* line 20, ../sass/theme/_chapter-opener.scss */
-#epub #book1.chapter-opener.chapter6 h3 {
-  color: #757b38;
-}
-/* line 21, ../sass/theme/_chapter-opener.scss */
-#epub #book1.chapter-opener.chapter6 .how-much-panel {
-  background-color: #e4e3cf;
-}
-/* line 20, ../sass/theme/_chapter-opener.scss */
-#epub #book1.chapter-opener.chapter7 h3 {
-  color: #009280;
-}
-/* line 21, ../sass/theme/_chapter-opener.scss */
-#epub #book1.chapter-opener.chapter7 .how-much-panel {
-  background-color: #d9e9e2;
-}
-/* line 20, ../sass/theme/_chapter-opener.scss */
-#epub #book1.chapter-opener.chapter8 h3 {
-  color: #a32041;
-}
-/* line 21, ../sass/theme/_chapter-opener.scss */
-#epub #book1.chapter-opener.chapter8 .how-much-panel {
-  background-color: #efd3cc;
-}
-/* line 20, ../sass/theme/_chapter-opener.scss */
-#epub #book1.chapter-opener.chapter9 h3 {
-  color: #2a86bb;
-}
-/* line 21, ../sass/theme/_chapter-opener.scss */
-#epub #book1.chapter-opener.chapter9 .how-much-panel {
-  background-color: #dce6ef;
-}
-/* line 20, ../sass/theme/_chapter-opener.scss */
-#epub #book1.chapter-opener.chapter10 h3 {
-  color: #9bc63c;
-}
-/* line 21, ../sass/theme/_chapter-opener.scss */
-#epub #book1.chapter-opener.chapter10 .how-much-panel {
-  background-color: #eff5d9;
-}
-/* line 20, ../sass/theme/_chapter-opener.scss */
-#epub #book1.chapter-opener.chapter11 h3 {
-  color: #663a58;
-}
-/* line 21, ../sass/theme/_chapter-opener.scss */
-#epub #book1.chapter-opener.chapter11 .how-much-panel {
-  background-color: #dfd3d3;
-}
-/* line 20, ../sass/theme/_chapter-opener.scss */
-#epub #book1.chapter-opener.chapter12 h3 {
-  color: #757b38;
-}
-/* line 21, ../sass/theme/_chapter-opener.scss */
-#epub #book1.chapter-opener.chapter12 .how-much-panel {
-  background-color: #e4e3cf;
-}
-/* line 32, ../sass/theme/_chapter-opener.scss */
-#epub #book2.chapter-opener.chapter1 h3 {
-  color: #a55261;
-}
-/* line 33, ../sass/theme/_chapter-opener.scss */
-#epub #book2.chapter-opener.chapter1 .how-much-panel {
-  background-color: #eedcd8;
-}
-/* line 32, ../sass/theme/_chapter-opener.scss */
-#epub #book2.chapter-opener.chapter2 h3 {
-  color: #757a38;
-}
-/* line 33, ../sass/theme/_chapter-opener.scss */
-#epub #book2.chapter-opener.chapter2 .how-much-panel {
-  background-color: #e4e3cf;
-}
-/* line 32, ../sass/theme/_chapter-opener.scss */
-#epub #book2.chapter-opener.chapter3 h3 {
-  color: #663a58;
-}
-/* line 33, ../sass/theme/_chapter-opener.scss */
-#epub #book2.chapter-opener.chapter3 .how-much-panel {
-  background-color: #ded2d3;
-}
-/* line 32, ../sass/theme/_chapter-opener.scss */
-#epub #book2.chapter-opener.chapter4 h3 {
-  color: #cb532a;
-}
-/* line 33, ../sass/theme/_chapter-opener.scss */
-#epub #book2.chapter-opener.chapter4 .how-much-panel {
-  background-color: #f9ddc8;
-}
-/* line 32, ../sass/theme/_chapter-opener.scss */
-#epub #book2.chapter-opener.chapter5 h3 {
-  color: #a55261;
-}
-/* line 33, ../sass/theme/_chapter-opener.scss */
-#epub #book2.chapter-opener.chapter5 .how-much-panel {
-  background-color: #eedcd8;
-}
-/* line 32, ../sass/theme/_chapter-opener.scss */
-#epub #book2.chapter-opener.chapter6 h3 {
-  color: #757a38;
-}
-/* line 33, ../sass/theme/_chapter-opener.scss */
-#epub #book2.chapter-opener.chapter6 .how-much-panel {
-  background-color: #e4e3cf;
-}
-/* line 32, ../sass/theme/_chapter-opener.scss */
-#epub #book2.chapter-opener.chapter7 h3 {
-  color: #663a58;
-}
-/* line 33, ../sass/theme/_chapter-opener.scss */
-#epub #book2.chapter-opener.chapter7 .how-much-panel {
-  background-color: #ded2d3;
-}
-/* line 32, ../sass/theme/_chapter-opener.scss */
-#epub #book2.chapter-opener.chapter8 h3 {
-  color: #cb532a;
-}
-/* line 33, ../sass/theme/_chapter-opener.scss */
-#epub #book2.chapter-opener.chapter8 .how-much-panel {
-  background-color: #f9ddc8;
+/* line 124, ../sass/theme/_covers.scss */
+#epub .cover-caption span {
+  color: #666666;
 }
 
 /* Page elements */

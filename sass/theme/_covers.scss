@@ -27,76 +27,103 @@ Chapter + Section covers
 	Using a custom mixin here allows us to pass the increment 
    	variable through to generate the image path for the covers */
 
- @for $i from 1 through 12 {
-	#book1.chapter-cover.chapter#{$i} {
-		@include coverBackground(1,$i);
+	 @for $i from 1 through 12 {
+		#book1.chapter-opener.chapter#{$i} {
+			@include coverBackground(1,$i);
+		}
+		#book2.chapter-opener.chapter#{$i} {
+			@include coverBackground(2, $i);
+		}
 	}
-	#book2.chapter-cover.chapter#{$i} {
-		@include coverBackground(2, $i);
-	}
-}
 
 
-
-/* 	Assign mast colours 
+/* 	Assign colours 
 =========================================================================== */
 
-$colors-list: $book1-chapter1, $book1-chapter2, $book1-chapter3, $book1-chapter4, $book1-chapter5, $book1-chapter6, $book1-chapter7, $book1-chapter8, $book1-chapter9, $book1-chapter10, $book1-chapter11, $book1-chapter12;
-@for $i from 1 through length($colors-list) {
-	#book1.chapter-cover.chapter#{$i} {
-		.masthead{
-			@include background-opacity(nth($colors-list, $i));
+	$colors-list: $book1-chapter1, $book1-chapter2, $book1-chapter3, $book1-chapter4, $book1-chapter5, $book1-chapter6, $book1-chapter7, $book1-chapter8, $book1-chapter9, $book1-chapter10, $book1-chapter11, $book1-chapter12;
+	$tint-list: $book1-chapter1-tint, $book1-chapter2-tint, $book1-chapter3-tint, $book1-chapter4-tint, $book1-chapter5-tint, $book1-chapter6-tint, $book1-chapter7-tint, $book1-chapter8-tint, $book1-chapter9-tint, $book1-chapter10-tint, $book1-chapter11-tint, $book1-chapter12-tint;
+
+	@for $i from 1 through length($colors-list) {
+		#book1.chapter-opener.chapter#{$i} {
+			.masthead{
+				@include background-opacity(nth($colors-list, $i));
+			}
+			h3{color: nth($colors-list, $i)};
+			.how-much-panel{background-color: nth($tint-list, $i)}
 		}
 	}
-}
 
-$colors-list: $book2-chapter1, $book2-chapter2, $book2-chapter3, $book2-chapter4, $book2-chapter5, $book2-chapter6, $book2-chapter7, $book2-chapter8;
-@for $i from 1 through length($colors-list) {
-	#book2.chapter-cover.chapter#{$i} {
-		.masthead{
-			@include background-opacity(nth($colors-list, $i));
+	$colors-list: $book2-chapter1, $book2-chapter2, $book2-chapter3, $book2-chapter4, $book2-chapter5, $book2-chapter6, $book2-chapter7, $book2-chapter8;
+	$tint-list: $book2-chapter1-tint, $book2-chapter2-tint, $book2-chapter3-tint, $book2-chapter4-tint, $book2-chapter5-tint, $book2-chapter6-tint, $book2-chapter7-tint, $book2-chapter8-tint;
+	@for $i from 1 through length($colors-list) {
+		#book2.chapter-opener.chapter#{$i} {
+			.masthead{
+				@include background-opacity(nth($colors-list, $i));
+			}
+		}
+		#book2.chapter-opener.chapter#{$i} {
+	        h3{color: nth($colors-list, $i)};
+			.how-much-panel{background-color: nth($tint-list, $i);}
+		}
+
+	}
+
+	// Master head 
+	.wrapper{
+		@include grid-row;
+		.inner{
+			@include grid-column(12);
 		}
 	}
-}
 
 
+	.chapter-opener{
+		height: 400px;
+		padding-top: 70px;
 
-.chapter-cover{
-	.masthead{
-		position: relative;
-		top: 50px;
-		text-align: right;
-		color: #fff;
-		text-transform: uppercase;
-		padding: 2.5em;
-		font-weight: 200;
-
-		.chapter{
-			font-size: $h3-font-size;
-			line-height: 2em;
-		}
-		.title{
-			font-size: $h1-font-size;
-			line-height: 1.2em;
+		.masthead{
+			margin-bottom: 150px;
 			text-align: right;
-			padding: 0;
+			color: #fff;
+			text-transform: uppercase;
+			font-weight: 200;
+			padding: 1em;	
+			@media #{$small} {
+				padding: 2.5em;		
+			}
+
+			.chapter{
+				font-size: $h3-font-size;
+				line-height: 2em;
+			}
+			.title{
+				font-size: $h1-font-size;
+				line-height: 1.2em;
+				text-align: right;
+				padding: 0;
+			}
 		}
-
 	}
-	
-}
 
-.cover-caption{
-	background-color: #FFF;
-	padding:2em;
-	position: absolute;
-	bottom: 0px;
-	width: 100%;
-	font-size:0.9em;
-	span{
-		color: $grey;
+	.content{
+		@include grid-row;
 	}
-}
 
+	.how-much-panel{
+		padding: 0.5em 1.5em;
+		margin-bottom: 1.5em;
+		@include rounded-corners(0,0,20px,20px);
+		@include grid-column(12);
+	}
+	.cover-caption{
+		background-color: #fff;
+		width: 100%;
+		font-size:0.9em;
+		margin-bottom: 1.1em;
+		text-align: right;
+		span{
+			color: $grey;
+		}
+	}
 
 }
