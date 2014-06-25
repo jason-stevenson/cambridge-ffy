@@ -12,7 +12,7 @@ $( document ).ready(function() {
     });
 	
 
-	$( ".chapter, .title" ).wrapAll('<div class="masthead"></div>');
+	$( ".chapter-opener .chapter, .chapter-opener .title" ).wrapAll('<div class="masthead"></div>');
 	$( ".masthead" ).wrapInner('<div class="wrapper"></div>');
 	$( ".wrapper" ).wrapInner('<div class="inner"></div>');
 
