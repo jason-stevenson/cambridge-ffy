@@ -18,20 +18,34 @@ $( document ).ready(function() {
 	// EOC
  	// ================================================================
 	$('.eoc').wrapInner('<div class="content"></div>');
-	$('.eoc .download a').html('<span class="icon-doc-solid"></span><div>Download</div>');
+	$('.eoc .download a').html('<span class="icon-doc-solid"></span><div></div>');
 
 
 	// Panels
  	// ================================================================
 	// Investigate Panels
-	$('.investigate-panel').wrapInner('<div class="content"></div>');
+	//$('.investigate-panel').wrapInner('<div class="content"></div>');
+	$('.investigate-panel .download a').html('<span class="icon-doc-solid"></span><div></div>');
+
+	// Design brief panel
+	$('.design-brief-panel .download a').html('<span class="icon-doc-solid"></span><div></div>');
+
+	// Collaborate Panels
+	//$('.collaborate-panel').wrapInner('<div class="content"></div>');
+	$('.collaborate-panel .download a').html('<span class="icon-doc-solid"></span><div></div>');
+
+	// Solution Panels
+	$('.solution-panel .download a').html('<span class="icon-doc-solid"></span><div></div>');
+
+	// Reflect Panels
+	$('.reflect-panel .download a').html('<span class="icon-doc-solid"></span><div></div>');
 
 
 	//Acitivity panel
 	$('.activity-panel').wrapInner('<div class="inner"></div>');
 	$('.activity-panel').prepend('<div class="top"></div>');
 	$('<div class="bottom"></div>').insertAfter('.activity-panel .inner');
-	$('.activity-panel .download a').html('<span class="icon-doc-solid"></span><div>Download</div>');
+	$('.activity-panel .download a').html('<span class="icon-doc-solid"></span><div></div>');
 
 
 	//Acitivity panel

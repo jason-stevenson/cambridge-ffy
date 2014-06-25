@@ -75,10 +75,15 @@
 			color: $grey;
 		}
 	}
-
+	caption{
+		strong{
+			color: $grey;
+		}
+	}
 	.caption{
 		strong{
 			color: $grey;
+			font-size: $base-font-size * 0.90;
 		}
 	}
 	

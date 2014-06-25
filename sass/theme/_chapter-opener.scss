@@ -3,14 +3,15 @@
 #epub{
 
 
-	/* Generate colours for each chapter opener panel  */
+	
 	
 	.how-much-panel{
 		padding: 0.5em 1.5em;
 		@include rounded-corners(0,0,20px,20px)
 	}
 
-
+	/* Generate colours for each chapter opener panel  */
+	
 	/* Book 1 */
 	$colors-list: $book1-chapter1, $book1-chapter2, $book1-chapter3, $book1-chapter4, $book1-chapter5, $book1-chapter6, $book1-chapter7, $book1-chapter8, $book1-chapter9, $book1-chapter10, $book1-chapter11, $book1-chapter12;
 	$tint-list: $book1-chapter1-tint, $book1-chapter2-tint, $book1-chapter3-tint, $book1-chapter4-tint, $book1-chapter5-tint, $book1-chapter6-tint, $book1-chapter7-tint, $book1-chapter8-tint, $book1-chapter9-tint, $book1-chapter10-tint, $book1-chapter11-tint, $book1-chapter12-tint;

@@ -3,10 +3,10 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-<path fill="#3C657C" d="M13.381,1.59c7.041,0,66.908-1.291,71.999-1.291c5.09,0,11.365,2.365,11.365,11.389
-	s-7.398,46.413-9.383,54.794c-1.982,8.378-8.021,10.742-11.008,10.742c-2.986,0-22.377-1.505-22.377-1.505L59.395,100l-24.9-25.141
-	c0,0-17.406-1.009-21.113-1.292c-3.706-0.278-7.22-5.368-8.119-11.171C4.36,56.596,3.905,14.67,4.36,12.547
+<path fill="#3C657C" d="M13.381,1.59c7.041,0,66.908-1.291,71.999-1.291s11.365,2.365,11.365,11.389s-7.397,46.414-9.384,54.794
+	c-1.981,8.377-8.021,10.742-11.008,10.742c-2.985,0-22.377-1.506-22.377-1.506L59.395,100L34.495,74.859
+	c0,0-17.406-1.01-21.113-1.293c-3.706-0.277-7.22-5.367-8.119-11.17C4.36,56.596,3.905,14.67,4.36,12.547
 	C4.813,10.422,6.343,1.59,13.381,1.59"/>
-<text transform="matrix(0.9978 -0.0657 0.0657 0.9978 3.7295 36.7139)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'BritannicBold'" font-size="31.306" letter-spacing="-2">T</tspan><tspan x="13.745" y="0" fill="#FFFFFF" font-family="'BritannicBold'" font-size="31.306">asty</tspan></text>
-<text transform="matrix(0.9978 -0.0657 0.0657 0.9978 18.4072 61.4111)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'BritannicBold'" font-size="31.306" letter-spacing="-2">T</tspan><tspan x="13.746" y="0" fill="#FFFFFF" font-family="'BritannicBold'" font-size="31.306">rivia</tspan></text>
+<text transform="matrix(1.0612 -0.0657 0.0699 0.9976 13.2046 35.833)" fill="#FFFFFF" font-family="'AvenirNextCondensed-DemiBold'" font-size="29.2625">Tasty</text>
+<text transform="matrix(1.0612 -0.0657 0.0699 0.9976 24.3994 63.2803)" fill="#FFFFFF" font-family="'AvenirNextCondensed-DemiBold'" font-size="29.2625">Trivia</text>
 </svg>

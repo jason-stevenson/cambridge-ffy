@@ -16,24 +16,32 @@
 		margin-bottom:2em;
 
 		// Icon re-sizing
-		@include svg-bg("../images/ui/investigate-icon", no-repeat, 12px 12px);
+		@include svg-bg("../images/ui/investigate-icon", no-repeat, 98% 10%);
 		background-size: 50px auto;
 		@media #{$small} {
-			@include svg-bg("../images/ui/investigate-icon", no-repeat, 20px 20px);
+			@include svg-bg("../images/ui/investigate-icon", no-repeat, 98% 10%);
 			background-size: 65px auto;
 		}
 
-		.content{
-			@include grid-column(11, false, false, 1, false, false, false, left);
-		}
 		h3{
 			color: #000 !important;
 		}
+
+		.download{	
+			a{color:darken($investigate-color,30);
+				&:hover{
+					@include download-colour($grey);
+				}
+			}
+		}
+		.content{
+			@include grid-column(9, false, false, 2, false, false, false, false);
+		}
+		
 	}
 
 
-	.interactive-panel,
-	.activity-panel{
+	.activity-panel-base{
 			clear: both;
 			margin-bottom: 45px;
 		.top{
@@ -53,30 +61,33 @@
 			border:1px solid $activity-color;
 			overflow: auto;
 		}
+		h3{
+			padding:0;
+			margin:0;
+			margin-bottom: 0.8em;
+			font-size:$h4-font-size;
+			color: $activity-color !important;
+		}
+		ol li{
+			color: $activity-color;
+		}
+	}
 
-		.download{
-			float: left;
-			width: 100%;
-			padding-right: 0;
-			a{
-				color:$activity-color;
+
+	.activity-panel{
+		@extend .activity-panel-base;
+
+		.download{	
+			a{color:darken($activity-color,0);
 				&:hover{
-					@include download-colour($grey, 0);
+					@include download-colour($grey);
 				}
 			}
-			@media #{$small} {
-				width: 20%;
-				padding-right: 30px;
-			}
-
 		}
 		.content{
-			float: left;
-			width: 100%;
-			@media #{$small} {
-				width: 80%;
-			}
+			@include grid-column(10, false, false, 2, false, false, false, false);
 		}
+
 		.quote{
 			border:1px solid #000;
 			background-color: #eee;
@@ -99,13 +110,6 @@
 			}
 		}
 
-		h3{
-			padding:0;
-			margin:0;
-			margin-bottom: 0.8em;
-			font-size:$h4-font-size;
-			color: $activity-color !important;
-		}
 		table{
 			border:2px solid $activity-color !important;
 			th{
@@ -119,17 +123,14 @@
 				border-bottom:2px solid $activity-color !important;
 			}
 		}
-
-		ol li{
-			color: $activity-color;
-		}
 	}
 
 
 
 	.interactive-panel{
-		.content{
+		@extend .activity-panel-base;
 
+		.content{
 			width: 100%;
 			h3{
 				text-transform: uppercase;
@@ -142,23 +143,42 @@
 		}
 	}
 
+	.solution-panel{
+		h3{
+			background-color:$solution-color;
+			color: #fff !important;
+			text-transform: uppercase;
+			padding: 0.3em;
+			text-align:center;
+			margin:0;
+		}
+		.download{	
+			a{color:darken($solution-color,0);
+				&:hover{
+					@include download-colour($grey);
+				}
+			}
+		}
+		.content{
+			@include grid-column(10, false, false, 2, false, false, false, false);
+		}
+	}
+
 
 
 	.trivia-panel{
-			width: 70%;
+			width: 100%;
 			margin:0 auto;
-
 			clear: both;
 			margin-bottom: 25px;
 			height: 140px;
-			// Icon re-sizing
 			@include svg-bg("../images/ui/trivia-icon", no-repeat, 20px 20px);
 			background-size: 70px auto;
 			@media #{$small} {
+				width: 70%;
 				@include svg-bg("../images/ui/trivia-icon", no-repeat, 20px 20px);
 				background-size: 100px auto;
 			}
-
 			p{	
 				margin-left: 140px;
 				padding-top: 25px;
@@ -167,35 +187,56 @@
 			}
 	}
 
+	.chapter1 .trivia-panel{
+		@extend .trivia-panel;
+		@include svg-bg("../images/ui/trivia-icon-2", no-repeat, 20px 20px);
+		@media #{$small} {
+				@include svg-bg("../images/ui/trivia-icon-2", no-repeat, 20px 20px);
+			}
+	}
 
 
 	.design-brief-panel{
+		overflow: auto;
 		background-color:desaturate(lighten($design-brief-color, 65),30);
 		border:2px solid $design-brief-color;
-		padding:1.6em;
+		padding:1em;
 		margin-bottom: 1.5em;
+
 		h3{
 			color: $design-brief-color !important; 
+		}
+		.download{	
+			a{color:darken($design-brief-color,10);
+				&:hover{
+					@include download-colour($grey);
+				}
+			}
+		}
+		.content{
+			@include grid-column(10, false, false, 2, false, false, false, false);
 		}
 	}
 
 
 
+
+
+
 	.collaborate-panel{
 			clear: both;
-			padding:15px 50px;
+			padding:15px 20px;
 			margin:35px 0;
 			border:1px solid $collaborate-color;
+			overflow: auto;
 			@include rounded-all-corners(1em);
 
 			// Icon re-sizing
-			@include svg-bg("../images/ui/collaborate-icon", no-repeat, 12px 12px);
-				background-size: auto 100px;
+			@include svg-bg("../images/ui/collaborate-icon", no-repeat, 95% 35%);
+				background-size: auto 180px;
 			@media #{$small} {
-				@include svg-bg("../images/ui/collaborate-icon", no-repeat, 20px 20px);
-				background-size: auto 80px;
+				background-size: auto 120px;
 			}
-
 
 			h3{
 				padding:0;
@@ -204,17 +245,37 @@
 				text-transform: uppercase;
 				color: $collaborate-color !important;
 			}
+			.download{	
+				a{color:darken($collaborate-color,10);
+					&:hover{
+						@include download-colour($grey);
+					}
+				}
+			}
+			.content{
+				@include grid-column(9, false, false, 2, false, false, false, false);
+			}
+
 	}
 
 
 
 		
-	/* Lets review */
-	.lets-review{
+	/* Reflect on learning */
+	.reflect-panel{
+		h3{
+			text-transform: uppercase;
+		}
 		ol{
 			li{
 				margin:5px;
 			}
+		}
+		.download{	
+			a:hover{@include download-colour($grey)}
+		}
+		.content{
+			@include grid-column(9, false, false, 2, false, false, false, false);
 		}
 	}
 }
@@ -222,18 +283,20 @@
 $colors-list: $book1-chapter1, $book1-chapter2, $book1-chapter3, $book1-chapter4, $book1-chapter5, $book1-chapter6, $book1-chapter7, $book1-chapter8, $book1-chapter9, $book1-chapter10, $book1-chapter11, $book1-chapter12;
 @for $i from 1 through length($colors-list) {
 	#book1.chapter#{$i} {
-		.lets-review{
+		.reflect-panel{
 			h3{color: nth($colors-list, $i) !important}
-			li{color: nth($colors-list, $i)};
+			li{color: nth($colors-list, $i)}
+			.download a{color: nth($colors-list, $i)}
 		}
     }
 }
 $colors-list: $book2-chapter1, $book2-chapter2, $book2-chapter3, $book2-chapter4, $book2-chapter5, $book2-chapter6, $book2-chapter7, $book2-chapter8;
 @for $i from 1 through length($colors-list) {
 	#book2.chapter#{$i} {
-		.lets-review{
+		.reflect-panel{
 			h3{color: nth($colors-list, $i) !important}
-			li{color: nth($colors-list, $i)};
+			li{color: nth($colors-list, $i)}
+			.download a{color: nth($colors-list, $i)}
 		}
 	}
 }

@@ -51,7 +51,7 @@
 	figcaption{
 		padding:15px 0;
 		font-weight:normal;
-		font-size: $base-font-size * 0.95;
+		font-size: $base-font-size * 0.90;
 		line-height: 1.2em;
 		strong{
 			font-weight:bold;
@@ -85,10 +85,10 @@
 		caption-side:bottom;
 		text-align:left;
 		font-weight:normal;
-		font-size: $base-font-size * 0.80;
+		font-size: $base-font-size * 0.90;
 		line-height: 1.2em;
 		padding:10px 0;
-		span{
+		strong{
 			font-weight:bold;
 		}
 	}
@@ -108,38 +108,47 @@
 	// Download button
 	// ================================================================================================
 	.download{
-		@include clearfix();
-		text-align:left;
-		margin-bottom: 25px;
-
+		font-size: 4.5em;
+		float: left;
+		padding:0.1em;
 		@media #{$small} {
-			text-align:center;
-		}
-
-		>a >span {
-			font-size:emCalc(60px);
-			float: left;
-
-			@media #{$small} {
-				float: none;
-				font-size:emCalc(80px);
-			}
-		}
-		>a >span + div{
-			margin-top: 15px;
-			margin-left: 10px;
-			margin-bottom: 15px;
-			font-size:emCalc(20px);
-	
-			float: left;
-
-			@media #{$small} {
-				float: none;
-				margin: 15px 0px 0px 0px;
-				font-size:emCalc(20px);
-			}
+			padding:0.3em;
+			font-size: 5.2em;		
 		}
 	}
+	// .download{
+	// 	@include clearfix();
+	// 	text-align:left;
+	// 	margin-bottom: 25px;
+
+	// 	@media #{$small} {
+	// 		text-align:center;
+	// 	}
+
+	// 	>a >span {
+	// 		font-size:emCalc(60px);
+	// 		float: left;
+
+	// 		@media #{$small} {
+	// 			float: none;
+	// 			font-size:emCalc(80px);
+	// 		}
+	// 	}
+	// 	>a >span + div{
+	// 		margin-top: 15px;
+	// 		margin-left: 10px;
+	// 		margin-bottom: 15px;
+	// 		font-size:emCalc(20px);
+	
+	// 		float: left;
+
+	// 		@media #{$small} {
+	// 			float: none;
+	// 			margin: 15px 0px 0px 0px;
+	// 			font-size:emCalc(20px);
+	// 		}
+	// 	}
+	// }
 
 
 
@@ -296,7 +305,6 @@
 
 // Reveal lightbox overide
 // ================================================================================================
-
 // Provides the Zoom icon
 figure {
 	a[data-reveal-id]{
@@ -320,7 +328,7 @@ figure {
 }
 
 // Overide deault foundation behaviour. 
-// Also CC styles aren't applied as they are scoped to the #epub ID
+// CamCore styles aren't applied as they are scoped to the #epub ID
 // ================================================================================================
 
 .reveal-modal{
