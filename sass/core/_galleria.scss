@@ -2,16 +2,23 @@
 
 /* Galleria
 ================================================================================================ */
-.galleria{
-	height: 450px;
-	margin-bottom: 2em;
-	margin:0 auto;
-	margin-bottom: 2em;
+.slideshow{
 	width:100%;
+	margin:0 auto;
 	
 	@media #{$small} {	
 		width:60%;
 	}
+	.caption{
+		padding: 0.8em 0;
+	}
+}
+
+.galleria{
+	height: 450px;
+	margin-bottom: 2em;
+	margin:0 auto;
+	width:100%;
 }
 .galleria-container{
 	@include linear-gradient(#000, #333);
@@ -20,3 +27,4 @@
 		@include box-shadow(5px, 5px, 15px, rgba(0,0,0,0.3));
 	}
 }
+

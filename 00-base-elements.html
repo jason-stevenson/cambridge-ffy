@@ -183,42 +183,19 @@
 
 
 			<!-- Galleria -->
-			<h3>Galleria</h3>
-			<div id= "gal1" class="galleria">
-			    <a href="images/covers/book1/chapter1-cover.jpg"><img src="images/covers/book1/chapter1-cover.jpg" data-title="My title" data-description="My description"></a>
-			    <a href="images/breakfast.jpg"><img src="images/breakfast.jpg" data-title="Another title" data-description="My <em>HTML</em> description"></a>
-			    <a href="images/microwave.jpg"><img src="images/microwave.jpg" data-title="Another title" data-description="My <em>HTML</em> description"></a>
-			    <a href="images/manu.jpg"><img src="images/manu.jpg" data-title="Another title" data-description="My <em>HTML</em> description"></a>
-			    <a href="images/donna.jpg"><img src="images/donna.jpg" data-title="Another title" data-description="My <em>HTML</em> description"></a>
-			</div>
-			<div class="caption">Caption</div>
-
-
-			<h3>Galleria</h3>
 			<div class="slideshow">
-				<div id= "gal2" class="galleria">
-				    <a href="images/covers/book1/chapter1-cover.jpg"><img src="images/covers/book1/chapter1-cover.jpg" data-title="My title" data-description="My description"></a>
-				    <a href="images/breakfast.jpg"><img src="images/breakfast.jpg" data-title="Another title" data-description="My <em>HTML</em> description"></a>
-				    <a href="images/microwave.jpg"><img src="images/microwave.jpg" data-title="Another title" data-description="My <em>HTML</em> description"></a>
-				    <a href="images/manu.jpg"><img src="images/manu.jpg" data-title="Another title" data-description="My <em>HTML</em> description"></a>
-				    <a href="images/donna.jpg"><img src="images/donna.jpg" data-title="Another title" data-description="My <em>HTML</em> description"></a>
+				<div id= "gal1" class="galleria">
+				    <a href="images/covers/book1/chapter1-cover.jpg"><img src="images/covers/book1/chapter1-cover.jpg" data-title="Food on a plate"></a>
+				    <a href="images/breakfast.jpg"><img src="images/breakfast.jpg" data-title="Breakfast"></a>
+				    <a href="images/microwave.jpg"><img src="images/microwave.jpg" data-title="Lady using a microwave"></a>
+				    <a href="images/manu.jpg"><img src="images/manu.jpg" data-title="Manu"></a>
+				    <a href="images/donna.jpg"><img src="images/donna.jpg" data-title="Donna Hay"></a>
 				</div>
-				<div class="caption">Caption</div>
+				<div class="caption"></div>
 			</div>
 			
 
 
-			<!-- Flow player -->
-			<div id="VA0201" data-ratio="0.5333" data-key="$462477215300594" class="flowplayer fixed-controls play-button is-splash" data-swf="flowplayer.swf" data-embed="false"> 
-			<video> 
-				<source type="video/webm" src="http://cambridge.edu.au/go/interactive_book/books/geography_7/filestore/video/AN0201.webm"/> 
-				<source type="video/mp4" src="http://cambridge.edu.au/go/interactive_book/books/geography_7/filestore/video/AN0201.mp4"/> 
-				<source type="video/ogv" src="http://cambridge.edu.au/go/interactive_book/books/geography_7/filestore/video/AN0201.ogv"/> 
-				<p class="sanserif medium">Your device does not natively support video.</p> 
-			</video> 
-			</div> 
-			<p class="manualCaption figcaption"><strong>Source 2.6</strong> The water cycle (<b>03:45</b>)</p> 
-			</div> 
 
 		</div>
 	</div>
@@ -239,23 +216,13 @@
 	<script src="javascripts/cambridge/main.js"></script>
 	<script>
     	Galleria.loadTheme('javascripts/galleria/themes/classic/galleria.classic.min.js');
-    	
 		Galleria.ready(function(options) {
 		    this.bind('image', function(e) {
 		        var caption = e.galleriaData.title;
-
-		       	$(".caption").html(caption);
-		       console.log($(this).parent())
-
-		       	//console.log(e.galleriaData)
+		       	$(".slideshow .caption").html(caption);
 		    });
 		});
- 		
-
-    	Galleria.run('#gal1, #gal2');
-
-    	
-
+    	Galleria.run('#gal1');
 	</script>
 
 

@@ -5,11 +5,11 @@ $( document ).ready(function() {
  	// ================================================================
 	// As we cant use the body element to apply the cover images to
 	// we need to re-size the internal div to fill the browser window
-	// $('.chapter-cover').css({'height':($(window).height())});
+	$('#cover').css({'height':($(window).height())});
 
-	// $(window).resize(function(){
- //    	$('.chapter-cover').css({'height':($(window).height())});
- //    });
+	$(window).resize(function(){
+    	$('#cover').css({'height':($(window).height())});
+    });
 	
 
 	$( ".chapter, .title" ).wrapAll('<div class="masthead"></div>');

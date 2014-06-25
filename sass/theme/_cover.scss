@@ -1,0 +1,10 @@
+
+
+
+
+#epub{
+	#cover{
+		@include cover-background("covers/epub.jpg");
+		background-size:contain;
+	}
+}
