@@ -12,6 +12,13 @@
     	background-color:$recipe-color;
     	padding:0;
     	.content{
+    		.download a{
+    			color:nth($colors-list, $i);
+    			&:hover{
+    				color: $grey;
+					@include hoverColor;
+    			}
+    		}
 	    	ol li{
 	    		color:nth($colors-list, $i)
 	    	}
@@ -42,6 +49,13 @@
     	background-color:$recipe-color;
     	padding:0;
     	.content{
+    		.download a{
+    			color:nth($colors-list, $i);
+    			&:hover{
+    				color: $grey;
+					@include hoverColor;
+    			}
+    		}
 	    	ol li{
 	    		color:nth($colors-list, $i)
 	    	}
@@ -71,15 +85,20 @@
 	}
 	.content{
 		padding:1.4em;
-
 		.info{
-			width: 45%;
+			width: 100%;
+			@media #{$small} {
+				width: 40%;
+			}
 			float: left;
+			margin-left: 1em;
 		}
 		.time{
-			width: 45%;
+			width: 100%;
+			@media #{$small} {
+				width: 40%;
+			}
 			padding:1.5em;
-			
 			float: right;
 		}
 		.ingredients{
@@ -111,6 +130,8 @@
 		}
 
 		figure{
+			float: left;
+			
 			img{
 				width: 100%;
 			}

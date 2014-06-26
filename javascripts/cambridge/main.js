@@ -23,7 +23,8 @@ $( document ).ready(function() {
 	$('.eoc').wrapInner('<div class="content"></div>');
 	$('.eoc .download a').html('<span class="icon-doc-solid"></span><div></div>');
 
-
+	// Recipes
+	$('.recipes .download a').html('<span class="icon-doc-solid"></span><div></div>');
 	// Panels
  	// ================================================================
 	// Investigate Panels

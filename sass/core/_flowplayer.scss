@@ -1,0 +1,16 @@
+
+
+.video{
+	width:100%;
+	margin:0 auto;
+	
+	@media #{$small} {	
+		width:80%;
+	}
+	.caption{
+		padding: 0.8em 0;
+	}
+}
+.flowplayer{
+	margin: 2em 0;
+}
