@@ -10,8 +10,7 @@ Rename produciton.js and remove uncompreseed version
 module.exports = function(grunt) {
 
   // load all grunt tasks
-  require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
-
+  
     grunt.initConfig({
       pkg: grunt.file.readJSON('package.json'),
 
@@ -123,56 +122,46 @@ module.exports = function(grunt) {
 
 
 
-      ftpush: {
-          build: {
-            auth: {
-              host: 'thestevensons.name',
-              port: 21,
-              authKey: 'key1'
-            },
-            src: 'build',
-            dest: '/public_html/cambridge/test',
-            exclusions: ['path/to/source/folder/**/.DS_Store', 'path/to/source/folder/**/Thumbs.db', 'dist/tmp'],
-            keep: ['/important/images/at/server/*.jpg']
-          }
-        },
-
-
-
 
     // Watch + Livereload
-		watch: {
-			sass: {
-				files: ['sass/**/*.scss'],
-				tasks: ['compass:dev']
-		},
+    watch: {
+      sass: {
+        files: ['sass/**/*.scss'],
+        tasks: ['compass:dev']
+    },
 
-		livereload: {
-			files: ['*.html', 'sass/*.scss', 'sass/**/*.scss', 'css/*.css', 'images/*', 'javascripts/**/*.js'],
-				options: {
-					livereload: true
-				}
-			},
-		}
+    livereload: {
+      files: ['*.html', 'sass/*.scss', 'sass/**/*.scss', 'css/*.css', 'images/*', 'javascripts/**/*.js'],
+        options: {
+          livereload: true
+        }
+      },
+    }
 
   });
 
 
 
-
-
+  grunt.loadNpmTasks('grunt-contrib-compass');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-contrib-copy');
 
 
 
    // Deploy task
- 	grunt.registerTask('deploy', [
+  grunt.registerTask('deploy', [
       'clean', 'cssmin', 'uglify', 'imagemin', 'copy'
    ]);
 
   
 
- 	// Default task
-  	grunt.registerTask('default', [
+  // Default task
+    grunt.registerTask('default', [
       'compass:dev' ,'watch'
    ]);
 

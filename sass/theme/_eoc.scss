@@ -30,7 +30,16 @@
 		    	}
 		    }
 
-			.download{a{color: nth($colors-list, $i) !important; float:left}};
+			.download{
+				width: 100%;
+				a{
+					color: nth($colors-list, $i) !important;
+					&:hover{
+						color: $grey !important;
+						@include hoverColor;
+						}
+					}
+			}
 				
 			h3{color: nth($colors-list, $i)}
 			h4{color: nth($colors-list, $i)}
@@ -44,6 +53,9 @@
 			}
 		}
 	}
+
+
+
 
 	$colors-list: $book2-chapter1, $book2-chapter2, $book2-chapter3, $book2-chapter4, $book2-chapter5, $book2-chapter6, $book2-chapter7, $book2-chapter8;
 	$tint-list: $book2-chapter1-tint, $book2-chapter2-tint, $book2-chapter3-tint, $book2-chapter4-tint, $book2-chapter5-tint, $book2-chapter6-tint, $book2-chapter7-tint, $book2-chapter8-tint;
@@ -72,7 +84,16 @@
 		    	}
 		    }
 
-			.download{a{color: nth($colors-list, $i) !important; float:left}};
+			.download{
+				width: 100%;
+				a{
+					color: nth($colors-list, $i) !important;
+					&:hover{
+						color: $grey !important;
+						@include hoverColor;
+						}
+					}
+			}
 				
 			h3{color: nth($colors-list, $i)}
 			h4{color: nth($colors-list, $i)}
@@ -91,6 +112,7 @@
 
 	.eoc{
 		margin-top: -5px;
+
 
 		.content{
 			padding:1em;
