@@ -381,6 +381,9 @@
 	<script src="javascripts/cambridge/main.js"></script>
 		<script>
     	Galleria.loadTheme('javascripts/galleria/themes/classic/galleria.classic.min.js');
+    	Galleria.configure({
+		    lightbox: true
+		});
 		Galleria.ready(function(options) {
 		    this.bind('image', function(e) {
 		        var caption = e.galleriaData.title;

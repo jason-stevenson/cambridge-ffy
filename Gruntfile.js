@@ -114,7 +114,8 @@ module.exports = function(grunt) {
           src: [
             '*.html',
             'fonts/*',
-            'javascripts/galleria/themes/**/*'
+            'javascripts/galleria/themes/**/*',
+            'javascripts/flowplayer/**/*'
           ],
           dest: 'build/',
         },
