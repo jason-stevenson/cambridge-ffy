@@ -8939,11 +8939,15 @@ Chapter + Section covers
 #epub #book1.recipes.chapter1 .content ol li {
   color: #009280;
 }
-/* line 26, ../sass/theme/_recipes.scss */
+/* line 25, ../sass/theme/_recipes.scss */
+#epub #book1.recipes.chapter1 .content figure {
+  float: left;
+}
+/* line 27, ../sass/theme/_recipes.scss */
 #epub #book1.recipes.chapter1 .title {
   background-color: #009280;
 }
-/* line 27, ../sass/theme/_recipes.scss */
+/* line 28, ../sass/theme/_recipes.scss */
 #epub #book1.recipes.chapter1 h2 {
   background: none;
   background-image: url("../images/ui/recipe-icon.png");
@@ -8953,7 +8957,7 @@ Chapter + Section covers
   background-size: 430px auto;
 }
 @media only screen and (min-width: 768px) {
-  /* line 27, ../sass/theme/_recipes.scss */
+  /* line 28, ../sass/theme/_recipes.scss */
   #epub #book1.recipes.chapter1 h2 {
     background-image: url("../images/ui/recipe-icon.png");
     background-image: none, url("../images/ui/recipe-icon.svg");
@@ -8962,11 +8966,11 @@ Chapter + Section covers
     background-size: 550px auto;
   }
 }
-/* line 35, ../sass/theme/_recipes.scss */
+/* line 36, ../sass/theme/_recipes.scss */
 #epub #book1.recipes.chapter1 h3, #epub #book1.recipes.chapter1 h4, #epub #book1.recipes.chapter1 .activity-panel .quote h5, #epub .activity-panel .quote #book1.recipes.chapter1 h5 {
   color: #009280;
 }
-/* line 36, ../sass/theme/_recipes.scss */
+/* line 37, ../sass/theme/_recipes.scss */
 #epub #book1.recipes.chapter1 .time {
   background-color: #d9e9e2;
 }
@@ -8992,11 +8996,15 @@ Chapter + Section covers
 #epub #book1.recipes.chapter2 .content ol li {
   color: #a32041;
 }
-/* line 26, ../sass/theme/_recipes.scss */
+/* line 25, ../sass/theme/_recipes.scss */
+#epub #book1.recipes.chapter2 .content figure {
+  float: left;
+}
+/* line 27, ../sass/theme/_recipes.scss */
 #epub #book1.recipes.chapter2 .title {
   background-color: #a32041;
 }
-/* line 27, ../sass/theme/_recipes.scss */
+/* line 28, ../sass/theme/_recipes.scss */
 #epub #book1.recipes.chapter2 h2 {
   background: none;
   background-image: url("../images/ui/recipe-icon.png");
@@ -9006,7 +9014,7 @@ Chapter + Section covers
   background-size: 430px auto;
 }
 @media only screen and (min-width: 768px) {
-  /* line 27, ../sass/theme/_recipes.scss */
+  /* line 28, ../sass/theme/_recipes.scss */
   #epub #book1.recipes.chapter2 h2 {
     background-image: url("../images/ui/recipe-icon.png");
     background-image: none, url("../images/ui/recipe-icon.svg");
@@ -9015,11 +9023,11 @@ Chapter + Section covers
     background-size: 550px auto;
   }
 }
-/* line 35, ../sass/theme/_recipes.scss */
+/* line 36, ../sass/theme/_recipes.scss */
 #epub #book1.recipes.chapter2 h3, #epub #book1.recipes.chapter2 h4, #epub #book1.recipes.chapter2 .activity-panel .quote h5, #epub .activity-panel .quote #book1.recipes.chapter2 h5 {
   color: #a32041;
 }
-/* line 36, ../sass/theme/_recipes.scss */
+/* line 37, ../sass/theme/_recipes.scss */
 #epub #book1.recipes.chapter2 .time {
   background-color: #efd3cc;
 }
@@ -9045,11 +9053,15 @@ Chapter + Section covers
 #epub #book1.recipes.chapter3 .content ol li {
   color: #2a86bb;
 }
-/* line 26, ../sass/theme/_recipes.scss */
+/* line 25, ../sass/theme/_recipes.scss */
+#epub #book1.recipes.chapter3 .content figure {
+  float: left;
+}
+/* line 27, ../sass/theme/_recipes.scss */
 #epub #book1.recipes.chapter3 .title {
   background-color: #2a86bb;
 }
-/* line 27, ../sass/theme/_recipes.scss */
+/* line 28, ../sass/theme/_recipes.scss */
 #epub #book1.recipes.chapter3 h2 {
   background: none;
   background-image: url("../images/ui/recipe-icon.png");
@@ -9059,7 +9071,7 @@ Chapter + Section covers
   background-size: 430px auto;
 }
 @media only screen and (min-width: 768px) {
-  /* line 27, ../sass/theme/_recipes.scss */
+  /* line 28, ../sass/theme/_recipes.scss */
   #epub #book1.recipes.chapter3 h2 {
     background-image: url("../images/ui/recipe-icon.png");
     background-image: none, url("../images/ui/recipe-icon.svg");
@@ -9068,11 +9080,11 @@ Chapter + Section covers
     background-size: 550px auto;
   }
 }
-/* line 35, ../sass/theme/_recipes.scss */
+/* line 36, ../sass/theme/_recipes.scss */
 #epub #book1.recipes.chapter3 h3, #epub #book1.recipes.chapter3 h4, #epub #book1.recipes.chapter3 .activity-panel .quote h5, #epub .activity-panel .quote #book1.recipes.chapter3 h5 {
   color: #2a86bb;
 }
-/* line 36, ../sass/theme/_recipes.scss */
+/* line 37, ../sass/theme/_recipes.scss */
 #epub #book1.recipes.chapter3 .time {
   background-color: #dce6ef;
 }
@@ -9098,11 +9110,15 @@ Chapter + Section covers
 #epub #book1.recipes.chapter4 .content ol li {
   color: #9bc63c;
 }
-/* line 26, ../sass/theme/_recipes.scss */
+/* line 25, ../sass/theme/_recipes.scss */
+#epub #book1.recipes.chapter4 .content figure {
+  float: left;
+}
+/* line 27, ../sass/theme/_recipes.scss */
 #epub #book1.recipes.chapter4 .title {
   background-color: #9bc63c;
 }
-/* line 27, ../sass/theme/_recipes.scss */
+/* line 28, ../sass/theme/_recipes.scss */
 #epub #book1.recipes.chapter4 h2 {
   background: none;
   background-image: url("../images/ui/recipe-icon.png");
@@ -9112,7 +9128,7 @@ Chapter + Section covers
   background-size: 430px auto;
 }
 @media only screen and (min-width: 768px) {
-  /* line 27, ../sass/theme/_recipes.scss */
+  /* line 28, ../sass/theme/_recipes.scss */
   #epub #book1.recipes.chapter4 h2 {
     background-image: url("../images/ui/recipe-icon.png");
     background-image: none, url("../images/ui/recipe-icon.svg");
@@ -9121,11 +9137,11 @@ Chapter + Section covers
     background-size: 550px auto;
   }
 }
-/* line 35, ../sass/theme/_recipes.scss */
+/* line 36, ../sass/theme/_recipes.scss */
 #epub #book1.recipes.chapter4 h3, #epub #book1.recipes.chapter4 h4, #epub #book1.recipes.chapter4 .activity-panel .quote h5, #epub .activity-panel .quote #book1.recipes.chapter4 h5 {
   color: #9bc63c;
 }
-/* line 36, ../sass/theme/_recipes.scss */
+/* line 37, ../sass/theme/_recipes.scss */
 #epub #book1.recipes.chapter4 .time {
   background-color: #eff5d9;
 }
@@ -9151,11 +9167,15 @@ Chapter + Section covers
 #epub #book1.recipes.chapter5 .content ol li {
   color: #663a58;
 }
-/* line 26, ../sass/theme/_recipes.scss */
+/* line 25, ../sass/theme/_recipes.scss */
+#epub #book1.recipes.chapter5 .content figure {
+  float: left;
+}
+/* line 27, ../sass/theme/_recipes.scss */
 #epub #book1.recipes.chapter5 .title {
   background-color: #663a58;
 }
-/* line 27, ../sass/theme/_recipes.scss */
+/* line 28, ../sass/theme/_recipes.scss */
 #epub #book1.recipes.chapter5 h2 {
   background: none;
   background-image: url("../images/ui/recipe-icon.png");
@@ -9165,7 +9185,7 @@ Chapter + Section covers
   background-size: 430px auto;
 }
 @media only screen and (min-width: 768px) {
-  /* line 27, ../sass/theme/_recipes.scss */
+  /* line 28, ../sass/theme/_recipes.scss */
   #epub #book1.recipes.chapter5 h2 {
     background-image: url("../images/ui/recipe-icon.png");
     background-image: none, url("../images/ui/recipe-icon.svg");
@@ -9174,11 +9194,11 @@ Chapter + Section covers
     background-size: 550px auto;
   }
 }
-/* line 35, ../sass/theme/_recipes.scss */
+/* line 36, ../sass/theme/_recipes.scss */
 #epub #book1.recipes.chapter5 h3, #epub #book1.recipes.chapter5 h4, #epub #book1.recipes.chapter5 .activity-panel .quote h5, #epub .activity-panel .quote #book1.recipes.chapter5 h5 {
   color: #663a58;
 }
-/* line 36, ../sass/theme/_recipes.scss */
+/* line 37, ../sass/theme/_recipes.scss */
 #epub #book1.recipes.chapter5 .time {
   background-color: #dfd3d3;
 }
@@ -9204,11 +9224,15 @@ Chapter + Section covers
 #epub #book1.recipes.chapter6 .content ol li {
   color: #757b38;
 }
-/* line 26, ../sass/theme/_recipes.scss */
+/* line 25, ../sass/theme/_recipes.scss */
+#epub #book1.recipes.chapter6 .content figure {
+  float: left;
+}
+/* line 27, ../sass/theme/_recipes.scss */
 #epub #book1.recipes.chapter6 .title {
   background-color: #757b38;
 }
-/* line 27, ../sass/theme/_recipes.scss */
+/* line 28, ../sass/theme/_recipes.scss */
 #epub #book1.recipes.chapter6 h2 {
   background: none;
   background-image: url("../images/ui/recipe-icon.png");
@@ -9218,7 +9242,7 @@ Chapter + Section covers
   background-size: 430px auto;
 }
 @media only screen and (min-width: 768px) {
-  /* line 27, ../sass/theme/_recipes.scss */
+  /* line 28, ../sass/theme/_recipes.scss */
   #epub #book1.recipes.chapter6 h2 {
     background-image: url("../images/ui/recipe-icon.png");
     background-image: none, url("../images/ui/recipe-icon.svg");
@@ -9227,11 +9251,11 @@ Chapter + Section covers
     background-size: 550px auto;
   }
 }
-/* line 35, ../sass/theme/_recipes.scss */
+/* line 36, ../sass/theme/_recipes.scss */
 #epub #book1.recipes.chapter6 h3, #epub #book1.recipes.chapter6 h4, #epub #book1.recipes.chapter6 .activity-panel .quote h5, #epub .activity-panel .quote #book1.recipes.chapter6 h5 {
   color: #757b38;
 }
-/* line 36, ../sass/theme/_recipes.scss */
+/* line 37, ../sass/theme/_recipes.scss */
 #epub #book1.recipes.chapter6 .time {
   background-color: #e4e3cf;
 }
@@ -9257,11 +9281,15 @@ Chapter + Section covers
 #epub #book1.recipes.chapter7 .content ol li {
   color: #009280;
 }
-/* line 26, ../sass/theme/_recipes.scss */
+/* line 25, ../sass/theme/_recipes.scss */
+#epub #book1.recipes.chapter7 .content figure {
+  float: left;
+}
+/* line 27, ../sass/theme/_recipes.scss */
 #epub #book1.recipes.chapter7 .title {
   background-color: #009280;
 }
-/* line 27, ../sass/theme/_recipes.scss */
+/* line 28, ../sass/theme/_recipes.scss */
 #epub #book1.recipes.chapter7 h2 {
   background: none;
   background-image: url("../images/ui/recipe-icon.png");
@@ -9271,7 +9299,7 @@ Chapter + Section covers
   background-size: 430px auto;
 }
 @media only screen and (min-width: 768px) {
-  /* line 27, ../sass/theme/_recipes.scss */
+  /* line 28, ../sass/theme/_recipes.scss */
   #epub #book1.recipes.chapter7 h2 {
     background-image: url("../images/ui/recipe-icon.png");
     background-image: none, url("../images/ui/recipe-icon.svg");
@@ -9280,11 +9308,11 @@ Chapter + Section covers
     background-size: 550px auto;
   }
 }
-/* line 35, ../sass/theme/_recipes.scss */
+/* line 36, ../sass/theme/_recipes.scss */
 #epub #book1.recipes.chapter7 h3, #epub #book1.recipes.chapter7 h4, #epub #book1.recipes.chapter7 .activity-panel .quote h5, #epub .activity-panel .quote #book1.recipes.chapter7 h5 {
   color: #009280;
 }
-/* line 36, ../sass/theme/_recipes.scss */
+/* line 37, ../sass/theme/_recipes.scss */
 #epub #book1.recipes.chapter7 .time {
   background-color: #d9e9e2;
 }
@@ -9310,11 +9338,15 @@ Chapter + Section covers
 #epub #book1.recipes.chapter8 .content ol li {
   color: #a32041;
 }
-/* line 26, ../sass/theme/_recipes.scss */
+/* line 25, ../sass/theme/_recipes.scss */
+#epub #book1.recipes.chapter8 .content figure {
+  float: left;
+}
+/* line 27, ../sass/theme/_recipes.scss */
 #epub #book1.recipes.chapter8 .title {
   background-color: #a32041;
 }
-/* line 27, ../sass/theme/_recipes.scss */
+/* line 28, ../sass/theme/_recipes.scss */
 #epub #book1.recipes.chapter8 h2 {
   background: none;
   background-image: url("../images/ui/recipe-icon.png");
@@ -9324,7 +9356,7 @@ Chapter + Section covers
   background-size: 430px auto;
 }
 @media only screen and (min-width: 768px) {
-  /* line 27, ../sass/theme/_recipes.scss */
+  /* line 28, ../sass/theme/_recipes.scss */
   #epub #book1.recipes.chapter8 h2 {
     background-image: url("../images/ui/recipe-icon.png");
     background-image: none, url("../images/ui/recipe-icon.svg");
@@ -9333,11 +9365,11 @@ Chapter + Section covers
     background-size: 550px auto;
   }
 }
-/* line 35, ../sass/theme/_recipes.scss */
+/* line 36, ../sass/theme/_recipes.scss */
 #epub #book1.recipes.chapter8 h3, #epub #book1.recipes.chapter8 h4, #epub #book1.recipes.chapter8 .activity-panel .quote h5, #epub .activity-panel .quote #book1.recipes.chapter8 h5 {
   color: #a32041;
 }
-/* line 36, ../sass/theme/_recipes.scss */
+/* line 37, ../sass/theme/_recipes.scss */
 #epub #book1.recipes.chapter8 .time {
   background-color: #efd3cc;
 }
@@ -9363,11 +9395,15 @@ Chapter + Section covers
 #epub #book1.recipes.chapter9 .content ol li {
   color: #2a86bb;
 }
-/* line 26, ../sass/theme/_recipes.scss */
+/* line 25, ../sass/theme/_recipes.scss */
+#epub #book1.recipes.chapter9 .content figure {
+  float: left;
+}
+/* line 27, ../sass/theme/_recipes.scss */
 #epub #book1.recipes.chapter9 .title {
   background-color: #2a86bb;
 }
-/* line 27, ../sass/theme/_recipes.scss */
+/* line 28, ../sass/theme/_recipes.scss */
 #epub #book1.recipes.chapter9 h2 {
   background: none;
   background-image: url("../images/ui/recipe-icon.png");
@@ -9377,7 +9413,7 @@ Chapter + Section covers
   background-size: 430px auto;
 }
 @media only screen and (min-width: 768px) {
-  /* line 27, ../sass/theme/_recipes.scss */
+  /* line 28, ../sass/theme/_recipes.scss */
   #epub #book1.recipes.chapter9 h2 {
     background-image: url("../images/ui/recipe-icon.png");
     background-image: none, url("../images/ui/recipe-icon.svg");
@@ -9386,11 +9422,11 @@ Chapter + Section covers
     background-size: 550px auto;
   }
 }
-/* line 35, ../sass/theme/_recipes.scss */
+/* line 36, ../sass/theme/_recipes.scss */
 #epub #book1.recipes.chapter9 h3, #epub #book1.recipes.chapter9 h4, #epub #book1.recipes.chapter9 .activity-panel .quote h5, #epub .activity-panel .quote #book1.recipes.chapter9 h5 {
   color: #2a86bb;
 }
-/* line 36, ../sass/theme/_recipes.scss */
+/* line 37, ../sass/theme/_recipes.scss */
 #epub #book1.recipes.chapter9 .time {
   background-color: #dce6ef;
 }
@@ -9416,11 +9452,15 @@ Chapter + Section covers
 #epub #book1.recipes.chapter10 .content ol li {
   color: #9bc63c;
 }
-/* line 26, ../sass/theme/_recipes.scss */
+/* line 25, ../sass/theme/_recipes.scss */
+#epub #book1.recipes.chapter10 .content figure {
+  float: left;
+}
+/* line 27, ../sass/theme/_recipes.scss */
 #epub #book1.recipes.chapter10 .title {
   background-color: #9bc63c;
 }
-/* line 27, ../sass/theme/_recipes.scss */
+/* line 28, ../sass/theme/_recipes.scss */
 #epub #book1.recipes.chapter10 h2 {
   background: none;
   background-image: url("../images/ui/recipe-icon.png");
@@ -9430,7 +9470,7 @@ Chapter + Section covers
   background-size: 430px auto;
 }
 @media only screen and (min-width: 768px) {
-  /* line 27, ../sass/theme/_recipes.scss */
+  /* line 28, ../sass/theme/_recipes.scss */
   #epub #book1.recipes.chapter10 h2 {
     background-image: url("../images/ui/recipe-icon.png");
     background-image: none, url("../images/ui/recipe-icon.svg");
@@ -9439,11 +9479,11 @@ Chapter + Section covers
     background-size: 550px auto;
   }
 }
-/* line 35, ../sass/theme/_recipes.scss */
+/* line 36, ../sass/theme/_recipes.scss */
 #epub #book1.recipes.chapter10 h3, #epub #book1.recipes.chapter10 h4, #epub #book1.recipes.chapter10 .activity-panel .quote h5, #epub .activity-panel .quote #book1.recipes.chapter10 h5 {
   color: #9bc63c;
 }
-/* line 36, ../sass/theme/_recipes.scss */
+/* line 37, ../sass/theme/_recipes.scss */
 #epub #book1.recipes.chapter10 .time {
   background-color: #eff5d9;
 }
@@ -9469,11 +9509,15 @@ Chapter + Section covers
 #epub #book1.recipes.chapter11 .content ol li {
   color: #663a58;
 }
-/* line 26, ../sass/theme/_recipes.scss */
+/* line 25, ../sass/theme/_recipes.scss */
+#epub #book1.recipes.chapter11 .content figure {
+  float: left;
+}
+/* line 27, ../sass/theme/_recipes.scss */
 #epub #book1.recipes.chapter11 .title {
   background-color: #663a58;
 }
-/* line 27, ../sass/theme/_recipes.scss */
+/* line 28, ../sass/theme/_recipes.scss */
 #epub #book1.recipes.chapter11 h2 {
   background: none;
   background-image: url("../images/ui/recipe-icon.png");
@@ -9483,7 +9527,7 @@ Chapter + Section covers
   background-size: 430px auto;
 }
 @media only screen and (min-width: 768px) {
-  /* line 27, ../sass/theme/_recipes.scss */
+  /* line 28, ../sass/theme/_recipes.scss */
   #epub #book1.recipes.chapter11 h2 {
     background-image: url("../images/ui/recipe-icon.png");
     background-image: none, url("../images/ui/recipe-icon.svg");
@@ -9492,11 +9536,11 @@ Chapter + Section covers
     background-size: 550px auto;
   }
 }
-/* line 35, ../sass/theme/_recipes.scss */
+/* line 36, ../sass/theme/_recipes.scss */
 #epub #book1.recipes.chapter11 h3, #epub #book1.recipes.chapter11 h4, #epub #book1.recipes.chapter11 .activity-panel .quote h5, #epub .activity-panel .quote #book1.recipes.chapter11 h5 {
   color: #663a58;
 }
-/* line 36, ../sass/theme/_recipes.scss */
+/* line 37, ../sass/theme/_recipes.scss */
 #epub #book1.recipes.chapter11 .time {
   background-color: #dfd3d3;
 }
@@ -9522,11 +9566,15 @@ Chapter + Section covers
 #epub #book1.recipes.chapter12 .content ol li {
   color: #757b38;
 }
-/* line 26, ../sass/theme/_recipes.scss */
+/* line 25, ../sass/theme/_recipes.scss */
+#epub #book1.recipes.chapter12 .content figure {
+  float: left;
+}
+/* line 27, ../sass/theme/_recipes.scss */
 #epub #book1.recipes.chapter12 .title {
   background-color: #757b38;
 }
-/* line 27, ../sass/theme/_recipes.scss */
+/* line 28, ../sass/theme/_recipes.scss */
 #epub #book1.recipes.chapter12 h2 {
   background: none;
   background-image: url("../images/ui/recipe-icon.png");
@@ -9536,7 +9584,7 @@ Chapter + Section covers
   background-size: 430px auto;
 }
 @media only screen and (min-width: 768px) {
-  /* line 27, ../sass/theme/_recipes.scss */
+  /* line 28, ../sass/theme/_recipes.scss */
   #epub #book1.recipes.chapter12 h2 {
     background-image: url("../images/ui/recipe-icon.png");
     background-image: none, url("../images/ui/recipe-icon.svg");
@@ -9545,24 +9593,24 @@ Chapter + Section covers
     background-size: 550px auto;
   }
 }
-/* line 35, ../sass/theme/_recipes.scss */
+/* line 36, ../sass/theme/_recipes.scss */
 #epub #book1.recipes.chapter12 h3, #epub #book1.recipes.chapter12 h4, #epub #book1.recipes.chapter12 .activity-panel .quote h5, #epub .activity-panel .quote #book1.recipes.chapter12 h5 {
   color: #757b38;
 }
-/* line 36, ../sass/theme/_recipes.scss */
+/* line 37, ../sass/theme/_recipes.scss */
 #epub #book1.recipes.chapter12 .time {
   background-color: #e4e3cf;
 }
-/* line 47, ../sass/theme/_recipes.scss */
+/* line 48, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter1 {
   background-color: #fff9ec;
   padding: 0;
 }
-/* line 52, ../sass/theme/_recipes.scss */
+/* line 53, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter1 .content .download a {
   color: #a55261;
 }
-/* line 54, ../sass/theme/_recipes.scss */
+/* line 55, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter1 .content .download a:hover {
   color: #666666;
   -webkit-transition: all 0.4s ease-in-out 0s;
@@ -9571,15 +9619,19 @@ Chapter + Section covers
   -ms-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
 }
-/* line 59, ../sass/theme/_recipes.scss */
+/* line 60, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter1 .content ol li {
   color: #a55261;
 }
 /* line 63, ../sass/theme/_recipes.scss */
+#epub #book2.recipes.chapter1 .content figure {
+  float: left;
+}
+/* line 65, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter1 .title {
   background-color: #a55261;
 }
-/* line 64, ../sass/theme/_recipes.scss */
+/* line 66, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter1 h2 {
   background: none;
   background-image: url("../images/ui/recipe-icon.png");
@@ -9589,7 +9641,7 @@ Chapter + Section covers
   background-size: 430px auto;
 }
 @media only screen and (min-width: 768px) {
-  /* line 64, ../sass/theme/_recipes.scss */
+  /* line 66, ../sass/theme/_recipes.scss */
   #epub #book2.recipes.chapter1 h2 {
     background-image: url("../images/ui/recipe-icon.png");
     background-image: none, url("../images/ui/recipe-icon.svg");
@@ -9598,24 +9650,24 @@ Chapter + Section covers
     background-size: 550px auto;
   }
 }
-/* line 72, ../sass/theme/_recipes.scss */
+/* line 74, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter1 h3, #epub #book2.recipes.chapter1 h4, #epub #book2.recipes.chapter1 .activity-panel .quote h5, #epub .activity-panel .quote #book2.recipes.chapter1 h5 {
   color: #a55261;
 }
-/* line 73, ../sass/theme/_recipes.scss */
+/* line 75, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter1 .time {
   background-color: #eedcd8;
 }
-/* line 47, ../sass/theme/_recipes.scss */
+/* line 48, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter2 {
   background-color: #fff9ec;
   padding: 0;
 }
-/* line 52, ../sass/theme/_recipes.scss */
+/* line 53, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter2 .content .download a {
   color: #757a38;
 }
-/* line 54, ../sass/theme/_recipes.scss */
+/* line 55, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter2 .content .download a:hover {
   color: #666666;
   -webkit-transition: all 0.4s ease-in-out 0s;
@@ -9624,15 +9676,19 @@ Chapter + Section covers
   -ms-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
 }
-/* line 59, ../sass/theme/_recipes.scss */
+/* line 60, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter2 .content ol li {
   color: #757a38;
 }
 /* line 63, ../sass/theme/_recipes.scss */
+#epub #book2.recipes.chapter2 .content figure {
+  float: left;
+}
+/* line 65, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter2 .title {
   background-color: #757a38;
 }
-/* line 64, ../sass/theme/_recipes.scss */
+/* line 66, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter2 h2 {
   background: none;
   background-image: url("../images/ui/recipe-icon.png");
@@ -9642,7 +9698,7 @@ Chapter + Section covers
   background-size: 430px auto;
 }
 @media only screen and (min-width: 768px) {
-  /* line 64, ../sass/theme/_recipes.scss */
+  /* line 66, ../sass/theme/_recipes.scss */
   #epub #book2.recipes.chapter2 h2 {
     background-image: url("../images/ui/recipe-icon.png");
     background-image: none, url("../images/ui/recipe-icon.svg");
@@ -9651,24 +9707,24 @@ Chapter + Section covers
     background-size: 550px auto;
   }
 }
-/* line 72, ../sass/theme/_recipes.scss */
+/* line 74, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter2 h3, #epub #book2.recipes.chapter2 h4, #epub #book2.recipes.chapter2 .activity-panel .quote h5, #epub .activity-panel .quote #book2.recipes.chapter2 h5 {
   color: #757a38;
 }
-/* line 73, ../sass/theme/_recipes.scss */
+/* line 75, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter2 .time {
   background-color: #e4e3cf;
 }
-/* line 47, ../sass/theme/_recipes.scss */
+/* line 48, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter3 {
   background-color: #fff9ec;
   padding: 0;
 }
-/* line 52, ../sass/theme/_recipes.scss */
+/* line 53, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter3 .content .download a {
   color: #663a58;
 }
-/* line 54, ../sass/theme/_recipes.scss */
+/* line 55, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter3 .content .download a:hover {
   color: #666666;
   -webkit-transition: all 0.4s ease-in-out 0s;
@@ -9677,15 +9733,19 @@ Chapter + Section covers
   -ms-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
 }
-/* line 59, ../sass/theme/_recipes.scss */
+/* line 60, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter3 .content ol li {
   color: #663a58;
 }
 /* line 63, ../sass/theme/_recipes.scss */
+#epub #book2.recipes.chapter3 .content figure {
+  float: left;
+}
+/* line 65, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter3 .title {
   background-color: #663a58;
 }
-/* line 64, ../sass/theme/_recipes.scss */
+/* line 66, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter3 h2 {
   background: none;
   background-image: url("../images/ui/recipe-icon.png");
@@ -9695,7 +9755,7 @@ Chapter + Section covers
   background-size: 430px auto;
 }
 @media only screen and (min-width: 768px) {
-  /* line 64, ../sass/theme/_recipes.scss */
+  /* line 66, ../sass/theme/_recipes.scss */
   #epub #book2.recipes.chapter3 h2 {
     background-image: url("../images/ui/recipe-icon.png");
     background-image: none, url("../images/ui/recipe-icon.svg");
@@ -9704,24 +9764,24 @@ Chapter + Section covers
     background-size: 550px auto;
   }
 }
-/* line 72, ../sass/theme/_recipes.scss */
+/* line 74, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter3 h3, #epub #book2.recipes.chapter3 h4, #epub #book2.recipes.chapter3 .activity-panel .quote h5, #epub .activity-panel .quote #book2.recipes.chapter3 h5 {
   color: #663a58;
 }
-/* line 73, ../sass/theme/_recipes.scss */
+/* line 75, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter3 .time {
   background-color: #ded2d3;
 }
-/* line 47, ../sass/theme/_recipes.scss */
+/* line 48, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter4 {
   background-color: #fff9ec;
   padding: 0;
 }
-/* line 52, ../sass/theme/_recipes.scss */
+/* line 53, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter4 .content .download a {
   color: #cb532a;
 }
-/* line 54, ../sass/theme/_recipes.scss */
+/* line 55, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter4 .content .download a:hover {
   color: #666666;
   -webkit-transition: all 0.4s ease-in-out 0s;
@@ -9730,15 +9790,19 @@ Chapter + Section covers
   -ms-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
 }
-/* line 59, ../sass/theme/_recipes.scss */
+/* line 60, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter4 .content ol li {
   color: #cb532a;
 }
 /* line 63, ../sass/theme/_recipes.scss */
+#epub #book2.recipes.chapter4 .content figure {
+  float: left;
+}
+/* line 65, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter4 .title {
   background-color: #cb532a;
 }
-/* line 64, ../sass/theme/_recipes.scss */
+/* line 66, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter4 h2 {
   background: none;
   background-image: url("../images/ui/recipe-icon.png");
@@ -9748,7 +9812,7 @@ Chapter + Section covers
   background-size: 430px auto;
 }
 @media only screen and (min-width: 768px) {
-  /* line 64, ../sass/theme/_recipes.scss */
+  /* line 66, ../sass/theme/_recipes.scss */
   #epub #book2.recipes.chapter4 h2 {
     background-image: url("../images/ui/recipe-icon.png");
     background-image: none, url("../images/ui/recipe-icon.svg");
@@ -9757,24 +9821,24 @@ Chapter + Section covers
     background-size: 550px auto;
   }
 }
-/* line 72, ../sass/theme/_recipes.scss */
+/* line 74, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter4 h3, #epub #book2.recipes.chapter4 h4, #epub #book2.recipes.chapter4 .activity-panel .quote h5, #epub .activity-panel .quote #book2.recipes.chapter4 h5 {
   color: #cb532a;
 }
-/* line 73, ../sass/theme/_recipes.scss */
+/* line 75, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter4 .time {
   background-color: #f9ddc8;
 }
-/* line 47, ../sass/theme/_recipes.scss */
+/* line 48, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter5 {
   background-color: #fff9ec;
   padding: 0;
 }
-/* line 52, ../sass/theme/_recipes.scss */
+/* line 53, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter5 .content .download a {
   color: #a55261;
 }
-/* line 54, ../sass/theme/_recipes.scss */
+/* line 55, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter5 .content .download a:hover {
   color: #666666;
   -webkit-transition: all 0.4s ease-in-out 0s;
@@ -9783,15 +9847,19 @@ Chapter + Section covers
   -ms-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
 }
-/* line 59, ../sass/theme/_recipes.scss */
+/* line 60, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter5 .content ol li {
   color: #a55261;
 }
 /* line 63, ../sass/theme/_recipes.scss */
+#epub #book2.recipes.chapter5 .content figure {
+  float: left;
+}
+/* line 65, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter5 .title {
   background-color: #a55261;
 }
-/* line 64, ../sass/theme/_recipes.scss */
+/* line 66, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter5 h2 {
   background: none;
   background-image: url("../images/ui/recipe-icon.png");
@@ -9801,7 +9869,7 @@ Chapter + Section covers
   background-size: 430px auto;
 }
 @media only screen and (min-width: 768px) {
-  /* line 64, ../sass/theme/_recipes.scss */
+  /* line 66, ../sass/theme/_recipes.scss */
   #epub #book2.recipes.chapter5 h2 {
     background-image: url("../images/ui/recipe-icon.png");
     background-image: none, url("../images/ui/recipe-icon.svg");
@@ -9810,24 +9878,24 @@ Chapter + Section covers
     background-size: 550px auto;
   }
 }
-/* line 72, ../sass/theme/_recipes.scss */
+/* line 74, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter5 h3, #epub #book2.recipes.chapter5 h4, #epub #book2.recipes.chapter5 .activity-panel .quote h5, #epub .activity-panel .quote #book2.recipes.chapter5 h5 {
   color: #a55261;
 }
-/* line 73, ../sass/theme/_recipes.scss */
+/* line 75, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter5 .time {
   background-color: #eedcd8;
 }
-/* line 47, ../sass/theme/_recipes.scss */
+/* line 48, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter6 {
   background-color: #fff9ec;
   padding: 0;
 }
-/* line 52, ../sass/theme/_recipes.scss */
+/* line 53, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter6 .content .download a {
   color: #757a38;
 }
-/* line 54, ../sass/theme/_recipes.scss */
+/* line 55, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter6 .content .download a:hover {
   color: #666666;
   -webkit-transition: all 0.4s ease-in-out 0s;
@@ -9836,15 +9904,19 @@ Chapter + Section covers
   -ms-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
 }
-/* line 59, ../sass/theme/_recipes.scss */
+/* line 60, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter6 .content ol li {
   color: #757a38;
 }
 /* line 63, ../sass/theme/_recipes.scss */
+#epub #book2.recipes.chapter6 .content figure {
+  float: left;
+}
+/* line 65, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter6 .title {
   background-color: #757a38;
 }
-/* line 64, ../sass/theme/_recipes.scss */
+/* line 66, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter6 h2 {
   background: none;
   background-image: url("../images/ui/recipe-icon.png");
@@ -9854,7 +9926,7 @@ Chapter + Section covers
   background-size: 430px auto;
 }
 @media only screen and (min-width: 768px) {
-  /* line 64, ../sass/theme/_recipes.scss */
+  /* line 66, ../sass/theme/_recipes.scss */
   #epub #book2.recipes.chapter6 h2 {
     background-image: url("../images/ui/recipe-icon.png");
     background-image: none, url("../images/ui/recipe-icon.svg");
@@ -9863,24 +9935,24 @@ Chapter + Section covers
     background-size: 550px auto;
   }
 }
-/* line 72, ../sass/theme/_recipes.scss */
+/* line 74, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter6 h3, #epub #book2.recipes.chapter6 h4, #epub #book2.recipes.chapter6 .activity-panel .quote h5, #epub .activity-panel .quote #book2.recipes.chapter6 h5 {
   color: #757a38;
 }
-/* line 73, ../sass/theme/_recipes.scss */
+/* line 75, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter6 .time {
   background-color: #e4e3cf;
 }
-/* line 47, ../sass/theme/_recipes.scss */
+/* line 48, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter7 {
   background-color: #fff9ec;
   padding: 0;
 }
-/* line 52, ../sass/theme/_recipes.scss */
+/* line 53, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter7 .content .download a {
   color: #663a58;
 }
-/* line 54, ../sass/theme/_recipes.scss */
+/* line 55, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter7 .content .download a:hover {
   color: #666666;
   -webkit-transition: all 0.4s ease-in-out 0s;
@@ -9889,15 +9961,19 @@ Chapter + Section covers
   -ms-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
 }
-/* line 59, ../sass/theme/_recipes.scss */
+/* line 60, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter7 .content ol li {
   color: #663a58;
 }
 /* line 63, ../sass/theme/_recipes.scss */
+#epub #book2.recipes.chapter7 .content figure {
+  float: left;
+}
+/* line 65, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter7 .title {
   background-color: #663a58;
 }
-/* line 64, ../sass/theme/_recipes.scss */
+/* line 66, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter7 h2 {
   background: none;
   background-image: url("../images/ui/recipe-icon.png");
@@ -9907,7 +9983,7 @@ Chapter + Section covers
   background-size: 430px auto;
 }
 @media only screen and (min-width: 768px) {
-  /* line 64, ../sass/theme/_recipes.scss */
+  /* line 66, ../sass/theme/_recipes.scss */
   #epub #book2.recipes.chapter7 h2 {
     background-image: url("../images/ui/recipe-icon.png");
     background-image: none, url("../images/ui/recipe-icon.svg");
@@ -9916,24 +9992,24 @@ Chapter + Section covers
     background-size: 550px auto;
   }
 }
-/* line 72, ../sass/theme/_recipes.scss */
+/* line 74, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter7 h3, #epub #book2.recipes.chapter7 h4, #epub #book2.recipes.chapter7 .activity-panel .quote h5, #epub .activity-panel .quote #book2.recipes.chapter7 h5 {
   color: #663a58;
 }
-/* line 73, ../sass/theme/_recipes.scss */
+/* line 75, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter7 .time {
   background-color: #ded2d3;
 }
-/* line 47, ../sass/theme/_recipes.scss */
+/* line 48, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter8 {
   background-color: #fff9ec;
   padding: 0;
 }
-/* line 52, ../sass/theme/_recipes.scss */
+/* line 53, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter8 .content .download a {
   color: #cb532a;
 }
-/* line 54, ../sass/theme/_recipes.scss */
+/* line 55, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter8 .content .download a:hover {
   color: #666666;
   -webkit-transition: all 0.4s ease-in-out 0s;
@@ -9942,15 +10018,19 @@ Chapter + Section covers
   -ms-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
 }
-/* line 59, ../sass/theme/_recipes.scss */
+/* line 60, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter8 .content ol li {
   color: #cb532a;
 }
 /* line 63, ../sass/theme/_recipes.scss */
+#epub #book2.recipes.chapter8 .content figure {
+  float: left;
+}
+/* line 65, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter8 .title {
   background-color: #cb532a;
 }
-/* line 64, ../sass/theme/_recipes.scss */
+/* line 66, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter8 h2 {
   background: none;
   background-image: url("../images/ui/recipe-icon.png");
@@ -9960,7 +10040,7 @@ Chapter + Section covers
   background-size: 430px auto;
 }
 @media only screen and (min-width: 768px) {
-  /* line 64, ../sass/theme/_recipes.scss */
+  /* line 66, ../sass/theme/_recipes.scss */
   #epub #book2.recipes.chapter8 h2 {
     background-image: url("../images/ui/recipe-icon.png");
     background-image: none, url("../images/ui/recipe-icon.svg");
@@ -9969,62 +10049,62 @@ Chapter + Section covers
     background-size: 550px auto;
   }
 }
-/* line 72, ../sass/theme/_recipes.scss */
+/* line 74, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter8 h3, #epub #book2.recipes.chapter8 h4, #epub #book2.recipes.chapter8 .activity-panel .quote h5, #epub .activity-panel .quote #book2.recipes.chapter8 h5 {
   color: #cb532a;
 }
-/* line 73, ../sass/theme/_recipes.scss */
+/* line 75, ../sass/theme/_recipes.scss */
 #epub #book2.recipes.chapter8 .time {
   background-color: #f9ddc8;
 }
-/* line 78, ../sass/theme/_recipes.scss */
+/* line 80, ../sass/theme/_recipes.scss */
 #epub .title {
   padding: 1em;
   color: #fff;
   text-align: center;
   text-transform: uppercase;
 }
-/* line 86, ../sass/theme/_recipes.scss */
+/* line 88, ../sass/theme/_recipes.scss */
 #epub .content {
   padding: 1.4em;
 }
-/* line 88, ../sass/theme/_recipes.scss */
+/* line 90, ../sass/theme/_recipes.scss */
 #epub .content .info {
   width: 100%;
   float: left;
   margin-left: 1em;
 }
 @media only screen and (min-width: 768px) {
-  /* line 88, ../sass/theme/_recipes.scss */
+  /* line 90, ../sass/theme/_recipes.scss */
   #epub .content .info {
     width: 40%;
   }
 }
-/* line 96, ../sass/theme/_recipes.scss */
+/* line 98, ../sass/theme/_recipes.scss */
 #epub .content .time {
   width: 100%;
   padding: 1.5em;
   float: right;
 }
 @media only screen and (min-width: 768px) {
-  /* line 96, ../sass/theme/_recipes.scss */
+  /* line 98, ../sass/theme/_recipes.scss */
   #epub .content .time {
     width: 40%;
   }
 }
-/* line 104, ../sass/theme/_recipes.scss */
+/* line 106, ../sass/theme/_recipes.scss */
 #epub .content .ingredients {
   float: left;
   width: 100%;
   margin: 0 0 1.5em 0;
 }
-/* line 109, ../sass/theme/_recipes.scss */
+/* line 111, ../sass/theme/_recipes.scss */
 #epub .content .ingredients ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-/* line 113, ../sass/theme/_recipes.scss */
+/* line 115, ../sass/theme/_recipes.scss */
 #epub .content .ingredients ul li {
   line-height: 1.1em;
   font-size: 1em;
@@ -10037,12 +10117,8 @@ Chapter + Section covers
   margin-left: -1px;
   color: #253275;
 }
-/* line 128, ../sass/theme/_recipes.scss */
+/* line 130, ../sass/theme/_recipes.scss */
 #epub .content .method {
-  float: left;
-}
-/* line 132, ../sass/theme/_recipes.scss */
-#epub .content figure {
   float: left;
 }
 /* line 135, ../sass/theme/_recipes.scss */
