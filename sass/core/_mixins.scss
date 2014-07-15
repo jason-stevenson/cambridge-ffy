@@ -99,6 +99,12 @@
   background-position:$position; 
 }
 
+@mixin bg($path, $repeat: no-repeat, $position: 0 0) {
+  background-image: url('#{$path}.png'); // IE8 & below
+  background-repeat: $repeat;
+  background-position:$position; 
+}
+
 
 // Panel styles
 @mixin panel-ribbon($color){

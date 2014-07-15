@@ -173,11 +173,11 @@
 			clear: both;
 			margin-bottom: 25px;
 			height: 140px;
-			@include svg-bg("../images/ui/trivia-icon", no-repeat, 20px 20px);
+			@include bg("../images/ui/trivia-icon", no-repeat, 20px 20px);
 			background-size: 70px auto;
 			@media #{$small} {
 				width: 70%;
-				@include svg-bg("../images/ui/trivia-icon", no-repeat, 20px 20px);
+				@include bg("../images/ui/trivia-icon", no-repeat, 20px 20px);
 				background-size: 100px auto;
 			}
 			p{	
@@ -190,9 +190,16 @@
 
 	.chapter1 .trivia-panel{
 		@extend .trivia-panel;
-		@include svg-bg("../images/ui/trivia-icon-2", no-repeat, 20px 20px);
+		@include bg("../images/ui/trivia-icon-2", no-repeat, 20px 20px);
 		@media #{$small} {
-				@include svg-bg("../images/ui/trivia-icon-2", no-repeat, 20px 20px);
+				@include bg("../images/ui/trivia-icon-2", no-repeat, 20px 20px);
+			}
+	}
+	.chapter1 .tasty-trivia-panel{
+		@extend .trivia-panel;
+		@include bg("../images/ui/trivia-icon", no-repeat, 20px 20px);
+		@media #{$small} {
+				@include bg("../images/ui/trivia-icon", no-repeat, 20px 20px);
 			}
 	}
 

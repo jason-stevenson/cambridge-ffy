@@ -40,6 +40,10 @@
 				<p>Over half of all the fires that occur in the home are electricity related.</p>
 			</div>
 
+			<div class="tasty-trivia-panel">
+				<p>Over half of all the fires that occur in the home are electricity related.</p>
+			</div>
+
 			<p>Accidents are common in the kitchen but they can be avoided if we follow a few simple safety practices and take into consideration a number of safety design features. If we choose not to follow these safety practices and standards then this is when accidents will occur. It does not matter how busy we are in the kitchen or how much fun we are having, it is essential to remember to follow food safety practices at all times. Kitchen safety really is important!</p>
 			
 			<p>We must always consider and analyse:</p>
@@ -326,20 +330,6 @@
 		
 
 
-			<!-- Galleria -->
-			<div class="slideshow">
-				<div id= "gal1" class="galleria">
-				    <a href="images/covers/book1/chapter1-cover.jpg"><img src="images/covers/book1/chapter1-cover.jpg" data-title="Food on a plate"></a>
-				    <a href="images/breakfast.jpg"><img src="images/breakfast.jpg" data-title="Breakfast"></a>
-				    <a href="images/microwave.jpg"><img src="images/microwave.jpg" data-title="Lady using a microwave"></a>
-				    <a href="images/manu.jpg"><img src="images/manu.jpg" data-title="Manu"></a>
-				    <a href="images/donna.jpg"><img src="images/donna.jpg" data-title="Donna Hay"></a>
-				</div>
-				<div class="caption"></div>
-			</div>
-
-
-
 
 			<!-- INteractive panel -->
 			<div class="interactive-panel">		
@@ -348,7 +338,7 @@
 
 					<p>The City of Sydney has been recognised for its efforts to ensure food sold through restaurants, cafes and take-away venues is served and prepared hygienically.The City won its category in the NSW Food Authority’s Food Surveillance Awards, which are held every two years to recognise best practice in food hygiene by local government and authorities. “We conduct around 2,500 inspections each year to ensure food safety is of the highest standards for the millions of residents, workers and tourists who eat out each year,” Lord Mayor Clover Moore said.</p>
 
-					<iframe onload="this.style.position='static'; this.style.visibility='visible';" src="http://www.cambridge.org/" height="400px" width="100%" frameborder="0" ></iframe> 
+					<iframe onload="this.style.position='static'; this.style.visibility='visible';" src="03-chapter-opener.html" height="400px" width="100%" frameborder="0" ></iframe> 
 
 					<div class="caption"><strong>Fig 12.2 </strong>Colds foods and foods that need to be cooked thoroughly</div>
 				
@@ -372,24 +362,11 @@
 
 
   	<script src="javascripts/vendor/jquery.js"></script>
-	<script src="javascripts/galleria/galleria-1.2.9.js"></script>
 	<script src="javascripts/foundation/foundation.js"></script>
 	<script src="javascripts/foundation/foundation.tooltips.js"></script>
 	<script src="javascripts/foundation/foundation.reveal.js"></script>
 	<script> $(document).foundation();</script>
 	<script src="javascripts/cambridge/main.js"></script>
-		<script>
-    	Galleria.loadTheme('javascripts/galleria/themes/classic/galleria.classic.min.js');
-    	Galleria.configure({
-		    lightbox: true
-		});
-		Galleria.ready(function(options) {
-		    this.bind('image', function(e) {
-		        var caption = e.galleriaData.title;
-		       	$(".slideshow .caption").html(caption);
-		    });
-		});
-    	Galleria.run('#gal1');
-	</script>
+		
 </body>
 </html>

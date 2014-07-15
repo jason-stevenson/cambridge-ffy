@@ -80,11 +80,12 @@ Chapter + Section covers
 
 
 	.chapter-opener{
-		height: 400px;
-		padding-top: 70px;
+		height: 60%;
+		max-height:600px;
+		padding-top: 50px;
 
 		.masthead{
-			margin-bottom: 150px;
+			margin-bottom: 180px;;
 			text-align: right;
 			color: #fff;
 			text-transform: uppercase;
@@ -118,10 +119,11 @@ Chapter + Section covers
 		@include grid-column(12);
 	}
 	.cover-caption{
-		background-color: #fff;
+		background-color: rgba(255,255,255,0.8);
 		width: 100%;
 		font-size:0.9em;
-		margin-bottom: 1.1em;
+		margin:0;
+		padding:1.5em;
 		text-align: right;
 		span{
 			color: $grey;

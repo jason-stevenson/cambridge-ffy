@@ -5,17 +5,30 @@ $( document ).ready(function() {
  	// ================================================================
 	// As we cant use the body element to apply the cover images to
 	// we need to re-size the internal div to fill the browser window
+	
+	$('#cover').append('<div class="image"></div>');
+	$('#cover').append('<div class="footer"><img src="images/covers/cover-footer.png"></img></div>');
+	
+
+
 	$('#cover').css({'height':($(window).height())});
+	$('#cover .image').css({'height':($(window).height()-420)});
+
 
 	$(window).resize(function(){
     	$('#cover').css({'height':($(window).height())});
+    	$('#cover .image').css({'height':($(window).height()-420)});
     });
 	
 
 	$( ".chapter-opener .chapter, .chapter-opener .title" ).wrapAll('<div class="masthead"></div>');
-	$( ".masthead" ).wrapInner('<div class="wrapper"></div>');
-	$( ".wrapper" ).wrapInner('<div class="inner"></div>');
+	$( ".chapter-opener .masthead" ).wrapInner('<div class="wrapper"></div>');
+	$( ".chapter-opener .wrapper" ).wrapInner('<div class="inner"></div>');
 
+
+	
+	
+            
 
 
 	// EOC

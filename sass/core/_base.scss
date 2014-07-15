@@ -10,6 +10,7 @@
 
 #epub{
 
+
 	/* The data attribute on the root epub element provides the page with the reposive grid config */
 	// ================================================================================================
 
@@ -24,6 +25,8 @@
 			@include grid-column(12, false, false, false, false, false, false, false);
 		}
 	}
+
+
 
 
 
@@ -116,39 +119,7 @@
 			font-size: 5.2em;		
 		}
 	}
-	// .download{
-	// 	@include clearfix();
-	// 	text-align:left;
-	// 	margin-bottom: 25px;
 
-	// 	@media #{$small} {
-	// 		text-align:center;
-	// 	}
-
-	// 	>a >span {
-	// 		font-size:emCalc(60px);
-	// 		float: left;
-
-	// 		@media #{$small} {
-	// 			float: none;
-	// 			font-size:emCalc(80px);
-	// 		}
-	// 	}
-	// 	>a >span + div{
-	// 		margin-top: 15px;
-	// 		margin-left: 10px;
-	// 		margin-bottom: 15px;
-	// 		font-size:emCalc(20px);
-	
-	// 		float: left;
-
-	// 		@media #{$small} {
-	// 			float: none;
-	// 			margin: 15px 0px 0px 0px;
-	// 			font-size:emCalc(20px);
-	// 		}
-	// 	}
-	// }
 
 
 
@@ -170,12 +141,13 @@
 	}
 	ol{
 		list-style-position:outside;
-		margin-left:18px;
+		margin-left:20px;
 		li{
 			margin:15px 0px;
 		}
 		ol{
 			list-style-position:outside;
+			margin-left:20px;
 			li{
 				list-style-type:decimal;	
 				padding:0px 0px;
@@ -256,7 +228,7 @@
 		width: 100%;
 		@media #{$small} {	
 			float:left;
-			width: 50%;
+			width: 40%;
 			margin-right:50px; 
 		}
 	}
@@ -264,7 +236,7 @@
 	 	width: 100%;
 			@media #{$small} {
 			float:right;
-			width: 50%;
+			width: 40%;
 			margin-left:50px; 
 		}
 	}
@@ -280,7 +252,7 @@
 		width: 60%;
 		margin:0 auto;
 		@media #{$small} {
-			width: 30%;
+			width: 25%;
 			margin-left:50px; 
 		}
 	}
@@ -288,15 +260,15 @@
 		width: 60%;
 		margin:0 auto;
 		@media #{$small} {
-			width: 30%;
+			width: 25%;
 			margin-right:50px; 
 		}
 	}
 
 
-	.align-right{
-		float: right;
-	}
+	// .align-right{
+	// 	float: right;
+	// }
 
 }
 

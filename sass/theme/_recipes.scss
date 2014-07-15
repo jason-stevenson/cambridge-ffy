@@ -12,27 +12,20 @@
     	background-color:$recipe-color;
     	padding:0;
     	.content{
-    		.download a{
-    			color:nth($colors-list, $i);
-    			&:hover{
-    				color: $grey;
-					@include hoverColor;
-    			}
-    		}
 	    	ol li{
 	    		color:nth($colors-list, $i)
 	    	}
 	    	figure{float:left};
 	    }
-		.title{background-color: nth($colors-list, $i);}
-			h2{background:none;
-				@include svg-bg("../images/ui/recipe-icon", no-repeat, 12px 12px);
-				background-size: 430px auto;
-				@media #{$small} {
-					@include svg-bg("../images/ui/recipe-icon", no-repeat, center center);
-					background-size: 550px auto;
+		.recipe-title{
+			background-color: nth($colors-list, $i);
+			.download{
+				a:hover{
+					color:darken(nth($colors-list, $i),20);
 				}
 			}
+		}
+			
 			h3,h4{color:nth($colors-list, $i)}
 			.time{background-color:nth($tint-list, $i)}
 	    }
@@ -50,39 +43,41 @@
     	background-color:$recipe-color;
     	padding:0;
     	.content{
-    		.download a{
-    			color:nth($colors-list, $i);
-    			&:hover{
-    				color: $grey;
-					@include hoverColor;
-    			}
-    		}
+ 
 	    	ol li{
 	    		color:nth($colors-list, $i)
 	    	}
 	    	figure{float:left};
 	    }
-		.title{background-color: nth($colors-list, $i);}
-			h2{background:none;
-				@include svg-bg("../images/ui/recipe-icon", no-repeat, 12px 12px);
-				background-size: 430px auto;
-				@media #{$small} {
-					@include svg-bg("../images/ui/recipe-icon", no-repeat, center center);
-					background-size: 550px auto;
+		.recipe-title{
+			background-color: nth($colors-list, $i);
+			.download{
+				a:hover{
+					color:darken(nth($colors-list, $i),15);
 				}
 			}
+		}
+			
 			h3,h4{color:nth($colors-list, $i)}
 			.time{background-color:nth($tint-list, $i)}
 	    }
 	}
 
 
-	.title{
-		
-		padding: 1em;
-		color: #fff;
-		text-align: center;
-		text-transform: uppercase;
+
+	.recipe-title{
+		height: 120px;
+		@include svg-bg("../images/ui/recipe-icon", no-repeat, center right);
+		background-size: 460px auto;
+		@media #{$small} {
+			@include svg-bg("../images/ui/recipe-icon", no-repeat, center center);
+			background-size: 550px auto;
+		}
+
+		.download{
+			padding:20px 0 0 35px;
+			a{color:#fff}
+		}
 
 	}
 	.content{
@@ -93,7 +88,6 @@
 				width: 40%;
 			}
 			float: left;
-			margin-left: 1em;
 		}
 		.time{
 			width: 100%;
@@ -102,6 +96,11 @@
 			}
 			padding:1.5em;
 			float: right;
+
+			img{
+				width: 32px;
+				margin-right: 15px;
+			}
 		}
 		.ingredients{
 			float: left;
