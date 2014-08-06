@@ -16,11 +16,11 @@
 		margin-bottom:2em;
 
 		// Icon re-sizing
-		@include svg-bg("../images/ui/investigate-icon", no-repeat, 98% 10%);
-		background-size: 50px auto;
+		@include svg-bg("../images/ui/investigate-icon-magnify", no-repeat, 96% 0%);
+		background-size: 16%;
 		@media #{$small} {
-			@include svg-bg("../images/ui/investigate-icon", no-repeat, 98% 10%);
-			background-size: 65px auto;
+			@include svg-bg("../images/ui/investigate-icon-magnify", no-repeat, 98% 15%);
+			background-size: 16%;
 		}
 
 		h3{

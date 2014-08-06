@@ -80,12 +80,11 @@ Chapter + Section covers
 
 
 	.chapter-opener{
-		height: 60%;
-		max-height:600px;
+		// height: 600px;
 		padding-top: 50px;
 
 		.masthead{
-			margin-bottom: 180px;;
+			//margin-bottom: 200px;;
 			text-align: right;
 			color: #fff;
 			text-transform: uppercase;
@@ -108,8 +107,11 @@ Chapter + Section covers
 		}
 	}
 
-	.content{
+	.content-wrapper{
 		@include grid-row;
+	}
+	.content{
+		height: 500px;
 	}
 
 	.how-much-panel{

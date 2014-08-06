@@ -1,6 +1,12 @@
 
 $( document ).ready(function() {
  	
+
+ 	// var docHeight = $(window).height();
+  //  	var footerHeight = $('.chapter-opener .content').height();
+  //  	var footerTop = $('.chapter-opener .content').position().top + footerHeight + 300;
+
+
  	// Chapter cover
  	// ================================================================
 	// As we cant use the body element to apply the cover images to
@@ -13,11 +19,22 @@ $( document ).ready(function() {
 
 	$('#cover').css({'height':($(window).height())});
 	$('#cover .image').css({'height':($(window).height()-420)});
+	$( ".chapter-opener").css({'height':($(window).height()*0.75)});
 
+	// $( ".chapter-opener .content").css({'height':($(window).height()*0.75)});
 
 	$(window).resize(function(){
     	$('#cover').css({'height':($(window).height())});
     	$('#cover .image').css({'height':($(window).height()-420)});
+    	$( ".chapter-opener").css({'height':($(window).height()*0.75)});
+
+
+
+    	// if (footerTop < docHeight) {
+    	// 	$('#footer').css('margin-top', 10 + (docHeight - footerTop) + 'px');
+   		// }
+
+    	
     });
 	
 
@@ -26,8 +43,10 @@ $( document ).ready(function() {
 	$( ".chapter-opener .wrapper" ).wrapInner('<div class="inner"></div>');
 
 
+
 	
-	
+		
+
             
 
 

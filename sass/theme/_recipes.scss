@@ -20,8 +20,9 @@
 		.recipe-title{
 			background-color: nth($colors-list, $i);
 			.download{
+				a{color:rgba(255,255,255,0.5)}
 				a:hover{
-					color:darken(nth($colors-list, $i),20);
+					color:darken(nth($colors-list, $i),12);
 				}
 			}
 		}
@@ -52,6 +53,7 @@
 		.recipe-title{
 			background-color: nth($colors-list, $i);
 			.download{
+				a{color:rgba(255,255,255,0.5)}
 				a:hover{
 					color:darken(nth($colors-list, $i),15);
 				}
@@ -76,7 +78,7 @@
 
 		.download{
 			padding:20px 0 0 35px;
-			a{color:#fff}
+			
 		}
 
 	}
@@ -112,16 +114,27 @@
 				padding:0;
 				margin: 0;
 				li{
+
+					width: 33.3%;
 					line-height: 1.1em;
 					font-size: 1em;
 					background-color:#fff;
-					padding: 0.8em;
-					margin: 0;
+					padding: 0.8em 0.8em 0 0.8em;
+					margin: 0 auto;
 					border:1px solid #253275;
-					width: 20%;
+					height:280px;
 					float: left;
 					margin-left: -1px;
 					color: #253275;
+					overflow: hidden;
+
+
+					@media #{$small} {
+						width: 20%;
+					}
+					img{
+						margin-top:15px;
+					}
 				}
 			}
 
