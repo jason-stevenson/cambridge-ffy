@@ -123,6 +123,21 @@ module.exports = function(grunt) {
 
 
 
+      // Remove the livereload script + switch in the minified javsacript
+      replace: {
+        example: {
+          src: ['build/*.html'],            
+          dest: 'build/',           
+          replacements: [{
+            from: '<script src="http://localhost:35729/livereload.js"></script>',      
+            to: ''
+          }]
+        }
+      },
+
+
+
+
     // Watch + Livereload
     watch: {
       sass: {
@@ -150,12 +165,12 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-contrib-copy');
-
+  grunt.loadNpmTasks('grunt-text-replace');
 
 
    // Deploy task
   grunt.registerTask('deploy', [
-      'clean', 'cssmin', 'uglify', 'imagemin', 'copy'
+      'clean', 'cssmin', 'uglify', 'imagemin', 'copy', 'replace'
    ]);
 
   

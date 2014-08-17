@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class="no-js" lang="en" > 
+<!--<![endif]-->
+<head>
+  <meta http-equiv="x-ua-compatible" content="IE=10">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>ePub</title>
+
+  <link rel="stylesheet" href="css/app.css">
+  <script src="javascripts/vendor/custom.modernizr.js"></script>
+  <script src="http://localhost:35729/livereload.js"></script>
+</head>
+
+
+
+<body>
+	<div id="epub">
+		<div class="section1 chapter1" data-type="page">
+
+			<h2>Cambridge Core</h2>
+			<p>Version 0.1.0</p>
+			<h3>Readme</h3>
+			<p>The style sheets are built using the following technology:</p>
+			<ul>
+				<li>Foundation 4.3.2</li>
+				<li>SASS + Compass</li>
+				<li>jQuery</li>
+				<li>Bundler</li>
+				<li>Grunt</li>
+			</ul>
+
+			<h5>Bundler</h5>
+			<p>Bundler manages any gem dependencies and version that may be required. Run<code> bundle install</code> to fetch any required gems.</p>
+			
+			<h5>Grunt</h5>
+			<p>This version of the epub framework has incorporated Grunt into the development workflow. It now handles SASS compilation and livereload during the development process as well as minification of CSS and Javascript for deployment.</p>
+
+			<h6>Development</h6>
+			<p>If changes need to be made to the CSS:</p>
+			<ul>
+				<li>Grunt CLI, Node.js and Node package manager need to be installed. Please read the online documentation to get started</li>
+				<li>Run <code>npm install</code> to get the require packages</li>
+				<li>Run <code>grunt</code></li>
+			</ul>
+			<p>Grunt will start watching the working directory for changes</p>
+			
+
+			<h6>Deployment</h6>
+			<p>To deploy the final build files for the epub</p>
+			<ul>
+				<li>Run <code>grunt deploy</code></li>
+			</ul>
+
+			<p>This will generate a directory called <code>build</code> with all the necessary files.</p>
+				<ul>
+					<li>Provides CSS and javscript concatenation and minification</li>
+					<li>Optimises all graphic file sizes</li>
+					<li>Removes unecessary scripts from the html</li>
+					<li>Copies only the required html, css and javascripts libraries</li>
+				</ul>
+
+			<h4>ePub Directory Structure</h4>
+
+			<h6>Sample pages</h6>
+			<p>Numbered html files are template pages of ePub content</p>
+			<ul>
+				<li><code>01-section-cover.html</code></li>
+				<li><code>04-sample-content.html</code></li>
+			</ul>
+
+			<h6>Base elements</h6>
+			<p>Common base styles that are used across all epub titles. <code>base-elements.html</code></p>
+			
+			<h6>Fonts folder</h6>
+			<p>Icon glyphs / font used across publications</p>
+
+			<h6>Images folder</h6>
+			<p>Images for inline page content</p>
+
+			<h6>Images > UI folder</h6>
+			<p>Graphic elements that are used in the theme. Custom panels components + backgrounds, icons etc.</p>
+
+			<h6>SASS</h6>
+			<p>Contains all the SASS partials for CSS compliation. These are not required for final deployment</p>
+
+			<h6>CSS</h6>
+			<p>Contains compressed version of the CSS stylesheet</p>
+
+			<h6>Javascripts</h6>
+			<p>Contains the Foundation framework, jQuery, modernizer and Cambridge files.</p>
+			
+			<h6>Gemfile + Gem.lock</h6>
+			<p>The gem file contains project gem dependencies and versions.</p>
+
+
+			
+		</div>	
+	</div>
+
+	
+
+
+
+
+  	<script src="javascripts/vendor/jquery.js"></script>
+	<script src="javascripts/foundation/foundation.js"></script>
+	<script src="javascripts/foundation/foundation.tooltips.js"></script>
+	<script src="javascripts/foundation/foundation.reveal.js"></script>
+	<script src="javascripts/foundation/foundation.section.js"></script>
+	<script> $(document).foundation();</script>
+	<script src="javascripts/cambridge/core.js"></script>
+	<script src="javascripts/cambridge/custom.js"></script>
+	
+	
+</body>
+</html>
