@@ -105,31 +105,29 @@ Chapter + Section covers
 				padding: 0;
 			}
 		}
-	}
-
-	.content-wrapper{
-		@include grid-row;
-	}
-	.content{
-		height: 500px;
-	}
-
-	.how-much-panel{
-		padding: 0.5em 1.5em;
-		margin-bottom: 1.5em;
-		@include rounded-corners(0,0,20px,20px);
-		@include grid-column(12);
-	}
-	.cover-caption{
-		background-color: rgba(255,255,255,0.8);
-		width: 100%;
-		font-size:0.9em;
-		margin:0;
-		padding:1.5em;
-		text-align: right;
-		span{
-			color: $grey;
+		.content{
+			height: 500px;
+		}
+		.content-wrapper{
+			@include grid-row;
+		}
+	
+		.how-much-panel{
+			padding: 0.5em 1.5em;
+			margin-bottom: 1.5em;
+			@include rounded-corners(0,0,20px,20px);
+			@include grid-column(12);
+		}
+		.cover-caption{
+			background-color: rgba(255,255,255,0.8);
+			width: 100%;
+			font-size:0.9em;
+			margin:0;
+			padding:1.5em;
+			text-align: right;
+			span{
+				color: $grey;
+			}
 		}
 	}
-
 }

@@ -21,18 +21,19 @@ $( document ).ready(function() {
 	$('#cover .image').css({'height':($(window).height()-420)});
 	$( ".chapter-opener").css({'height':($(window).height()*0.75)});
 
-	// $( ".chapter-opener .content").css({'height':($(window).height()*0.75)});
+	
+	var imageHeight = $(window).height()*0.75;
+	$( ".chapter-opener .content").css({'margin-top':imageHeight-250});
 
 	$(window).resize(function(){
     	$('#cover').css({'height':($(window).height())});
     	$('#cover .image').css({'height':($(window).height()-420)});
     	$( ".chapter-opener").css({'height':($(window).height()*0.75)});
 
+    	var imageHeight = $(window).height()*0.75;
 
+    	$( ".chapter-opener .content").css({'margin-top':imageHeight-250});
 
-    	// if (footerTop < docHeight) {
-    	// 	$('#footer').css('margin-top', 10 + (docHeight - footerTop) + 'px');
-   		// }
 
     	
     });
@@ -44,10 +45,7 @@ $( document ).ready(function() {
 
 
 
-	
-		
 
-            
 
 
 	// EOC
